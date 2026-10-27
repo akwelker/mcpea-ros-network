@@ -1,0 +1,20 @@
+[0.069s] Invoking command in '/home/ubuntu/mc-pea-ros-network/build/actuator_command': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/mc-pea-ros-network/build/actuator_command -- -j4 -l4
+[0.251s] Invoked command in '/home/ubuntu/mc-pea-ros-network/build/actuator_command' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/mc-pea-ros-network/build/actuator_command -- -j4 -l4
+[0.314s] Invoking command in '/home/ubuntu/mc-pea-ros-network/build/actuator_command': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/mc-pea-ros-network/build/actuator_command
+[0.351s] -- Install configuration: ""
+[0.353s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/actuator_command/share/ament_index/resource_index/package_run_dependencies/actuator_command
+[0.355s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/actuator_command/share/ament_index/resource_index/parent_prefix_path/actuator_command
+[0.357s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/environment/ament_prefix_path.sh
+[0.360s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/environment/ament_prefix_path.dsv
+[0.363s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/environment/path.sh
+[0.366s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/environment/path.dsv
+[0.369s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/local_setup.bash
+[0.373s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/local_setup.sh
+[0.376s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/local_setup.zsh
+[0.379s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/local_setup.dsv
+[0.383s] -- Installing: /home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/package.dsv
+[0.389s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/actuator_command/share/ament_index/resource_index/packages/actuator_command
+[0.389s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/cmake/actuator_commandConfig.cmake
+[0.392s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/cmake/actuator_commandConfig-version.cmake
+[0.396s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/package.xml
+[0.412s] Invoked command in '/home/ubuntu/mc-pea-ros-network/build/actuator_command' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/mc-pea-ros-network/build/actuator_command

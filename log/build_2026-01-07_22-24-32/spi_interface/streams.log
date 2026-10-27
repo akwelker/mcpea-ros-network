@@ -1,0 +1,61 @@
+[0.097s] Invoking command in '/home/ubuntu/mc-pea-ros-network/build/spi_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/mc-pea-ros-network/build/spi_interface -- -j4 -l4
+[0.585s] [  2%] Built target spi_interface__cpp
+[0.637s] [35m[1mConsolidate compiler generated dependencies of target spi_bridge_node[0m
+[0.858s] [  2%] Built target ament_cmake_python_copy_spi_interface
+[0.864s] [ 11%] Built target spi_interface__rosidl_generator_c
+[0.959s] [ 20%] Built target spi_interface__rosidl_typesupport_cpp
+[1.270s] [ 28%] Built target spi_interface__rosidl_typesupport_introspection_cpp
+[1.351s] [ 37%] Built target spi_interface__rosidl_typesupport_fastrtps_cpp
+[1.473s] [ 40%] [32mBuilding CXX object CMakeFiles/spi_bridge_node.dir/src/spi_bridge.cpp.o[0m
+[1.614s] [ 48%] Built target spi_interface__rosidl_typesupport_fastrtps_c
+[1.627s] [ 57%] Built target spi_interface__rosidl_typesupport_introspection_c
+[1.716s] [ 60%] [32mBuilding CXX object CMakeFiles/spi_bridge_node.dir/src/spi_bridge_node.cpp.o[0m
+[2.011s] [ 68%] Built target spi_interface__rosidl_typesupport_c
+[2.337s] [ 68%] Built target spi_interface
+[2.674s] [ 71%] Built target spi_interface__py
+[3.170s] [ 77%] Built target interpreter_node
+[3.987s] [ 84%] Built target spi_interface__rosidl_generator_py
+[4.958s] running egg_info
+[4.964s] writing spi_interface.egg-info/PKG-INFO
+[4.968s] writing dependency_links to spi_interface.egg-info/dependency_links.txt
+[4.988s] [ 88%] Built target spi_interface__rosidl_typesupport_fastrtps_c__pyext
+[4.997s] writing top-level names to spi_interface.egg-info/top_level.txt
+[5.042s] reading manifest file 'spi_interface.egg-info/SOURCES.txt'
+[5.046s] writing manifest file 'spi_interface.egg-info/SOURCES.txt'
+[5.281s] [ 93%] Built target spi_interface__rosidl_typesupport_introspection_c__pyext
+[5.296s] [ 93%] Built target ament_cmake_python_build_spi_interface_egg
+[5.626s] [ 97%] Built target spi_interface__rosidl_typesupport_c__pyext
+[34.908s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/spi_bridge.cpp:[m[K In member function ‘[01m[Kvoid Spi_Bridge::raw_data_pub_callback()[m[K’:
+[34.909s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/spi_bridge.cpp:93:16:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kstd_msgs::msg::UInt16MultiArray_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::vector<short unsigned int, std::allocator<short unsigned int> >[m[K’} and ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >[m[K’)
+[34.910s]    93 |     msg.data = [01;31m[Koutput_data_[m[K;
+[34.914s]       |                [01;31m[K^~~~~~~~~~~~[m[K
+[34.918s] In file included from [01m[K/usr/include/c++/11/vector:72[m[K,
+[34.919s]                  from [01m[K/usr/include/c++/11/functional:62[m[K,
+[34.920s]                  from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/spi_bridge.h:17[m[K,
+[34.921s]                  from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/spi_bridge.cpp:13[m[K:
+[34.922s] [01m[K/usr/include/c++/11/bits/vector.tcc:198:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = short unsigned int; _Alloc = std::allocator<short unsigned int>][m[K’
+[34.928s]   198 |     [01;36m[Kvector<_Tp, _Alloc>[m[K::
+[34.930s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[34.931s] [01m[K/usr/include/c++/11/bits/vector.tcc:199:42:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >[m[K’ to ‘[01m[Kconst std::vector<short unsigned int, std::allocator<short unsigned int> >&[m[K’
+[34.932s]   199 |     operator=([01;36m[Kconst vector<_Tp, _Alloc>& __x[m[K)
+[34.933s]       |               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[34.934s] In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+[34.947s]                  from [01m[K/usr/include/c++/11/functional:62[m[K,
+[34.950s]                  from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/spi_bridge.h:17[m[K,
+[34.954s]                  from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/spi_bridge.cpp:13[m[K:
+[34.957s] [01m[K/usr/include/c++/11/bits/stl_vector.h:709:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::vector<_Tp, _Alloc>&&) [with _Tp = short unsigned int; _Alloc = std::allocator<short unsigned int>][m[K’
+[34.961s]   709 |       [01;36m[Koperator[m[K=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())
+[34.964s]       |       [01;36m[K^~~~~~~~[m[K
+[34.967s] [01m[K/usr/include/c++/11/bits/stl_vector.h:709:26:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >[m[K’ to ‘[01m[Kstd::vector<short unsigned int, std::allocator<short unsigned int> >&&[m[K’
+[34.970s]   709 |       operator=([01;36m[Kvector&& __x[m[K) noexcept(_Alloc_traits::_S_nothrow_move())
+[34.971s]       |                 [01;36m[K~~~~~~~~~^~~[m[K
+[34.972s] [01m[K/usr/include/c++/11/bits/stl_vector.h:730:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::initializer_list<_Tp>) [with _Tp = short unsigned int; _Alloc = std::allocator<short unsigned int>][m[K’
+[34.973s]   730 |       [01;36m[Koperator[m[K=(initializer_list<value_type> __l)
+[34.973s]       |       [01;36m[K^~~~~~~~[m[K
+[34.974s] [01m[K/usr/include/c++/11/bits/stl_vector.h:730:46:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >[m[K’ to ‘[01m[Kstd::initializer_list<short unsigned int>[m[K’
+[34.975s]   730 |       operator=([01;36m[Kinitializer_list<value_type> __l[m[K)
+[34.976s]       |                 [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[47.438s] gmake[2]: *** [CMakeFiles/spi_bridge_node.dir/build.make:76: CMakeFiles/spi_bridge_node.dir/src/spi_bridge.cpp.o] Error 1
+[47.440s] gmake[1]: *** [CMakeFiles/Makefile2:594: CMakeFiles/spi_bridge_node.dir/all] Error 2
+[47.448s] gmake: *** [Makefile:146: all] Error 2
+[47.453s] Invoked command in '/home/ubuntu/mc-pea-ros-network/build/spi_interface' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/mc-pea-ros-network/build/spi_interface -- -j4 -l4

@@ -1,0 +1,61 @@
+[0.067s] Invoking command in '/home/ubuntu/mc-pea-ros-network/build/spi_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/mc-pea-ros-network/build/spi_interface -- -j4 -l4
+[0.397s] [  8%] Built target spi_interface__rosidl_generator_c
+[0.451s] [ 10%] Built target spi_interface__cpp
+[0.510s] [ 10%] Built target ament_cmake_python_copy_spi_interface
+[0.552s] [ 16%] Built target spi_bridge_node
+[0.648s] [ 25%] Built target spi_interface__rosidl_typesupport_fastrtps_c
+[0.663s] [ 33%] Built target spi_interface__rosidl_typesupport_introspection_c
+[0.712s] [ 41%] Built target spi_interface__rosidl_typesupport_c
+[0.807s] [ 50%] Built target spi_interface__rosidl_typesupport_introspection_cpp
+[0.820s] [ 58%] Built target spi_interface__rosidl_typesupport_cpp
+[0.877s] [ 66%] Built target spi_interface__rosidl_typesupport_fastrtps_cpp
+[0.989s] [ 66%] Built target spi_interface
+[1.091s] [35m[1mConsolidate compiler generated dependencies of target interpreter_node[0m
+[1.117s] [ 68%] Built target spi_interface__py
+[1.278s] [ 75%] Built target actuator_bridge_node
+[1.324s] [ 81%] Built target spi_interface__rosidl_generator_py
+[1.351s] [ 83%] [32mBuilding CXX object CMakeFiles/interpreter_node.dir/src/interpreter.cpp.o[0m
+[1.500s] [ 87%] Built target spi_interface__rosidl_typesupport_introspection_c__pyext
+[1.540s] [ 91%] Built target spi_interface__rosidl_typesupport_fastrtps_c__pyext
+[1.623s] [ 95%] Built target spi_interface__rosidl_typesupport_c__pyext
+[2.593s] running egg_info
+[2.597s] writing spi_interface.egg-info/PKG-INFO
+[2.600s] writing dependency_links to spi_interface.egg-info/dependency_links.txt
+[2.602s] writing top-level names to spi_interface.egg-info/top_level.txt
+[2.617s] reading manifest file 'spi_interface.egg-info/SOURCES.txt'
+[2.622s] writing manifest file 'spi_interface.egg-info/SOURCES.txt'
+[2.791s] [ 95%] Built target ament_cmake_python_build_spi_interface_egg
+[13.578s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:[m[K In member function ‘[01m[Kvoid Interpreter::command_pub_callback(std::vector<unsigned char, std::allocator<unsigned char> >)[m[K’:
+[13.578s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:286:35:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kstd_msgs::msg::UInt8MultiArray_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >[m[K’} and ‘[01m[Kunsigned char*[m[K’)
+[13.579s]   286 |     msg_out.data = check_out.data([01;31m[K)[m[K;
+[13.580s]       |                                   [01;31m[K^[m[K
+[13.580s] In file included from [01m[K/usr/include/c++/11/vector:72[m[K,
+[13.580s]                  from [01m[K/usr/include/c++/11/functional:62[m[K,
+[13.582s]                  from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/interpreter.h:60[m[K,
+[13.582s]                  from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:10[m[K:
+[13.583s] [01m[K/usr/include/c++/11/bits/vector.tcc:198:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = unsigned char; _Alloc = std::allocator<unsigned char>][m[K’
+[13.584s]   198 |     [01;36m[Kvector<_Tp, _Alloc>[m[K::
+[13.584s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[13.585s] [01m[K/usr/include/c++/11/bits/vector.tcc:199:42:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kunsigned char*[m[K’ to ‘[01m[Kconst std::vector<unsigned char, std::allocator<unsigned char> >&[m[K’
+[13.585s]   199 |     operator=([01;36m[Kconst vector<_Tp, _Alloc>& __x[m[K)
+[13.586s]       |               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[13.586s] In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+[13.588s]                  from [01m[K/usr/include/c++/11/functional:62[m[K,
+[13.588s]                  from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/interpreter.h:60[m[K,
+[13.589s]                  from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:10[m[K:
+[13.590s] [01m[K/usr/include/c++/11/bits/stl_vector.h:709:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::vector<_Tp, _Alloc>&&) [with _Tp = unsigned char; _Alloc = std::allocator<unsigned char>][m[K’
+[13.590s]   709 |       [01;36m[Koperator[m[K=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())
+[13.591s]       |       [01;36m[K^~~~~~~~[m[K
+[13.591s] [01m[K/usr/include/c++/11/bits/stl_vector.h:709:26:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kunsigned char*[m[K’ to ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >&&[m[K’
+[13.592s]   709 |       operator=([01;36m[Kvector&& __x[m[K) noexcept(_Alloc_traits::_S_nothrow_move())
+[13.592s]       |                 [01;36m[K~~~~~~~~~^~~[m[K
+[13.593s] [01m[K/usr/include/c++/11/bits/stl_vector.h:730:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::initializer_list<_Tp>) [with _Tp = unsigned char; _Alloc = std::allocator<unsigned char>][m[K’
+[13.593s]   730 |       [01;36m[Koperator[m[K=(initializer_list<value_type> __l)
+[13.594s]       |       [01;36m[K^~~~~~~~[m[K
+[13.595s] [01m[K/usr/include/c++/11/bits/stl_vector.h:730:46:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kunsigned char*[m[K’ to ‘[01m[Kstd::initializer_list<unsigned char>[m[K’
+[13.595s]   730 |       operator=([01;36m[Kinitializer_list<value_type> __l[m[K)
+[13.595s]       |                 [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[27.248s] gmake[2]: *** [CMakeFiles/interpreter_node.dir/build.make:76: CMakeFiles/interpreter_node.dir/src/interpreter.cpp.o] Error 1
+[27.250s] gmake[1]: *** [CMakeFiles/Makefile2:624: CMakeFiles/interpreter_node.dir/all] Error 2
+[27.253s] gmake: *** [Makefile:146: all] Error 2
+[27.258s] Invoked command in '/home/ubuntu/mc-pea-ros-network/build/spi_interface' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/mc-pea-ros-network/build/spi_interface -- -j4 -l4

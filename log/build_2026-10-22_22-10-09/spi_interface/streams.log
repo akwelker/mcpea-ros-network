@@ -1,0 +1,36 @@
+[0.076s] Invoking command in '/home/ubuntu/mc-pea-ros-network/build/spi_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/mc-pea-ros-network/build/spi_interface -- -j4 -l4
+[0.381s] [35m[1mConsolidate compiler generated dependencies of target spi_bridge_node[0m
+[0.459s] [  8%] Built target spi_interface__rosidl_generator_c
+[0.518s] [ 10%] Built target spi_interface__cpp
+[0.554s] [ 10%] Built target ament_cmake_python_copy_spi_interface
+[0.611s] [ 12%] [32mBuilding CXX object CMakeFiles/spi_bridge_node.dir/src/spi_bridge.cpp.o[0m
+[0.669s] [ 20%] Built target spi_interface__rosidl_typesupport_fastrtps_c
+[0.712s] [ 29%] Built target spi_interface__rosidl_typesupport_c
+[0.726s] [ 37%] Built target spi_interface__rosidl_typesupport_introspection_c
+[0.748s] [ 39%] [32mBuilding CXX object CMakeFiles/spi_bridge_node.dir/src/spi_bridge_node.cpp.o[0m
+[0.977s] [ 47%] Built target spi_interface__rosidl_typesupport_introspection_cpp
+[1.213s] [ 56%] Built target spi_interface__rosidl_typesupport_cpp
+[1.345s] [ 64%] Built target spi_interface__rosidl_typesupport_fastrtps_cpp
+[1.634s] [ 64%] Built target spi_interface
+[2.025s] [ 66%] Built target spi_interface__py
+[2.215s] [ 72%] Built target interpreter_node
+[2.346s] running egg_info
+[2.350s] writing spi_interface.egg-info/PKG-INFO
+[2.352s] writing dependency_links to spi_interface.egg-info/dependency_links.txt
+[2.353s] writing top-level names to spi_interface.egg-info/top_level.txt
+[2.367s] reading manifest file 'spi_interface.egg-info/SOURCES.txt'
+[2.371s] writing manifest file 'spi_interface.egg-info/SOURCES.txt'
+[2.395s] [ 79%] Built target actuator_bridge_node
+[2.551s] [ 79%] Built target ament_cmake_python_build_spi_interface_egg
+[2.679s] [ 85%] Built target spi_interface__rosidl_generator_py
+[2.876s] [ 89%] Built target spi_interface__rosidl_typesupport_fastrtps_c__pyext
+[2.930s] [ 93%] Built target spi_interface__rosidl_typesupport_introspection_c__pyext
+[3.027s] [ 97%] Built target spi_interface__rosidl_typesupport_c__pyext
+[14.692s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/spi_bridge.cpp:[m[K In member function ‘[01m[Kvoid Spi_Bridge::raw_data_sub_callback(std_msgs::msg::UInt8MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[14.693s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/spi_bridge.cpp:71:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<std_msgs::msg::UInt8MultiArray_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kdata[m[K’
+[14.693s]    71 |     std::copy(msg.[01;31m[Kdata[m[K(),
+[14.694s]       |                   [01;31m[K^~~~[m[K
+[24.913s] gmake[2]: *** [CMakeFiles/spi_bridge_node.dir/build.make:76: CMakeFiles/spi_bridge_node.dir/src/spi_bridge.cpp.o] Error 1
+[24.914s] gmake[1]: *** [CMakeFiles/Makefile2:596: CMakeFiles/spi_bridge_node.dir/all] Error 2
+[24.916s] gmake: *** [Makefile:146: all] Error 2
+[24.925s] Invoked command in '/home/ubuntu/mc-pea-ros-network/build/spi_interface' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/mc-pea-ros-network/build/spi_interface -- -j4 -l4

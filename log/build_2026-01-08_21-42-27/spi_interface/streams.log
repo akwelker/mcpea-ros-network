@@ -1,0 +1,170 @@
+[0.070s] Invoking command in '/home/ubuntu/mc-pea-ros-network/build/spi_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/mc-pea-ros-network/build/spi_interface -- -j4 -l4
+[0.399s] [  2%] Built target spi_interface__cpp
+[0.423s] [ 10%] Built target spi_interface__rosidl_generator_c
+[0.532s] [ 10%] Built target ament_cmake_python_copy_spi_interface
+[0.583s] [ 18%] Built target spi_interface__rosidl_typesupport_cpp
+[0.605s] [ 25%] Built target spi_bridge_node
+[0.673s] [ 33%] Built target spi_interface__rosidl_typesupport_fastrtps_cpp
+[0.707s] [ 41%] Built target spi_interface__rosidl_typesupport_introspection_c
+[0.747s] [ 50%] Built target spi_interface__rosidl_typesupport_c
+[0.827s] [ 58%] Built target spi_interface__rosidl_typesupport_introspection_cpp
+[0.872s] [ 66%] Built target spi_interface__rosidl_typesupport_fastrtps_c
+[0.988s] [ 66%] Built target spi_interface
+[1.104s] [35m[1mConsolidate compiler generated dependencies of target actuator_bridge_node[0m
+[1.169s] [ 68%] Built target spi_interface__py
+[1.219s] [ 75%] Built target interpreter_node
+[1.284s] [ 77%] [32mBuilding CXX object CMakeFiles/actuator_bridge_node.dir/src/actuator_bridge.cpp.o[0m
+[1.337s] [ 79%] [32mBuilding CXX object CMakeFiles/actuator_bridge_node.dir/src/actuator_bridge_node.cpp.o[0m
+[1.359s] [ 85%] Built target spi_interface__rosidl_generator_py
+[1.565s] [ 89%] Built target spi_interface__rosidl_typesupport_fastrtps_c__pyext
+[1.874s] [ 93%] Built target spi_interface__rosidl_typesupport_introspection_c__pyext
+[2.106s] [ 97%] Built target spi_interface__rosidl_typesupport_c__pyext
+[2.523s] running egg_info
+[2.528s] writing spi_interface.egg-info/PKG-INFO
+[2.530s] writing dependency_links to spi_interface.egg-info/dependency_links.txt
+[2.532s] writing top-level names to spi_interface.egg-info/top_level.txt
+[2.543s] reading manifest file 'spi_interface.egg-info/SOURCES.txt'
+[2.547s] writing manifest file 'spi_interface.egg-info/SOURCES.txt'
+[2.785s] [ 97%] Built target ament_cmake_python_build_spi_interface_egg
+[14.962s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:[m[K In constructor ‘[01m[KActuator_Bridge::Actuator_Bridge(double)[m[K’:
+[14.963s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:16:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kfilename[m[K’ was not declared in this scope; did you mean ‘[01m[Krename[m[K’?
+[14.964s]    16 |     set_filename([01;31m[Kfilename[m[K);
+[14.964s]       |                  [01;31m[K^~~~~~~~[m[K
+[14.965s]       |                  [32m[Krename[m[K
+[14.995s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:16:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_filename[m[K’ was not declared in this scope
+[14.996s]    16 |     [01;31m[Kset_filename[m[K(filename);
+[14.996s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[15.036s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:21:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kraw_data_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_create_publisher[m[K’?
+[15.038s]    21 |     [01;31m[Kraw_data_publisher_[m[K =
+[15.038s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[15.039s]       |     [32m[Krmw_create_publisher[m[K
+[15.093s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:25:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kraw_data_subscriber_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_count_subscribers[m[K’?
+[15.093s]    25 |     [01;31m[Kraw_data_subscriber_[m[K =
+[15.094s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[15.095s]       |     [32m[Krmw_count_subscribers[m[K
+[15.369s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:33:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_timer_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpublish_timer[m[K’?
+[15.370s]    33 |     [01;31m[Kpublish_timer_[m[K = this->create_wall_timer(
+[15.371s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[15.371s]       |     [32m[Kpublish_timer[m[K
+[15.397s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:34:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_rate_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpublish_rate[m[K’?
+[15.398s]    34 |         std::chrono::duration<double>(1.0 / [01;31m[Kpublish_rate_[m[K),
+[15.398s]       |                                             [01;31m[K^~~~~~~~~~~~~[m[K
+[15.400s]       |                                             [32m[Kpublish_rate[m[K
+[15.441s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:37:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kspi_timer_[m[K’ was not declared in this scope; did you mean ‘[01m[Kspi_timer[m[K’?
+[15.442s]    37 |     [01;31m[Kspi_timer_[m[K = this->create_wall_timer(
+[15.443s]       |     [01;31m[K^~~~~~~~~~[m[K
+[15.444s]       |     [32m[Kspi_timer[m[K
+[15.445s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:39:52:[m[K [01;31m[Kerror: [m[Klvalue required as unary ‘[01m[K&[m[K’ operand
+[15.446s]    39 |         std::bind(&[01;31m[KActuator_Bridge::spi_transaction()[m[K, this));
+[15.447s]       |                    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[15.448s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:52:40:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K;[m[K’ token
+[15.449s]    52 |     for (int i = 0; i < SPI_BUFFER_SIZE[01;31m[K;[m[K ++i)
+[15.449s]       |                                        [01;31m[K^[m[K
+[15.450s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:14:41:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpublish_rate[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[15.451s]    14 | Actuator_Bridge::Actuator_Bridge([01;35m[Kdouble publish_rate[m[K): Node("Actuator_Bridge")
+[15.451s]       |                                  [01;35m[K~~~~~~~^~~~~~~~~~~~[m[K
+[15.464s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:[m[K At global scope:
+[15.465s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:60:1:[m[K [01;31m[Kerror: [m[K‘[01m[KSpi_Bridge[m[K’ does not name a type
+[15.466s]    60 | [01;31m[KSpi_Bridge[m[K::~Spi_Bridge()
+[15.467s]       | [01;31m[K^~~~~~~~~~[m[K
+[15.468s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:72:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid Actuator_Bridge::raw_data_sub_callback(spi_interface::msg::McpeaCommand)[m[K’
+[15.469s]    72 | void [01;31m[KActuator_Bridge[m[K::raw_data_sub_callback(
+[15.469s]       |      [01;31m[K^~~~~~~~~~~~~~~[m[K
+[15.470s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:72:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid Actuator_Bridge::raw_data_sub_callback(spi_interface::msg::McpeaCommand)[m[K’
+[15.472s] In file included from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:12[m[K:
+[15.474s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/actuator_bridge.h:59:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Actuator_Bridge[m[K’ defined here
+[15.475s]    59 | class [01;36m[KActuator_Bridge[m[K : public rclcpp::Node
+[15.476s]       |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[15.476s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:82:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid Actuator_Bridge::raw_data_pub_callback()[m[K’
+[15.477s]    82 | void [01;31m[KActuator_Bridge[m[K::raw_data_pub_callback()
+[15.478s]       |      [01;31m[K^~~~~~~~~~~~~~~[m[K
+[15.478s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:82:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid Actuator_Bridge::raw_data_pub_callback()[m[K’
+[15.480s] In file included from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:12[m[K:
+[15.481s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/actuator_bridge.h:59:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Actuator_Bridge[m[K’ defined here
+[15.482s]    59 | class [01;36m[KActuator_Bridge[m[K : public rclcpp::Node
+[15.482s]       |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[15.483s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:190:6:[m[K [01;31m[Kerror: [m[K‘[01m[KSpi_Bridge[m[K’ has not been declared
+[15.484s]   190 | void [01;31m[KSpi_Bridge[m[K::spi_transaction()
+[15.486s]       |      [01;31m[K^~~~~~~~~~[m[K
+[15.487s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:[m[K In function ‘[01m[Kvoid spi_transaction()[m[K’:
+[15.488s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:192:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kdata_mutex_[m[K’ was not declared in this scope
+[15.488s]   192 |     std::lock_guard<std::mutex> lock([01;31m[Kdata_mutex_[m[K);
+[15.491s]       |                                      [01;31m[K^~~~~~~~~~~[m[K
+[15.492s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:195:40:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K;[m[K’ token
+[15.492s]   195 |     for(int i  = 0; i < SPI_BUFFER_SIZE[01;31m[K;[m[K ++i)
+[15.493s]       |                                        [01;31m[K^[m[K
+[15.494s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:197:9:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[15.495s]   197 |         [01;31m[Kthis[m[K->spi_buffer[i] = this->input_data[i];
+[15.496s]       |         [01;31m[K^~~~[m[K
+[15.497s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:197:31:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[15.497s]   197 |         this->spi_buffer[i] = [01;31m[Kthis[m[K->input_data[i];
+[15.498s]       |                               [01;31m[K^~~~[m[K
+[15.506s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:200:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kspi_buffer[m[K’ was not declared in this scope; did you mean ‘[01m[Ksetbuffer[m[K’?
+[15.507s]   200 |     int result = wiringPiSPIDataRW(CHANNEL,[01;31m[Kspi_buffer[m[K, 1);
+[15.510s]       |                                            [01;31m[K^~~~~~~~~~[m[K
+[15.514s]       |                                            [32m[Ksetbuffer[m[K
+[15.515s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[15.516s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[15.517s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[15.518s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[15.519s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[15.520s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[15.520s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[15.521s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[15.522s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[15.522s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[15.523s]                  from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/actuator_bridge.h:24[m[K,
+[15.524s]                  from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:12[m[K:
+[15.524s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:204:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_logger[m[K’ was not declared in this scope; did you mean ‘[01m[Krclcpp::get_logger[m[K’?
+[15.525s]   204 |         RCLCPP_ERROR([01;31m[Kget_logger[m[K(), "SPI transaction failed");
+[15.526s]       |                      [01;31m[K^~~~~~~~~~[m[K
+[15.526s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:23[m[K,
+[15.527s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[15.528s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[15.528s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[15.529s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[15.530s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[15.530s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[15.531s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[15.532s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[15.533s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[15.535s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[15.537s]                  from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/actuator_bridge.h:24[m[K,
+[15.538s]                  from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:12[m[K:
+[15.539s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logger.hpp:106:17:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp::get_logger[m[K’ declared here
+[15.540s]   106 |   friend Logger [01;36m[Krclcpp[m[K::get_logger(const std::string & name);
+[15.541s]       |                 [01;36m[K^~~~~~[m[K
+[15.541s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[15.542s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[15.543s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[15.544s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[15.544s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[15.545s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[15.546s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[15.547s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[15.547s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[15.548s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[15.549s]                  from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/actuator_bridge.h:24[m[K,
+[15.549s]                  from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:12[m[K:
+[15.550s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:204:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[15.550s]   204 |         [01;31m[KRCLCPP_ERROR[m[K(get_logger(), "SPI transaction failed");
+[15.551s]       |         [01;31m[K^~~~~~~~~~~~[m[K
+[15.552s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:204:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[15.553s]   204 |         [01;31m[KRCLCPP_ERROR[m[K(get_logger(), "SPI transaction failed");
+[15.553s]       |         [01;31m[K^~~~~~~~~~~~[m[K
+[15.554s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:204:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[15.554s]   204 |         [01;31m[KRCLCPP_ERROR[m[K(get_logger(), "SPI transaction failed");
+[15.555s]       |         [01;31m[K^~~~~~~~~~~~[m[K
+[15.556s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:208:40:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K;[m[K’ token
+[15.557s]   208 |     for(int i  = 0; i < SPI_BUFFER_SIZE[01;31m[K;[m[K ++i)
+[15.559s]       |                                        [01;31m[K^[m[K
+[15.559s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:210:9:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[15.560s]   210 |         [01;31m[Kthis[m[K->output_data[i] = this->spi_buffer[i];
+[15.561s]       |         [01;31m[K^~~~[m[K
+[15.561s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:210:32:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[15.562s]   210 |         this->output_data[i] = [01;31m[Kthis[m[K->spi_buffer[i];
+[15.563s]       |                                [01;31m[K^~~~[m[K
+[24.720s] gmake[2]: *** [CMakeFiles/actuator_bridge_node.dir/build.make:76: CMakeFiles/actuator_bridge_node.dir/src/actuator_bridge.cpp.o] Error 1
+[24.721s] gmake[1]: *** [CMakeFiles/Makefile2:652: CMakeFiles/actuator_bridge_node.dir/all] Error 2
+[24.722s] gmake: *** [Makefile:146: all] Error 2
+[24.730s] Invoked command in '/home/ubuntu/mc-pea-ros-network/build/spi_interface' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/mc-pea-ros-network/build/spi_interface -- -j4 -l4

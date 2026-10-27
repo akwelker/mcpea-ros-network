@@ -1,0 +1,63 @@
+[01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/spi_bridge.cpp:[m[K In member function ‘[01m[Kvoid Spi_Bridge::raw_data_sub_callback(std_msgs::msg::UInt8MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/spi_bridge.cpp:71:14:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcopy(std_msgs::msg::UInt8MultiArray_<std::allocator<void> >::_data_type&, unsigned char*, const size_t&)[m[K’
+   71 |     [01;31m[Kstd::copy(msg->data,[m[K
+      |     [01;31m[K~~~~~~~~~^~~~~~~~~~~[m[K
+   72 | [01;31m[K              input_data_.data(),[m[K
+      |               [01;31m[K~~~~~~~~~~~~~~~~~~~[m[K
+   73 | [01;31m[K              SPI_BUFFER_SIZE_BYTES)[m[K;
+      |               [01;31m[K~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/array:40[m[K,
+                 from [01m[K/usr/include/c++/11/tuple:39[m[K,
+                 from [01m[K/usr/include/c++/11/functional:54[m[K,
+                 from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/spi_bridge.h:17[m[K,
+                 from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/spi_bridge.cpp:13[m[K:
+[01m[K/usr/include/c++/11/bits/stl_algobase.h:611:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _II, class _OI> _OI std::copy(_II, _II, _OI)[m[K’
+  611 |     [01;36m[Kcopy[m[K(_II __first, _II __last, _OI __result)
+      |     [01;36m[K^~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_algobase.h:611:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/spi_bridge.cpp:71:14:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[K_II[m[K’ (‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >[m[K’ and ‘[01m[Kunsigned char*[m[K’)
+   71 |     [01;36m[Kstd::copy(msg->data,[m[K
+      |     [01;36m[K~~~~~~~~~^~~~~~~~~~~[m[K
+   72 | [01;36m[K              input_data_.data(),[m[K
+      |               [01;36m[K~~~~~~~~~~~~~~~~~~~[m[K
+   73 | [01;36m[K              SPI_BUFFER_SIZE_BYTES)[m[K;
+      |               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/bits/locale_facets.h:48[m[K,
+                 from [01m[K/usr/include/c++/11/bits/basic_ios.h:37[m[K,
+                 from [01m[K/usr/include/c++/11/ios:44[m[K,
+                 from [01m[K/usr/include/c++/11/istream:38[m[K,
+                 from [01m[K/usr/include/c++/11/fstream:38[m[K,
+                 from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/spi_bridge.h:20[m[K,
+                 from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/spi_bridge.cpp:13[m[K:
+[01m[K/usr/include/c++/11/bits/streambuf_iterator.h:325:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT> typename __gnu_cxx::__enable_if<std::__is_char<_Tp>::__value, std::ostreambuf_iterator<_CharT> >::__type std::copy(std::istreambuf_iterator<_CharT, std::char_traits<_CharT> >, std::istreambuf_iterator<_CharT, std::char_traits<_CharT> >, std::ostreambuf_iterator<_CharT>)[m[K’
+  325 |     [01;36m[Kcopy[m[K(istreambuf_iterator<_CharT> __first,
+      |     [01;36m[K^~~~[m[K
+[01m[K/usr/include/c++/11/bits/streambuf_iterator.h:325:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/spi_bridge.cpp:71:14:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >[m[K’ is not derived from ‘[01m[Kstd::istreambuf_iterator<_CharT, std::char_traits<_CharT> >[m[K’
+   71 |     [01;36m[Kstd::copy(msg->data,[m[K
+      |     [01;36m[K~~~~~~~~~^~~~~~~~~~~[m[K
+   72 | [01;36m[K              input_data_.data(),[m[K
+      |               [01;36m[K~~~~~~~~~~~~~~~~~~~[m[K
+   73 | [01;36m[K              SPI_BUFFER_SIZE_BYTES)[m[K;
+      |               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/spi_bridge.h:24[m[K,
+                 from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/spi_bridge.cpp:13[m[K:
+[01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:134:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _ExecutionPolicy, class _ForwardIterator1, class _ForwardIterator2> __pstl::__internal::__enable_if_execution_policy<_ExecutionPolicy, _ForwardIterator> std::copy(_ExecutionPolicy&&, _ForwardIterator1, _ForwardIterator1, _ForwardIterator2)[m[K’
+  134 | [01;36m[Kcopy[m[K(_ExecutionPolicy&& __exec, _ForwardIterator1 __first, _ForwardIterator1 __last, _ForwardIterator2 __result);
+      | [01;36m[K^~~~[m[K
+[01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:134:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/spi_bridge.cpp:71:14:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[K_ForwardIterator1[m[K’ (‘[01m[Kunsigned char*[m[K’ and ‘[01m[Klong unsigned int[m[K’)
+   71 |     [01;36m[Kstd::copy(msg->data,[m[K
+      |     [01;36m[K~~~~~~~~~^~~~~~~~~~~[m[K
+   72 | [01;36m[K              input_data_.data(),[m[K
+      |               [01;36m[K~~~~~~~~~~~~~~~~~~~[m[K
+   73 | [01;36m[K              SPI_BUFFER_SIZE_BYTES)[m[K;
+      |               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/spi_bridge_node.dir/build.make:76: CMakeFiles/spi_bridge_node.dir/src/spi_bridge.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:596: CMakeFiles/spi_bridge_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

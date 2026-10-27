@@ -1,0 +1,10 @@
+[  2%] Built target spi_interface__cpp
+[  2%] Built target ament_cmake_python_copy_spi_interface
+[ 11%] Built target spi_interface__rosidl_generator_c
+[ 17%] Built target spi_bridge_node
+[ 26%] Built target spi_interface__rosidl_typesupport_cpp
+[ 40%] Built target spi_interface__rosidl_typesupport_introspection_cpp
+[ 44%] Built target spi_interface__rosidl_typesupport_fastrtps_cpp
+[ 53%] Built target spi_interface__rosidl_typesupport_introspection_c
+[ 62%] Built target spi_interface__rosidl_typesupport_fastrtps_c
+[ 71%] Built target spi_interface__rosidl_typesupport_c

@@ -1,0 +1,224 @@
+[0.075s] Invoking command in '/home/ubuntu/mc-pea-ros-network/build/spi_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/mc-pea-ros-network/build/spi_interface -- -j4 -l4
+[0.210s] -- Looking for msg/McpeaTelemetry.msg in /home/ubuntu/mc-pea-ros-network/src/spi_interface/msg
+[0.211s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.969s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[1.171s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.188s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.221s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.277s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.355s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.555s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.564s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.166s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.446s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[2.486s] -- Found std_srvs: 4.8.0 (/opt/ros/humble/share/std_srvs/cmake)
+[3.889s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[5.444s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.056s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.177s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[6.295s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[6.296s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[6.297s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[6.346s] -- Detected WiringPI -- Building spi_bridge
+[6.355s] [0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+[6.355s]   Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+[6.356s]   rosidl_target_interfaces()
+[6.357s] Call Stack (most recent call first):
+[6.357s]   CMakeLists.txt:60 (rosidl_target_interfaces)
+[6.357s] 
+[6.358s] [0m
+[6.358s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[6.433s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[6.437s] -- Configured cppcheck include dirs: /home/ubuntu/mc-pea-ros-network/src/spi_interface/include
+[6.437s] -- Configured cppcheck exclude dirs and/or files: 
+[6.449s] -- Added test 'lint_cmake' to check CMake code style
+[6.480s] -- Added test 'uncrustify' to check C / C++ code style
+[6.480s] -- Configured uncrustify additional arguments: 
+[6.484s] -- Added test 'xmllint' to check XML markup files
+[6.497s] -- Configuring done
+[6.785s] -- Generating done
+[6.859s] -- Build files have been written to: /home/ubuntu/mc-pea-ros-network/build/spi_interface
+[7.001s] [35m[1mConsolidate compiler generated dependencies of target spi_interface__rosidl_generator_c[0m
+[7.005s] [35m[1mConsolidate compiler generated dependencies of target spi_bridge_node[0m
+[7.095s] [  8%] Built target spi_interface__rosidl_generator_c
+[7.096s] [ 11%] Built target spi_interface__cpp
+[7.150s] [35m[1mConsolidate compiler generated dependencies of target spi_interface__rosidl_typesupport_fastrtps_c[0m
+[7.165s] [35m[1mConsolidate compiler generated dependencies of target spi_interface__rosidl_typesupport_introspection_c[0m
+[7.187s] [ 17%] Built target spi_bridge_node
+[7.241s] [ 17%] Built target ament_cmake_python_copy_spi_interface
+[7.245s] [35m[1mConsolidate compiler generated dependencies of target spi_interface__rosidl_typesupport_c[0m
+[7.260s] [ 26%] Built target spi_interface__rosidl_typesupport_fastrtps_c
+[7.270s] [ 35%] Built target spi_interface__rosidl_typesupport_introspection_c
+[7.318s] [35m[1mConsolidate compiler generated dependencies of target spi_interface__rosidl_typesupport_introspection_cpp[0m
+[7.359s] [ 44%] Built target spi_interface__rosidl_typesupport_c
+[7.385s] [35m[1mConsolidate compiler generated dependencies of target spi_interface__rosidl_typesupport_cpp[0m
+[7.434s] [ 53%] Built target spi_interface__rosidl_typesupport_introspection_cpp
+[7.480s] [35m[1mConsolidate compiler generated dependencies of target spi_interface__rosidl_typesupport_fastrtps_cpp[0m
+[7.536s] [ 62%] Built target spi_interface__rosidl_typesupport_cpp
+[7.631s] [ 71%] Built target spi_interface__rosidl_typesupport_fastrtps_cpp
+[7.740s] [ 71%] Built target spi_interface
+[7.814s] [35m[1mConsolidate compiler generated dependencies of target interpreter_node[0m
+[7.873s] [ 73%] Built target spi_interface__py
+[7.927s] [35m[1mConsolidate compiler generated dependencies of target spi_interface__rosidl_generator_py[0m
+[7.971s] [ 80%] Built target interpreter_node
+[8.024s] [ 86%] Built target spi_interface__rosidl_generator_py
+[8.093s] [35m[1mConsolidate compiler generated dependencies of target spi_interface__rosidl_typesupport_fastrtps_c__pyext[0m
+[8.096s] [35m[1mConsolidate compiler generated dependencies of target spi_interface__rosidl_typesupport_c__pyext[0m
+[8.134s] [35m[1mConsolidate compiler generated dependencies of target spi_interface__rosidl_typesupport_introspection_c__pyext[0m
+[8.260s] [ 91%] Built target spi_interface__rosidl_typesupport_c__pyext
+[8.288s] [ 95%] Built target spi_interface__rosidl_typesupport_introspection_c__pyext
+[8.332s] [100%] Built target spi_interface__rosidl_typesupport_fastrtps_c__pyext
+[8.761s] running egg_info
+[8.765s] writing spi_interface.egg-info/PKG-INFO
+[8.766s] writing dependency_links to spi_interface.egg-info/dependency_links.txt
+[8.767s] writing top-level names to spi_interface.egg-info/top_level.txt
+[8.779s] reading manifest file 'spi_interface.egg-info/SOURCES.txt'
+[8.782s] writing manifest file 'spi_interface.egg-info/SOURCES.txt'
+[8.944s] [100%] Built target ament_cmake_python_build_spi_interface_egg
+[9.014s] Invoked command in '/home/ubuntu/mc-pea-ros-network/build/spi_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/mc-pea-ros-network/build/spi_interface -- -j4 -l4
+[9.018s] Invoking command in '/home/ubuntu/mc-pea-ros-network/build/spi_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/mc-pea-ros-network/build/spi_interface
+[9.060s] -- Install configuration: ""
+[9.068s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/ament_index/resource_index/rosidl_interfaces/spi_interface
+[9.074s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface
+[9.074s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg
+[9.075s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/mcpea_telemetry.h
+[9.077s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/rosidl_generator_c__visibility_control.h
+[9.081s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/detail
+[9.082s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/detail/mcpea_telemetry__struct.h
+[9.083s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/detail/mcpea_telemetry__functions.c
+[9.089s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/detail/mcpea_telemetry__functions.h
+[9.093s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/detail/mcpea_command__struct.h
+[9.094s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/detail/mcpea_command__functions.c
+[9.095s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/detail/mcpea_command__functions.h
+[9.096s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/detail/mcpea_command__type_support.h
+[9.098s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/detail/mcpea_telemetry__type_support.h
+[9.100s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/mcpea_command.h
+[9.101s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/environment/library_path.sh
+[9.102s] -- Installing: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/environment/library_path.dsv
+[9.103s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/lib/libspi_interface__rosidl_generator_c.so
+[9.104s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface
+[9.105s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg
+[9.106s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[9.108s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/detail
+[9.109s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/detail/mcpea_command__rosidl_typesupport_fastrtps_c.h
+[9.111s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/detail/mcpea_telemetry__rosidl_typesupport_fastrtps_c.h
+[9.112s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/lib/libspi_interface__rosidl_typesupport_fastrtps_c.so
+[9.112s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface
+[9.114s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg
+[9.115s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/mcpea_telemetry.hpp
+[9.118s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/detail
+[9.119s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/detail/mcpea_telemetry__type_support.hpp
+[9.120s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/detail/mcpea_command__struct.hpp
+[9.121s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/detail/mcpea_command__type_support.hpp
+[9.125s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/detail/mcpea_telemetry__traits.hpp
+[9.127s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/detail/mcpea_telemetry__struct.hpp
+[9.128s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/detail/mcpea_telemetry__builder.hpp
+[9.130s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/detail/mcpea_command__builder.hpp
+[9.132s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/detail/mcpea_command__traits.hpp
+[9.133s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/mcpea_command.hpp
+[9.134s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/rosidl_generator_cpp__visibility_control.hpp
+[9.135s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface
+[9.136s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg
+[9.136s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[9.137s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/detail
+[9.138s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/detail/mcpea_telemetry__rosidl_typesupport_fastrtps_cpp.hpp
+[9.138s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/detail/dds_fastrtps
+[9.139s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/detail/mcpea_command__rosidl_typesupport_fastrtps_cpp.hpp
+[9.140s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/lib/libspi_interface__rosidl_typesupport_fastrtps_cpp.so
+[9.140s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface
+[9.141s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg
+[9.142s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/detail
+[9.142s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/detail/mcpea_telemetry__rosidl_typesupport_introspection_c.h
+[9.143s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/detail/mcpea_command__rosidl_typesupport_introspection_c.h
+[9.144s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/detail/mcpea_telemetry__type_support.c
+[9.144s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/detail/mcpea_command__type_support.c
+[9.145s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[9.146s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/lib/libspi_interface__rosidl_typesupport_introspection_c.so
+[9.147s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/lib/libspi_interface__rosidl_typesupport_c.so
+[9.147s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface
+[9.148s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg
+[9.149s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/detail
+[9.149s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/detail/mcpea_command__type_support.cpp
+[9.150s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/detail/mcpea_command__rosidl_typesupport_introspection_cpp.hpp
+[9.151s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/detail/mcpea_telemetry__rosidl_typesupport_introspection_cpp.hpp
+[9.151s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/include/spi_interface/spi_interface/msg/detail/mcpea_telemetry__type_support.cpp
+[9.152s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/lib/libspi_interface__rosidl_typesupport_introspection_cpp.so
+[9.153s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/lib/libspi_interface__rosidl_typesupport_cpp.so
+[9.153s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/environment/pythonpath.sh
+[9.154s] -- Installing: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/environment/pythonpath.dsv
+[9.155s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/local/lib/python3.10/dist-packages/spi_interface-0.0.0-py3.10.egg-info
+[9.156s] -- Installing: /home/ubuntu/mc-pea-ros-network/install/spi_interface/local/lib/python3.10/dist-packages/spi_interface-0.0.0-py3.10.egg-info/PKG-INFO
+[9.156s] -- Installing: /home/ubuntu/mc-pea-ros-network/install/spi_interface/local/lib/python3.10/dist-packages/spi_interface-0.0.0-py3.10.egg-info/top_level.txt
+[9.157s] -- Installing: /home/ubuntu/mc-pea-ros-network/install/spi_interface/local/lib/python3.10/dist-packages/spi_interface-0.0.0-py3.10.egg-info/SOURCES.txt
+[9.157s] -- Installing: /home/ubuntu/mc-pea-ros-network/install/spi_interface/local/lib/python3.10/dist-packages/spi_interface-0.0.0-py3.10.egg-info/dependency_links.txt
+[9.158s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/local/lib/python3.10/dist-packages/spi_interface
+[9.159s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/local/lib/python3.10/dist-packages/spi_interface/libspi_interface__rosidl_generator_py.so
+[9.159s] -- Installing: /home/ubuntu/mc-pea-ros-network/install/spi_interface/local/lib/python3.10/dist-packages/spi_interface/__init__.py
+[9.160s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/local/lib/python3.10/dist-packages/spi_interface/_spi_interface_s.ep.rosidl_typesupport_introspection_c.c
+[9.161s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/local/lib/python3.10/dist-packages/spi_interface/_spi_interface_s.ep.rosidl_typesupport_fastrtps_c.c
+[9.161s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/local/lib/python3.10/dist-packages/spi_interface/spi_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[9.162s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/local/lib/python3.10/dist-packages/spi_interface/spi_interface_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[9.162s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/local/lib/python3.10/dist-packages/spi_interface/msg
+[9.163s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/local/lib/python3.10/dist-packages/spi_interface/msg/__init__.py
+[9.164s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/local/lib/python3.10/dist-packages/spi_interface/msg/_mcpea_telemetry.py
+[9.164s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/local/lib/python3.10/dist-packages/spi_interface/msg/_mcpea_telemetry_s.c
+[9.165s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/local/lib/python3.10/dist-packages/spi_interface/msg/_mcpea_command_s.c
+[9.165s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/local/lib/python3.10/dist-packages/spi_interface/msg/_mcpea_command.py
+[9.166s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/local/lib/python3.10/dist-packages/spi_interface/_spi_interface_s.ep.rosidl_typesupport_c.c
+[9.167s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/local/lib/python3.10/dist-packages/spi_interface/spi_interface_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[9.337s] Listing '/home/ubuntu/mc-pea-ros-network/install/spi_interface/local/lib/python3.10/dist-packages/spi_interface'...
+[9.351s] Compiling '/home/ubuntu/mc-pea-ros-network/install/spi_interface/local/lib/python3.10/dist-packages/spi_interface/__init__.py'...
+[9.354s] Listing '/home/ubuntu/mc-pea-ros-network/install/spi_interface/local/lib/python3.10/dist-packages/spi_interface/msg'...
+[9.374s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/local/lib/python3.10/dist-packages/spi_interface/spi_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[9.377s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/local/lib/python3.10/dist-packages/spi_interface/spi_interface_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[9.380s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/local/lib/python3.10/dist-packages/spi_interface/spi_interface_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[9.383s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/lib/libspi_interface__rosidl_generator_py.so
+[9.385s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/msg/McpeaCommand.idl
+[9.386s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/msg/McpeaTelemetry.idl
+[9.386s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/msg/McpeaCommand.msg
+[9.387s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/msg/McpeaTelemetry.msg
+[9.388s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/lib/spi_interface/spi_bridge_node
+[9.391s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/lib/spi_interface/interpreter_node
+[9.392s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface//launch
+[9.394s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface//launch/interpreter_log.txt
+[9.395s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface//launch/bare_bones_telemetry.yaml
+[9.396s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/ament_index/resource_index/package_run_dependencies/spi_interface
+[9.396s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/ament_index/resource_index/parent_prefix_path/spi_interface
+[9.397s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/environment/ament_prefix_path.sh
+[9.398s] -- Installing: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/environment/ament_prefix_path.dsv
+[9.399s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/environment/path.sh
+[9.399s] -- Installing: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/environment/path.dsv
+[9.401s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/local_setup.bash
+[9.402s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/local_setup.sh
+[9.402s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/local_setup.zsh
+[9.403s] -- Installing: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/local_setup.dsv
+[9.404s] -- Installing: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/package.dsv
+[9.406s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/ament_index/resource_index/packages/spi_interface
+[9.408s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/cmake/export_spi_interface__rosidl_generator_cExport.cmake
+[9.410s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/cmake/export_spi_interface__rosidl_generator_cExport-noconfig.cmake
+[9.411s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/cmake/export_spi_interface__rosidl_typesupport_fastrtps_cExport.cmake
+[9.412s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/cmake/export_spi_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[9.413s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/cmake/export_spi_interface__rosidl_generator_cppExport.cmake
+[9.415s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/cmake/export_spi_interface__rosidl_typesupport_fastrtps_cppExport.cmake
+[9.416s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/cmake/export_spi_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[9.418s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/cmake/spi_interface__rosidl_typesupport_introspection_cExport.cmake
+[9.419s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/cmake/spi_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[9.423s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/cmake/spi_interface__rosidl_typesupport_cExport.cmake
+[9.424s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/cmake/spi_interface__rosidl_typesupport_cExport-noconfig.cmake
+[9.429s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/cmake/spi_interface__rosidl_typesupport_introspection_cppExport.cmake
+[9.430s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/cmake/spi_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[9.431s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/cmake/spi_interface__rosidl_typesupport_cppExport.cmake
+[9.432s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/cmake/spi_interface__rosidl_typesupport_cppExport-noconfig.cmake
+[9.433s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/cmake/export_spi_interface__rosidl_generator_pyExport.cmake
+[9.434s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/cmake/export_spi_interface__rosidl_generator_pyExport-noconfig.cmake
+[9.436s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/cmake/rosidl_cmake-extras.cmake
+[9.438s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[9.441s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[9.442s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/cmake/ament_cmake_export_targets-extras.cmake
+[9.443s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[9.443s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.444s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[9.445s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/cmake/spi_interfaceConfig.cmake
+[9.446s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/cmake/spi_interfaceConfig-version.cmake
+[9.447s] -- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/package.xml
+[9.448s] Invoked command in '/home/ubuntu/mc-pea-ros-network/build/spi_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/mc-pea-ros-network/build/spi_interface

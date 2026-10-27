@@ -1,0 +1,17 @@
+[01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:54:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid Interpreter::raw_data_pub_callback(std_msgs::msg::UInt16MultiArray)[m[K’
+   54 | void [01;31m[KInterpreter[m[K::raw_data_pub_callback(const std_msgs::msg::UInt16MultiArray spi_msg)
+      |      [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:10[m[K:
+[01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/interpreter.h:78:14:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid Interpreter::raw_data_pub_callback(std_msgs::msg::UInt8MultiArray)[m[K’
+   78 |         void [01;36m[Kraw_data_pub_callback[m[K(const std_msgs::msg::UInt8MultiArray spi_msg);
+      |              [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/interpreter.h:48:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Interpreter[m[K’ defined here
+   48 | class [01;36m[KInterpreter[m[K: public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:[m[K In member function ‘[01m[Kvoid Interpreter::command_sub_callback(std_msgs::msg::UInt16MultiArray)[m[K’:
+[01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:160:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  160 | void Interpreter::command_sub_callback([01;35m[Kconst std_msgs::msg::UInt16MultiArray msg[m[K)
+      |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+gmake[2]: *** [CMakeFiles/interpreter_node.dir/build.make:76: CMakeFiles/interpreter_node.dir/src/interpreter.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:624: CMakeFiles/interpreter_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

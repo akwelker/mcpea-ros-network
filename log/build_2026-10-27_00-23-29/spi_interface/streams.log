@@ -1,0 +1,49 @@
+[0.082s] Invoking command in '/home/ubuntu/mc-pea-ros-network/build/spi_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/mc-pea-ros-network/build/spi_interface -- -j4 -l4
+[0.451s] [  2%] Built target spi_interface__cpp
+[0.508s] [ 10%] Built target spi_interface__rosidl_generator_c
+[0.531s] [ 10%] Built target ament_cmake_python_copy_spi_interface
+[0.561s] [ 16%] Built target spi_bridge_node
+[0.698s] [ 25%] Built target spi_interface__rosidl_typesupport_fastrtps_cpp
+[0.713s] [ 33%] Built target spi_interface__rosidl_typesupport_cpp
+[0.717s] [ 41%] Built target spi_interface__rosidl_typesupport_introspection_c
+[0.763s] [ 50%] Built target spi_interface__rosidl_typesupport_c
+[0.962s] [ 58%] Built target spi_interface__rosidl_typesupport_introspection_cpp
+[0.993s] [ 66%] Built target spi_interface__rosidl_typesupport_fastrtps_c
+[1.113s] [ 66%] Built target spi_interface
+[1.285s] [35m[1mConsolidate compiler generated dependencies of target interpreter_node[0m
+[1.355s] [ 68%] Built target spi_interface__py
+[1.495s] [ 75%] Built target actuator_bridge_node
+[1.569s] [ 81%] Built target spi_interface__rosidl_generator_py
+[1.635s] [ 83%] [32mBuilding CXX object CMakeFiles/interpreter_node.dir/src/interpreter.cpp.o[0m
+[1.772s] [ 87%] Built target spi_interface__rosidl_typesupport_fastrtps_c__pyext
+[1.803s] [ 91%] Built target spi_interface__rosidl_typesupport_introspection_c__pyext
+[1.995s] [ 95%] Built target spi_interface__rosidl_typesupport_c__pyext
+[2.569s] running egg_info
+[2.576s] writing spi_interface.egg-info/PKG-INFO
+[2.581s] writing dependency_links to spi_interface.egg-info/dependency_links.txt
+[2.583s] writing top-level names to spi_interface.egg-info/top_level.txt
+[2.592s] reading manifest file 'spi_interface.egg-info/SOURCES.txt'
+[2.596s] writing manifest file 'spi_interface.egg-info/SOURCES.txt'
+[2.761s] [ 95%] Built target ament_cmake_python_build_spi_interface_egg
+[14.000s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:[m[K In function ‘[01m[Kvoid enable_service_call(std::shared_ptr<std_srvs::srv::Trigger_Request_<std::allocator<void> > >, std::shared_ptr<std_srvs::srv::Trigger_Response_<std::allocator<void> > >)[m[K’:
+[14.000s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:541:5:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[14.001s]   541 |     [01;31m[Kthis[m[K->motor_enable_flag = true;
+[14.001s]       |     [01;31m[K^~~~[m[K
+[14.002s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:539:81:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krequest[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[14.003s]   539 | void enable_service_call([01;35m[Kconst std::shared_ptr<std_srvs::srv::Trigger::Request> request[m[K, std::shared_ptr<std_srvs::srv::Trigger::Response> response)
+[14.004s]       |                          [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[14.004s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:[m[K In function ‘[01m[Kvoid reset_service_call(std::shared_ptr<std_srvs::srv::Trigger_Request_<std::allocator<void> > >, std::shared_ptr<std_srvs::srv::Trigger_Response_<std::allocator<void> > >)[m[K’:
+[14.005s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:549:5:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[14.006s]   549 |     [01;31m[Kthis[m[K->motor_reset_flag = true;
+[14.007s]       |     [01;31m[K^~~~[m[K
+[14.007s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:547:80:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krequest[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[14.008s]   547 | void reset_service_call([01;35m[Kconst std::shared_ptr<std_srvs::srv::Trigger::Request> request[m[K, std::shared_ptr<std_srvs::srv::Trigger::Response> response)
+[14.009s]       |                         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[14.009s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:[m[K At global scope:
+[14.010s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:556:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K{[m[K’ token
+[14.010s]   556 | [01;31m[K{[m[K
+[14.011s]       | [01;31m[K^[m[K
+[28.499s] gmake[2]: *** [CMakeFiles/interpreter_node.dir/build.make:76: CMakeFiles/interpreter_node.dir/src/interpreter.cpp.o] Error 1
+[28.501s] gmake[1]: *** [CMakeFiles/Makefile2:624: CMakeFiles/interpreter_node.dir/all] Error 2
+[28.502s] gmake: *** [Makefile:146: all] Error 2
+[28.510s] Invoked command in '/home/ubuntu/mc-pea-ros-network/build/spi_interface' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/mc-pea-ros-network/build/spi_interface -- -j4 -l4

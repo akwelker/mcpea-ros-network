@@ -1,0 +1,157 @@
+[0.090s] Invoking command in '/home/ubuntu/mc-pea-ros-network/build/spi_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/mc-pea-ros-network/build/spi_interface -- -j4 -l4
+[0.276s] -- Looking for msg/McpeaTelemetry.msg in /home/ubuntu/mc-pea-ros-network/src/spi_interface/msg
+[0.278s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.206s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[1.535s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.557s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.606s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.677s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.776s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.004s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.016s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.794s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.205s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[5.073s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[7.052s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.760s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.892s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[8.024s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[8.025s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[8.025s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[8.091s] [0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+[8.091s]   Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+[8.092s]   rosidl_target_interfaces()
+[8.093s] Call Stack (most recent call first):
+[8.093s]   CMakeLists.txt:46 (rosidl_target_interfaces)
+[8.094s] 
+[8.095s] [0m
+[8.097s] [0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+[8.097s]   Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+[8.098s]   rosidl_target_interfaces()
+[8.099s] Call Stack (most recent call first):
+[8.100s]   CMakeLists.txt:59 (rosidl_target_interfaces)
+[8.101s] 
+[8.102s] [0m
+[8.103s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[8.212s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[8.217s] -- Configured cppcheck include dirs: /home/ubuntu/mc-pea-ros-network/src/spi_interface/include
+[8.218s] -- Configured cppcheck exclude dirs and/or files: 
+[8.231s] -- Added test 'lint_cmake' to check CMake code style
+[8.265s] -- Added test 'uncrustify' to check C / C++ code style
+[8.266s] -- Configured uncrustify additional arguments: 
+[8.271s] -- Added test 'xmllint' to check XML markup files
+[8.293s] -- Configuring done
+[8.709s] -- Generating done
+[8.831s] -- Build files have been written to: /home/ubuntu/mc-pea-ros-network/build/spi_interface
+[8.989s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[9.037s] [35m[1mConsolidate compiler generated dependencies of target spi_bridge_node[0m
+[9.042s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[9.191s] [  4%] Built target ament_cmake_python_copy_spi_interface
+[9.357s] [ 10%] Built target spi_bridge_node
+[12.364s] running egg_info
+[12.382s] writing spi_interface.egg-info/PKG-INFO
+[12.388s] writing dependency_links to spi_interface.egg-info/dependency_links.txt
+[12.392s] writing top-level names to spi_interface.egg-info/top_level.txt
+[12.460s] reading manifest file 'spi_interface.egg-info/SOURCES.txt'
+[12.477s] writing manifest file 'spi_interface.egg-info/SOURCES.txt'
+[12.778s] [ 10%] Built target ament_cmake_python_build_spi_interface_egg
+[12.798s] [ 10%] Built target spi_interface__cpp
+[12.861s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[12.950s] [ 14%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[12.965s] [ 16%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[13.023s] [35m[1mConsolidate compiler generated dependencies of target spi_interface__rosidl_generator_c[0m
+[13.186s] [ 18%] [32mBuilding C object CMakeFiles/spi_interface__rosidl_generator_c.dir/rosidl_generator_c/spi_interface/msg/detail/mcpea_command__functions.c.o[0m
+[13.987s] [ 20%] [32mBuilding C object CMakeFiles/spi_interface__rosidl_generator_c.dir/rosidl_generator_c/spi_interface/msg/detail/mcpea_telemetry__functions.c.o[0m
+[14.809s] [ 22%] [32m[1mLinking C shared library libspi_interface__rosidl_generator_c.so[0m
+[15.421s] [ 22%] Built target spi_interface__rosidl_generator_c
+[15.530s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[15.633s] [35m[1mConsolidate compiler generated dependencies of target spi_interface__rosidl_typesupport_cpp[0m
+[15.837s] [ 27%] [32mBuilding CXX object CMakeFiles/spi_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/spi_interface/msg/mcpea_command__type_support.cpp.o[0m
+[16.412s] [35m[1mConsolidate compiler generated dependencies of target spi_interface__rosidl_typesupport_fastrtps_cpp[0m
+[16.495s] [35m[1mConsolidate compiler generated dependencies of target spi_interface__rosidl_typesupport_introspection_cpp[0m
+[16.684s] [ 29%] [32mBuilding CXX object CMakeFiles/spi_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/spi_interface/msg/detail/dds_fastrtps/mcpea_command__type_support.cpp.o[0m
+[16.701s] [ 31%] [32mBuilding CXX object CMakeFiles/spi_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/spi_interface/msg/detail/mcpea_command__type_support.cpp.o[0m
+[18.600s] [35m[1mConsolidate compiler generated dependencies of target spi_interface__rosidl_typesupport_fastrtps_c[0m
+[18.777s] [ 33%] [32mBuilding CXX object CMakeFiles/spi_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/spi_interface/msg/detail/mcpea_command__type_support_c.cpp.o[0m
+[19.192s] [ 35%] [32mBuilding CXX object CMakeFiles/spi_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/spi_interface/msg/mcpea_telemetry__type_support.cpp.o[0m
+[21.327s] [ 37%] [32m[1mLinking CXX shared library libspi_interface__rosidl_typesupport_cpp.so[0m
+[21.349s] [ 39%] [32mBuilding CXX object CMakeFiles/spi_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/spi_interface/msg/detail/mcpea_telemetry__type_support.cpp.o[0m
+[21.803s] [ 39%] Built target spi_interface__rosidl_typesupport_cpp
+[21.969s] [ 41%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[22.176s] [ 43%] [32mBuilding CXX object CMakeFiles/spi_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/spi_interface/msg/detail/dds_fastrtps/mcpea_telemetry__type_support.cpp.o[0m
+[22.824s] [ 45%] [32mBuilding CXX object CMakeFiles/spi_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/spi_interface/msg/detail/mcpea_telemetry__type_support_c.cpp.o[0m
+[25.291s] [ 47%] [32m[1mLinking CXX shared library libspi_interface__rosidl_typesupport_introspection_cpp.so[0m
+[25.553s] [35m[1mConsolidate compiler generated dependencies of target spi_interface__rosidl_typesupport_introspection_c[0m
+[25.650s] [ 50%] [32mBuilding C object CMakeFiles/spi_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/spi_interface/msg/detail/mcpea_command__type_support.c.o[0m
+[26.053s] [ 52%] [32mBuilding C object CMakeFiles/spi_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/spi_interface/msg/detail/mcpea_telemetry__type_support.c.o[0m
+[26.095s] [ 52%] Built target spi_interface__rosidl_typesupport_introspection_cpp
+[26.299s] [ 54%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[26.800s] [ 56%] [32m[1mLinking C shared library libspi_interface__rosidl_typesupport_introspection_c.so[0m
+[27.211s] [ 58%] [32m[1mLinking CXX shared library libspi_interface__rosidl_typesupport_fastrtps_c.so[0m
+[27.352s] [ 58%] Built target spi_interface__rosidl_typesupport_introspection_c
+[28.514s] [ 58%] Built target spi_interface__rosidl_typesupport_fastrtps_c
+[28.638s] [ 60%] [32m[1mLinking CXX shared library libspi_interface__rosidl_typesupport_fastrtps_cpp.so[0m
+[29.614s] [ 60%] Built target spi_interface__rosidl_typesupport_fastrtps_cpp
+[30.198s] [35m[1mConsolidate compiler generated dependencies of target spi_interface__rosidl_typesupport_c[0m
+[30.363s] [ 62%] [32mBuilding CXX object CMakeFiles/spi_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/spi_interface/msg/mcpea_telemetry__type_support.cpp.o[0m
+[30.383s] [ 64%] [32mBuilding CXX object CMakeFiles/spi_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/spi_interface/msg/mcpea_command__type_support.cpp.o[0m
+[30.998s] [ 66%] [32m[1mLinking CXX shared library libspi_interface__rosidl_typesupport_c.so[0m
+[31.362s] [ 66%] Built target spi_interface__rosidl_typesupport_c
+[31.675s] [ 66%] Built target spi_interface
+[31.841s] [35m[1mConsolidate compiler generated dependencies of target interpreter_node[0m
+[31.866s] [35m[1mConsolidate compiler generated dependencies of target actuator_bridge_node[0m
+[32.065s] [ 68%] [34m[1mGenerating Python code for ROS interfaces[0m
+[32.173s] [ 70%] [32mBuilding CXX object CMakeFiles/interpreter_node.dir/src/interpreter.cpp.o[0m
+[32.208s] [ 75%] [32mBuilding CXX object CMakeFiles/actuator_bridge_node.dir/src/actuator_bridge_node.cpp.o[0m
+[32.213s] [ 75%] [32mBuilding CXX object CMakeFiles/actuator_bridge_node.dir/src/actuator_bridge.cpp.o[0m
+[43.241s] [ 75%] Built target spi_interface__py
+[62.731s] In file included from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:10[m[K:
+[62.739s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:[m[K In member function ‘[01m[Kvoid Interpreter::command_sub_callback(spi_interface::msg::McpeaCommand)[m[K’:
+[62.747s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/interpreter.h:51:27:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K=[m[K’ token
+[62.751s]    51 | #define BOOL_BUFFER_INDEX [01;31m[K=[m[K 120
+[62.762s]       |                           [01;31m[K^[m[K
+[62.765s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:285:18:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KBOOL_BUFFER_INDEX[m[K’
+[62.768s]   285 |         data_out[[01;36m[KBOOL_BUFFER_INDEX[m[K] += (1 << (7-DYNAMIC_COMP_INDEX));
+[62.771s]       |                  [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[62.777s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:285:43:[m[K [01;35m[Kwarning: [m[Kleft shift count is negative [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wshift-count-negative-Wshift-count-negative]8;;[m[K]
+[62.779s]   285 |         data_out[BOOL_BUFFER_INDEX] += ([01;35m[K1 << (7-DYNAMIC_COMP_INDEX)[m[K);
+[62.785s]       |                                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[62.788s] In file included from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:10[m[K:
+[62.792s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:[m[K In member function ‘[01m[Kvoid Interpreter::command_pub_callback(std::vector<unsigned char, std::allocator<unsigned char> >)[m[K’:
+[62.795s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/interpreter.h:52:26:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K=[m[K’ token
+[62.798s]    52 | #define ZERO_JOINT_INDEX [01;31m[K=[m[K 1
+[62.801s]       |                          [01;31m[K^[m[K
+[62.803s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:347:48:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KZERO_JOINT_INDEX[m[K’
+[62.806s]   347 |         boolean_float_values_addtn += (1 << (7-[01;36m[KZERO_JOINT_INDEX[m[K));
+[62.809s]       |                                                [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[62.812s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/interpreter.h:54:31:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K=[m[K’ token
+[62.815s]    54 | #define ZERO_BOOM_ANGLE_INDEX [01;31m[K=[m[K 3
+[62.818s]       |                               [01;31m[K^[m[K
+[62.820s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:352:48:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KZERO_BOOM_ANGLE_INDEX[m[K’
+[62.823s]   352 |         boolean_float_values_addtn += (1 << (7-[01;36m[KZERO_BOOM_ANGLE_INDEX[m[K));
+[62.826s]       |                                                [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[62.828s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/interpreter.h:51:27:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K=[m[K’ token
+[62.831s]    51 | #define BOOL_BUFFER_INDEX [01;31m[K=[m[K 120
+[62.834s]       |                           [01;31m[K^[m[K
+[62.837s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:355:15:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KBOOL_BUFFER_INDEX[m[K’
+[62.840s]   355 |     check_out[[01;36m[KBOOL_BUFFER_INDEX[m[K] += boolean_float_values_addtn;
+[62.843s]       |               [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[63.068s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:[m[K In constructor ‘[01m[KActuator_Bridge::Actuator_Bridge(double)[m[K’:
+[63.070s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:14:41:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpublish_rate[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[63.072s]    14 | Actuator_Bridge::Actuator_Bridge([01;35m[Kdouble publish_rate[m[K): Node("Actuator_Bridge")
+[63.074s]       |                                  [01;35m[K~~~~~~~^~~~~~~~~~~~[m[K
+[63.098s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:[m[K In member function ‘[01m[Kvoid Actuator_Bridge::command_sub_callback(spi_interface::msg::McpeaCommand_<std::allocator<void> >::SharedPtr)[m[K’:
+[63.100s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:70:55:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[63.102s]    70 |     [01;35m[Kconst spi_interface::msg::McpeaCommand::SharedPtr msg[m[K)
+[63.104s]       |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[63.120s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:[m[K In member function ‘[01m[Kvoid Actuator_Bridge::spi_transaction()[m[K’:
+[63.122s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:203:14:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kzero_check[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[63.124s]   203 |         bool [01;35m[Kzero_check[m[K = false;
+[63.127s]       |              [01;35m[K^~~~~~~~~~[m[K
+[81.051s] gmake[2]: *** [CMakeFiles/interpreter_node.dir/build.make:76: CMakeFiles/interpreter_node.dir/src/interpreter.cpp.o] Error 1
+[81.052s] gmake[1]: *** [CMakeFiles/Makefile2:624: CMakeFiles/interpreter_node.dir/all] Error 2
+[81.053s] gmake[1]: *** Waiting for unfinished jobs....
+[94.021s] [ 77%] [32m[1mLinking CXX executable actuator_bridge_node[0m
+[96.396s] [ 77%] Built target actuator_bridge_node
+[96.401s] gmake: *** [Makefile:146: all] Error 2
+[96.415s] Invoked command in '/home/ubuntu/mc-pea-ros-network/build/spi_interface' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/mc-pea-ros-network/build/spi_interface -- -j4 -l4

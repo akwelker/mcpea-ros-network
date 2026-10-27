@@ -1,0 +1,46 @@
+[0.077s] Invoking command in '/home/ubuntu/mc-pea-ros-network/build/spi_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/mc-pea-ros-network/build/spi_interface -- -j4 -l4
+[0.466s] [  2%] Built target spi_interface__cpp
+[0.509s] [35m[1mConsolidate compiler generated dependencies of target spi_bridge_node[0m
+[0.657s] [ 10%] Built target spi_interface__rosidl_generator_c
+[0.773s] [ 18%] Built target spi_interface__rosidl_typesupport_cpp
+[0.805s] [ 18%] Built target ament_cmake_python_copy_spi_interface
+[0.822s] [ 20%] [32mBuilding CXX object CMakeFiles/spi_bridge_node.dir/src/spi_bridge.cpp.o[0m
+[1.035s] [ 31%] Built target spi_interface__rosidl_typesupport_fastrtps_cpp
+[1.050s] [ 37%] Built target spi_interface__rosidl_typesupport_c
+[1.069s] [ 45%] Built target spi_interface__rosidl_typesupport_introspection_c
+[1.259s] [ 54%] Built target spi_interface__rosidl_typesupport_introspection_cpp
+[1.467s] [ 62%] Built target spi_interface__rosidl_typesupport_fastrtps_c
+[1.493s] [ 64%] [32mBuilding CXX object CMakeFiles/spi_bridge_node.dir/src/spi_bridge_node.cpp.o[0m
+[1.668s] [ 64%] Built target spi_interface
+[1.968s] [ 66%] Built target spi_interface__py
+[2.143s] [ 72%] Built target interpreter_node
+[2.396s] [ 79%] Built target actuator_bridge_node
+[2.739s] [ 85%] Built target spi_interface__rosidl_generator_py
+[2.898s] [ 89%] Built target spi_interface__rosidl_typesupport_fastrtps_c__pyext
+[3.049s] [ 93%] Built target spi_interface__rosidl_typesupport_introspection_c__pyext
+[3.182s] [ 97%] Built target spi_interface__rosidl_typesupport_c__pyext
+[5.626s] running egg_info
+[5.667s] writing spi_interface.egg-info/PKG-INFO
+[5.671s] writing dependency_links to spi_interface.egg-info/dependency_links.txt
+[5.673s] writing top-level names to spi_interface.egg-info/top_level.txt
+[5.678s] reading manifest file 'spi_interface.egg-info/SOURCES.txt'
+[5.694s] writing manifest file 'spi_interface.egg-info/SOURCES.txt'
+[6.015s] [ 97%] Built target ament_cmake_python_build_spi_interface_egg
+[21.933s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/spi_bridge.cpp:15:1:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[KSpi_Bridge::Spi_Bridge(double, double)[m[K’
+[21.934s]    15 | [01;31m[KSpi_Bridge[m[K::Spi_Bridge(double publish_rate,
+[21.935s]       | [01;31m[K^~~~~~~~~~[m[K
+[21.936s] In file included from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/spi_bridge.cpp:13[m[K:
+[21.939s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/spi_bridge.h:40:7:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[KSpi_Bridge::Spi_Bridge(const Spi_Bridge&)[m[K’
+[21.941s]    40 | class [01;36m[KSpi_Bridge[m[K : public rclcpp::Node
+[21.945s]       |       [01;36m[K^~~~~~~~~~[m[K
+[21.949s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/spi_bridge.h:43:5:[m[K [01;36m[Knote: [m[K                ‘[01m[KSpi_Bridge::Spi_Bridge(const string&, double, double)[m[K’
+[21.955s]    43 |     [01;36m[KSpi_Bridge[m[K(const std::string& filename,
+[21.957s]       |     [01;36m[K^~~~~~~~~~[m[K
+[21.959s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/spi_bridge.h:40:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Spi_Bridge[m[K’ defined here
+[21.962s]    40 | class [01;36m[KSpi_Bridge[m[K : public rclcpp::Node
+[21.965s]       |       [01;36m[K^~~~~~~~~~[m[K
+[24.716s] gmake[2]: *** [CMakeFiles/spi_bridge_node.dir/build.make:76: CMakeFiles/spi_bridge_node.dir/src/spi_bridge.cpp.o] Error 1
+[24.717s] gmake[2]: *** Waiting for unfinished jobs....
+[24.756s] gmake[1]: *** [CMakeFiles/Makefile2:596: CMakeFiles/spi_bridge_node.dir/all] Error 2
+[24.757s] gmake: *** [Makefile:146: all] Error 2
+[24.773s] Invoked command in '/home/ubuntu/mc-pea-ros-network/build/spi_interface' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/mc-pea-ros-network/build/spi_interface -- -j4 -l4

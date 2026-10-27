@@ -1,0 +1,36 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from spi_interface/msg/McpeaCommand.msg
+// generated code does not contain a copyright notice
+
+
+module spi_interface {
+  module msg {
+    @verbatim (language="comment", text=
+      "MCPEA_command.msg")
+    struct McpeaCommand {
+      float torque_limit;
+
+      float motor_state_cmd;
+
+      float current_limit;
+
+      float feedforward_torque;
+
+      float control_mode;
+
+      float data_1;
+
+      float data_2;
+
+      float data_3;
+
+      float data_4;
+
+      float data_5;
+
+      float dynamic_comp_gain;
+
+      boolean dynamic_comp_on;
+    };
+  };
+};

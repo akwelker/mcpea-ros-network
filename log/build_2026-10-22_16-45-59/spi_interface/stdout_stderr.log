@@ -1,0 +1,48 @@
+[  2%] Built target spi_interface__cpp
+[ 10%] Built target spi_interface__rosidl_generator_c
+[ 16%] Built target spi_bridge_node
+[ 16%] Built target ament_cmake_python_copy_spi_interface
+[ 25%] Built target spi_interface__rosidl_typesupport_cpp
+[ 33%] Built target spi_interface__rosidl_typesupport_fastrtps_cpp
+[ 41%] Built target spi_interface__rosidl_typesupport_introspection_c
+[ 50%] Built target spi_interface__rosidl_typesupport_c
+[ 58%] Built target spi_interface__rosidl_typesupport_introspection_cpp
+[ 66%] Built target spi_interface__rosidl_typesupport_fastrtps_c
+[ 66%] Built target spi_interface
+[35m[1mConsolidate compiler generated dependencies of target interpreter_node[0m
+[ 68%] Built target spi_interface__py
+[ 75%] Built target actuator_bridge_node
+[ 77%] [32mBuilding CXX object CMakeFiles/interpreter_node.dir/src/interpreter.cpp.o[0m
+[ 83%] Built target spi_interface__rosidl_generator_py
+[ 87%] Built target spi_interface__rosidl_typesupport_fastrtps_c__pyext
+[ 91%] Built target spi_interface__rosidl_typesupport_introspection_c__pyext
+[ 95%] Built target spi_interface__rosidl_typesupport_c__pyext
+running egg_info
+writing spi_interface.egg-info/PKG-INFO
+writing dependency_links to spi_interface.egg-info/dependency_links.txt
+writing top-level names to spi_interface.egg-info/top_level.txt
+reading manifest file 'spi_interface.egg-info/SOURCES.txt'
+writing manifest file 'spi_interface.egg-info/SOURCES.txt'
+[ 95%] Built target ament_cmake_python_build_spi_interface_egg
+[01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:[m[K In member function ‘[01m[Kvoid Interpreter::raw_data_sub_callback(std_msgs::msg::UInt8MultiArray)[m[K’:
+[01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:39:45:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst unsigned char*[m[K’ to ‘[01m[Kconst uint16_t*[m[K’ {aka ‘[01m[Kconst short unsigned int*[m[K’} in initialization
+   39 |     const uint16_t* data = [01;31m[Kspi_msg.data.data()[m[K;
+      |                            [01;31m[K~~~~~~~~~~~~~~~~~^~[m[K
+      |                                             [01;31m[K|[m[K
+      |                                             [01;31m[Kconst unsigned char*[m[K
+[01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:45:31:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst UInt8MultiArray[m[K’ {aka ‘[01m[Kconst std_msgs::msg::UInt8MultiArray_<std::allocator<void> >[m[K’} to ‘[01m[Kstd_msgs::msg::UInt16MultiArray[m[K’ {aka ‘[01m[Kstd_msgs::msg::UInt16MultiArray_<std::allocator<void> >[m[K’}
+   45 |         raw_data_pub_callback([01;31m[Kspi_msg[m[K);
+      |                               [01;31m[K^~~~~~~[m[K
+      |                               [01;31m[K|[m[K
+      |                               [01;31m[Kconst UInt8MultiArray {aka const std_msgs::msg::UInt8MultiArray_<std::allocator<void> >}[m[K
+In file included from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:10[m[K:
+[01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/interpreter.h:78:74:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid Interpreter::raw_data_pub_callback(std_msgs::msg::UInt16MultiArray)[m[K’
+   78 |         void raw_data_pub_callback([01;36m[Kconst std_msgs::msg::UInt16MultiArray spi_msg[m[K);
+      |                                    [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:[m[K In member function ‘[01m[Kvoid Interpreter::command_sub_callback(std_msgs::msg::UInt16MultiArray)[m[K’:
+[01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:160:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  160 | void Interpreter::command_sub_callback([01;35m[Kconst std_msgs::msg::UInt16MultiArray msg[m[K)
+      |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+gmake[2]: *** [CMakeFiles/interpreter_node.dir/build.make:76: CMakeFiles/interpreter_node.dir/src/interpreter.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:624: CMakeFiles/interpreter_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

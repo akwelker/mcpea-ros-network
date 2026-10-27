@@ -1,0 +1,85 @@
+[0.157s] Invoking command in '/home/ubuntu/mc-pea-ros-network/build/spi_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/mc-pea-ros-network/build/spi_interface -- -j4 -l4
+[0.674s] [  2%] Built target spi_interface__cpp
+[0.909s] [ 10%] Built target spi_interface__rosidl_generator_c
+[0.955s] [ 16%] Built target spi_bridge_node
+[1.010s] [ 16%] Built target ament_cmake_python_copy_spi_interface
+[1.075s] [ 25%] Built target spi_interface__rosidl_typesupport_cpp
+[1.206s] [ 33%] Built target spi_interface__rosidl_typesupport_fastrtps_cpp
+[1.238s] [ 41%] Built target spi_interface__rosidl_typesupport_c
+[1.332s] [ 50%] Built target spi_interface__rosidl_typesupport_introspection_cpp
+[1.352s] [ 58%] Built target spi_interface__rosidl_typesupport_introspection_c
+[1.418s] [ 66%] Built target spi_interface__rosidl_typesupport_fastrtps_c
+[1.547s] [ 66%] Built target spi_interface
+[1.650s] [35m[1mConsolidate compiler generated dependencies of target interpreter_node[0m
+[1.769s] [ 68%] Built target spi_interface__py
+[1.923s] [ 75%] Built target actuator_bridge_node
+[1.982s] [ 77%] [32mBuilding CXX object CMakeFiles/interpreter_node.dir/src/interpreter.cpp.o[0m
+[2.058s] [ 83%] Built target spi_interface__rosidl_generator_py
+[2.247s] [ 87%] Built target spi_interface__rosidl_typesupport_fastrtps_c__pyext
+[2.403s] [ 91%] Built target spi_interface__rosidl_typesupport_introspection_c__pyext
+[2.493s] [ 95%] Built target spi_interface__rosidl_typesupport_c__pyext
+[3.309s] running egg_info
+[3.314s] writing spi_interface.egg-info/PKG-INFO
+[3.317s] writing dependency_links to spi_interface.egg-info/dependency_links.txt
+[3.319s] writing top-level names to spi_interface.egg-info/top_level.txt
+[3.333s] reading manifest file 'spi_interface.egg-info/SOURCES.txt'
+[3.337s] writing manifest file 'spi_interface.egg-info/SOURCES.txt'
+[3.717s] [ 95%] Built target ament_cmake_python_build_spi_interface_egg
+[14.932s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:[m[K In member function ‘[01m[Kvoid Interpreter::raw_data_sub_callback(std_msgs::msg::UInt8MultiArray)[m[K’:
+[14.933s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:41:43:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst uint8_t*[m[K’ {aka ‘[01m[Kconst unsigned char*[m[K’} to ‘[01m[Kconst uint16_t*[m[K’ {aka ‘[01m[Kconst short unsigned int*[m[K’}
+[14.933s]    41 |     bool good_data_flag = verify_checksum([01;31m[Kdata[m[K);
+[14.934s]       |                                           [01;31m[K^~~~[m[K
+[14.935s]       |                                           [01;31m[K|[m[K
+[14.935s]       |                                           [01;31m[Kconst uint8_t* {aka const unsigned char*}[m[K
+[14.936s] In file included from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:10[m[K:
+[14.937s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/interpreter.h:85:46:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kbool Interpreter::verify_checksum(const uint16_t*)[m[K’
+[14.937s]    85 |         bool verify_checksum([01;36m[Kconst uint16_t* data[m[K);
+[14.938s]       |                              [01;36m[K~~~~~~~~~~~~~~~~^~~~[m[K
+[14.938s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:45:31:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst UInt8MultiArray[m[K’ {aka ‘[01m[Kconst std_msgs::msg::UInt8MultiArray_<std::allocator<void> >[m[K’} to ‘[01m[Kstd_msgs::msg::UInt16MultiArray[m[K’ {aka ‘[01m[Kstd_msgs::msg::UInt16MultiArray_<std::allocator<void> >[m[K’}
+[14.939s]    45 |         raw_data_pub_callback([01;31m[Kspi_msg[m[K);
+[14.940s]       |                               [01;31m[K^~~~~~~[m[K
+[14.940s]       |                               [01;31m[K|[m[K
+[14.941s]       |                               [01;31m[Kconst UInt8MultiArray {aka const std_msgs::msg::UInt8MultiArray_<std::allocator<void> >}[m[K
+[14.942s] In file included from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:10[m[K:
+[14.943s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/interpreter.h:78:74:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid Interpreter::raw_data_pub_callback(std_msgs::msg::UInt16MultiArray)[m[K’
+[14.944s]    78 |         void raw_data_pub_callback([01;36m[Kconst std_msgs::msg::UInt16MultiArray spi_msg[m[K);
+[14.945s]       |                                    [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[14.946s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:[m[K In member function ‘[01m[Kvoid Interpreter::command_sub_callback(std_msgs::msg::UInt16MultiArray)[m[K’:
+[14.947s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:160:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[14.948s]   160 | void Interpreter::command_sub_callback([01;35m[Kconst std_msgs::msg::UInt16MultiArray msg[m[K)
+[14.948s]       |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[14.949s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:[m[K At global scope:
+[14.950s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:178:10:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kuint16_t Interpreter::get_checksum_1(const uint8_t*)[m[K’
+[14.951s]   178 | uint16_t [01;31m[KInterpreter[m[K::get_checksum_1(const uint8_t* data)
+[14.952s]       |          [01;31m[K^~~~~~~~~~~[m[K
+[14.953s] In file included from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:10[m[K:
+[14.953s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/interpreter.h:83:18:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kuint16_t Interpreter::get_checksum_1(const uint16_t*)[m[K’
+[14.954s]    83 |         uint16_t [01;36m[Kget_checksum_1[m[K(const uint16_t* data);
+[14.954s]       |                  [01;36m[K^~~~~~~~~~~~~~[m[K
+[14.955s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/interpreter.h:48:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Interpreter[m[K’ defined here
+[14.956s]    48 | class [01;36m[KInterpreter[m[K: public rclcpp::Node
+[14.956s]       |       [01;36m[K^~~~~~~~~~~[m[K
+[14.957s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:207:10:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kuint16_t Interpreter::get_checksum_2(const uint8_t*)[m[K’
+[14.957s]   207 | uint16_t [01;31m[KInterpreter[m[K::get_checksum_2(const uint8_t* data)
+[14.958s]       |          [01;31m[K^~~~~~~~~~~[m[K
+[14.958s] In file included from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:10[m[K:
+[14.959s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/interpreter.h:84:18:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kuint16_t Interpreter::get_checksum_2(const uint16_t*)[m[K’
+[14.959s]    84 |         uint16_t [01;36m[Kget_checksum_2[m[K(const uint16_t* data);
+[14.960s]       |                  [01;36m[K^~~~~~~~~~~~~~[m[K
+[14.960s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/interpreter.h:48:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Interpreter[m[K’ defined here
+[14.961s]    48 | class [01;36m[KInterpreter[m[K: public rclcpp::Node
+[14.962s]       |       [01;36m[K^~~~~~~~~~~[m[K
+[14.962s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:234:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kbool Interpreter::verify_checksum(const uint8_t*)[m[K’
+[14.963s]   234 | bool [01;31m[KInterpreter[m[K::verify_checksum(const uint8_t* data)
+[14.963s]       |      [01;31m[K^~~~~~~~~~~[m[K
+[14.964s] In file included from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:10[m[K:
+[14.965s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/interpreter.h:85:14:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kbool Interpreter::verify_checksum(const uint16_t*)[m[K’
+[14.965s]    85 |         bool [01;36m[Kverify_checksum[m[K(const uint16_t* data);
+[14.966s]       |              [01;36m[K^~~~~~~~~~~~~~~[m[K
+[14.966s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/interpreter.h:48:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Interpreter[m[K’ defined here
+[14.967s]    48 | class [01;36m[KInterpreter[m[K: public rclcpp::Node
+[14.967s]       |       [01;36m[K^~~~~~~~~~~[m[K
+[25.471s] gmake[2]: *** [CMakeFiles/interpreter_node.dir/build.make:76: CMakeFiles/interpreter_node.dir/src/interpreter.cpp.o] Error 1
+[25.473s] gmake[1]: *** [CMakeFiles/Makefile2:624: CMakeFiles/interpreter_node.dir/all] Error 2
+[25.474s] gmake: *** [Makefile:146: all] Error 2
+[25.481s] Invoked command in '/home/ubuntu/mc-pea-ros-network/build/spi_interface' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/mc-pea-ros-network/build/spi_interface -- -j4 -l4

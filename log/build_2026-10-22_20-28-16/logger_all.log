@@ -1,0 +1,213 @@
+[0.788s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.789s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffffa17541c0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffa185d180>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffa185d180>>, mixin_verb=('build',))
+[2.117s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.118s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.118s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.119s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.120s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.120s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.121s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ubuntu/mc-pea-ros-network'
+[2.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.123s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.124s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.125s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.125s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.126s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.128s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.128s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.206s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.207s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.208s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.209s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.209s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.211s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.212s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.213s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.216s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.218s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.219s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.223s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.225s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.226s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.229s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[2.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[2.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[2.233s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[2.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[2.236s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[2.237s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[2.238s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[2.240s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[2.242s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[2.243s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[2.244s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[2.246s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[2.247s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[2.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/actuator_command) by extensions ['ignore', 'ignore_ament_install']
+[2.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/actuator_command) by extension 'ignore'
+[2.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/actuator_command) by extension 'ignore_ament_install'
+[2.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/actuator_command) by extensions ['colcon_pkg']
+[2.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/actuator_command) by extension 'colcon_pkg'
+[2.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/actuator_command) by extensions ['colcon_meta']
+[2.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/actuator_command) by extension 'colcon_meta'
+[2.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/actuator_command) by extensions ['ros']
+[2.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/actuator_command) by extension 'ros'
+[2.280s] DEBUG:colcon.colcon_core.package_identification:Package 'src/actuator_command' with type 'ros.ament_cmake' and name 'actuator_command'
+[2.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/spi_interface) by extensions ['ignore', 'ignore_ament_install']
+[2.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/spi_interface) by extension 'ignore'
+[2.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/spi_interface) by extension 'ignore_ament_install'
+[2.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/spi_interface) by extensions ['colcon_pkg']
+[2.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/spi_interface) by extension 'colcon_pkg'
+[2.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/spi_interface) by extensions ['colcon_meta']
+[2.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/spi_interface) by extension 'colcon_meta'
+[2.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/spi_interface) by extensions ['ros']
+[2.294s] Level 1:colcon.colcon_core.package_identification:_identify(src/spi_interface) by extension 'ros'
+[2.300s] DEBUG:colcon.colcon_core.package_identification:Package 'src/spi_interface' with type 'ros.ament_cmake' and name 'spi_interface'
+[2.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.302s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.303s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.304s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.305s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.479s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.480s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.502s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/ubuntu/mc-pea-ros-network/install
+[2.512s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 181 installed packages in /opt/ros/humble
+[2.519s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.739s] Level 5:colcon.colcon_core.verb:set package 'actuator_command' build argument 'cmake_args' from command line to 'None'
+[2.740s] Level 5:colcon.colcon_core.verb:set package 'actuator_command' build argument 'cmake_target' from command line to 'None'
+[2.740s] Level 5:colcon.colcon_core.verb:set package 'actuator_command' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.740s] Level 5:colcon.colcon_core.verb:set package 'actuator_command' build argument 'cmake_clean_cache' from command line to 'False'
+[2.740s] Level 5:colcon.colcon_core.verb:set package 'actuator_command' build argument 'cmake_clean_first' from command line to 'False'
+[2.740s] Level 5:colcon.colcon_core.verb:set package 'actuator_command' build argument 'cmake_force_configure' from command line to 'False'
+[2.740s] Level 5:colcon.colcon_core.verb:set package 'actuator_command' build argument 'ament_cmake_args' from command line to 'None'
+[2.740s] Level 5:colcon.colcon_core.verb:set package 'actuator_command' build argument 'catkin_cmake_args' from command line to 'None'
+[2.741s] Level 5:colcon.colcon_core.verb:set package 'actuator_command' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.741s] DEBUG:colcon.colcon_core.verb:Building package 'actuator_command' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/mc-pea-ros-network/build/actuator_command', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/mc-pea-ros-network/install/actuator_command', 'merge_install': False, 'path': '/home/ubuntu/mc-pea-ros-network/src/actuator_command', 'symlink_install': False, 'test_result_base': None}
+[2.743s] Level 5:colcon.colcon_core.verb:set package 'spi_interface' build argument 'cmake_args' from command line to 'None'
+[2.743s] Level 5:colcon.colcon_core.verb:set package 'spi_interface' build argument 'cmake_target' from command line to 'None'
+[2.743s] Level 5:colcon.colcon_core.verb:set package 'spi_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.744s] Level 5:colcon.colcon_core.verb:set package 'spi_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[2.744s] Level 5:colcon.colcon_core.verb:set package 'spi_interface' build argument 'cmake_clean_first' from command line to 'False'
+[2.744s] Level 5:colcon.colcon_core.verb:set package 'spi_interface' build argument 'cmake_force_configure' from command line to 'False'
+[2.744s] Level 5:colcon.colcon_core.verb:set package 'spi_interface' build argument 'ament_cmake_args' from command line to 'None'
+[2.744s] Level 5:colcon.colcon_core.verb:set package 'spi_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[2.745s] Level 5:colcon.colcon_core.verb:set package 'spi_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.745s] DEBUG:colcon.colcon_core.verb:Building package 'spi_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/mc-pea-ros-network/build/spi_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/mc-pea-ros-network/install/spi_interface', 'merge_install': False, 'path': '/home/ubuntu/mc-pea-ros-network/src/spi_interface', 'symlink_install': False, 'test_result_base': None}
+[2.746s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.750s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.752s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/mc-pea-ros-network/src/actuator_command' with build type 'ament_cmake'
+[2.753s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/mc-pea-ros-network/src/actuator_command'
+[2.766s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.768s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.768s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.790s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/mc-pea-ros-network/src/spi_interface' with build type 'ament_cmake'
+[2.791s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/mc-pea-ros-network/src/spi_interface'
+[2.793s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.793s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.843s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/mc-pea-ros-network/build/actuator_command': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/mc-pea-ros-network/build/actuator_command -- -j4 -l4
+[2.873s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/mc-pea-ros-network/build/spi_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/mc-pea-ros-network/build/spi_interface -- -j4 -l4
+[3.034s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/mc-pea-ros-network/build/actuator_command' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/mc-pea-ros-network/build/actuator_command -- -j4 -l4
+[3.084s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/mc-pea-ros-network/build/actuator_command': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/mc-pea-ros-network/build/actuator_command
+[3.235s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(actuator_command)
+[3.237s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/mc-pea-ros-network/build/actuator_command' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/mc-pea-ros-network/build/actuator_command
+[3.280s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/mc-pea-ros-network/install/actuator_command' for CMake module files
+[3.284s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/mc-pea-ros-network/install/actuator_command' for CMake config files
+[3.296s] Level 1:colcon.colcon_core.shell:create_environment_hook('actuator_command', 'cmake_prefix_path')
+[3.298s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/hook/cmake_prefix_path.ps1'
+[3.302s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/hook/cmake_prefix_path.dsv'
+[3.305s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/hook/cmake_prefix_path.sh'
+[3.311s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/mc-pea-ros-network/install/actuator_command/bin'
+[3.312s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/mc-pea-ros-network/install/actuator_command/lib/pkgconfig/actuator_command.pc'
+[3.313s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/mc-pea-ros-network/install/actuator_command/lib/python3.10/site-packages'
+[3.315s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/mc-pea-ros-network/install/actuator_command/bin'
+[3.317s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/package.ps1'
+[3.323s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/package.dsv'
+[3.330s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/package.sh'
+[3.337s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/package.bash'
+[3.343s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/package.zsh'
+[3.348s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/mc-pea-ros-network/install/actuator_command/share/colcon-core/packages/actuator_command)
+[3.353s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(actuator_command)
+[3.358s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/mc-pea-ros-network/install/actuator_command' for CMake module files
+[3.362s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/mc-pea-ros-network/install/actuator_command' for CMake config files
+[3.369s] Level 1:colcon.colcon_core.shell:create_environment_hook('actuator_command', 'cmake_prefix_path')
+[3.372s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/hook/cmake_prefix_path.ps1'
+[3.378s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/hook/cmake_prefix_path.dsv'
+[3.382s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/hook/cmake_prefix_path.sh'
+[3.387s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/mc-pea-ros-network/install/actuator_command/bin'
+[3.388s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/mc-pea-ros-network/install/actuator_command/lib/pkgconfig/actuator_command.pc'
+[3.390s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/mc-pea-ros-network/install/actuator_command/lib/python3.10/site-packages'
+[3.392s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/mc-pea-ros-network/install/actuator_command/bin'
+[3.394s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/package.ps1'
+[3.401s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/package.dsv'
+[3.407s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/package.sh'
+[3.412s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/package.bash'
+[3.417s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/package.zsh'
+[3.422s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/mc-pea-ros-network/install/actuator_command/share/colcon-core/packages/actuator_command)
+[44.216s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/mc-pea-ros-network/build/spi_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/mc-pea-ros-network/build/spi_interface -- -j4 -l4
+[44.230s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/mc-pea-ros-network/build/spi_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/mc-pea-ros-network/build/spi_interface
+[44.618s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(spi_interface)
+[44.619s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/mc-pea-ros-network/install/spi_interface' for CMake module files
+[44.621s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/mc-pea-ros-network/build/spi_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/mc-pea-ros-network/build/spi_interface
+[44.626s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/mc-pea-ros-network/install/spi_interface' for CMake config files
+[44.630s] Level 1:colcon.colcon_core.shell:create_environment_hook('spi_interface', 'cmake_prefix_path')
+[44.631s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/hook/cmake_prefix_path.ps1'
+[44.634s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/hook/cmake_prefix_path.dsv'
+[44.637s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/hook/cmake_prefix_path.sh'
+[44.640s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/mc-pea-ros-network/install/spi_interface/lib'
+[44.642s] Level 1:colcon.colcon_core.shell:create_environment_hook('spi_interface', 'ld_library_path_lib')
+[44.643s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/hook/ld_library_path_lib.ps1'
+[44.645s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/hook/ld_library_path_lib.dsv'
+[44.648s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/hook/ld_library_path_lib.sh'
+[44.651s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/mc-pea-ros-network/install/spi_interface/bin'
+[44.651s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/mc-pea-ros-network/install/spi_interface/lib/pkgconfig/spi_interface.pc'
+[44.652s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/mc-pea-ros-network/install/spi_interface/lib/python3.10/site-packages'
+[44.653s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/mc-pea-ros-network/install/spi_interface/bin'
+[44.655s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/package.ps1'
+[44.657s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/package.dsv'
+[44.660s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/package.sh'
+[44.662s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/package.bash'
+[44.665s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/package.zsh'
+[44.667s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/mc-pea-ros-network/install/spi_interface/share/colcon-core/packages/spi_interface)
+[44.670s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(spi_interface)
+[44.672s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/mc-pea-ros-network/install/spi_interface' for CMake module files
+[44.677s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/mc-pea-ros-network/install/spi_interface' for CMake config files
+[44.681s] Level 1:colcon.colcon_core.shell:create_environment_hook('spi_interface', 'cmake_prefix_path')
+[44.683s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/hook/cmake_prefix_path.ps1'
+[44.685s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/hook/cmake_prefix_path.dsv'
+[44.687s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/hook/cmake_prefix_path.sh'
+[44.690s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/mc-pea-ros-network/install/spi_interface/lib'
+[44.691s] Level 1:colcon.colcon_core.shell:create_environment_hook('spi_interface', 'ld_library_path_lib')
+[44.692s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/hook/ld_library_path_lib.ps1'
+[44.694s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/hook/ld_library_path_lib.dsv'
+[44.696s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/hook/ld_library_path_lib.sh'
+[44.699s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/mc-pea-ros-network/install/spi_interface/bin'
+[44.699s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/mc-pea-ros-network/install/spi_interface/lib/pkgconfig/spi_interface.pc'
+[44.700s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/mc-pea-ros-network/install/spi_interface/lib/python3.10/site-packages'
+[44.701s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/mc-pea-ros-network/install/spi_interface/bin'
+[44.703s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/package.ps1'
+[44.706s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/package.dsv'
+[44.709s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/package.sh'
+[44.711s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/package.bash'
+[44.714s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/mc-pea-ros-network/install/spi_interface/share/spi_interface/package.zsh'
+[44.716s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/mc-pea-ros-network/install/spi_interface/share/colcon-core/packages/spi_interface)
+[44.718s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[44.719s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[44.719s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[44.720s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[44.747s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[44.748s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[44.748s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[44.748s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[44.752s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[44.752s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[44.753s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/mc-pea-ros-network/install/local_setup.ps1'
+[44.758s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/mc-pea-ros-network/install/_local_setup_util_ps1.py'
+[44.767s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/mc-pea-ros-network/install/setup.ps1'
+[44.774s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/mc-pea-ros-network/install/local_setup.sh'
+[44.777s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/mc-pea-ros-network/install/_local_setup_util_sh.py'
+[44.780s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/mc-pea-ros-network/install/setup.sh'
+[44.787s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/mc-pea-ros-network/install/local_setup.bash'
+[44.790s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/mc-pea-ros-network/install/setup.bash'
+[44.795s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/mc-pea-ros-network/install/local_setup.zsh'
+[44.798s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/mc-pea-ros-network/install/setup.zsh'

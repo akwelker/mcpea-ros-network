@@ -1,0 +1,35 @@
+[35m[1mConsolidate compiler generated dependencies of target spi_bridge_node[0m
+[  8%] Built target spi_interface__rosidl_generator_c
+[ 11%] Built target spi_interface__cpp
+[ 11%] Built target ament_cmake_python_copy_spi_interface
+[ 20%] Built target spi_interface__rosidl_typesupport_fastrtps_c
+[ 22%] [32mBuilding CXX object CMakeFiles/spi_bridge_node.dir/src/spi_bridge.cpp.o[0m
+[ 31%] Built target spi_interface__rosidl_typesupport_c
+[ 40%] Built target spi_interface__rosidl_typesupport_introspection_c
+[ 48%] Built target spi_interface__rosidl_typesupport_introspection_cpp
+[ 57%] Built target spi_interface__rosidl_typesupport_cpp
+[ 66%] Built target spi_interface__rosidl_typesupport_fastrtps_cpp
+[ 66%] Built target spi_interface
+[ 68%] Built target spi_interface__py
+[ 75%] Built target interpreter_node
+[ 82%] Built target spi_interface__rosidl_generator_py
+[ 86%] Built target spi_interface__rosidl_typesupport_fastrtps_c__pyext
+[ 91%] Built target spi_interface__rosidl_typesupport_introspection_c__pyext
+[ 95%] Built target spi_interface__rosidl_typesupport_c__pyext
+running egg_info
+writing spi_interface.egg-info/PKG-INFO
+writing dependency_links to spi_interface.egg-info/dependency_links.txt
+writing top-level names to spi_interface.egg-info/top_level.txt
+reading manifest file 'spi_interface.egg-info/SOURCES.txt'
+writing manifest file 'spi_interface.egg-info/SOURCES.txt'
+[ 95%] Built target ament_cmake_python_build_spi_interface_egg
+[01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/spi_bridge.cpp:71:1:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[KSpi_Bridge::~Spi_Bridge()[m[K’
+   71 | [01;31m[KSpi_Bridge[m[K::~Spi_Bridge()
+      | [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/spi_bridge.cpp:13[m[K:
+[01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/spi_bridge.h:55:9:[m[K [01;36m[Knote: [m[K‘[01m[Kvirtual Spi_Bridge::~Spi_Bridge()[m[K’ previously defined here
+   55 |         [01;36m[K~[m[KSpi_Bridge()
+      |         [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/spi_bridge_node.dir/build.make:76: CMakeFiles/spi_bridge_node.dir/src/spi_bridge.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:594: CMakeFiles/spi_bridge_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

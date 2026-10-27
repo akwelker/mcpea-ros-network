@@ -1,0 +1,10 @@
+[01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/spi_bridge.cpp:71:1:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[KSpi_Bridge::~Spi_Bridge()[m[K’
+   71 | [01;31m[KSpi_Bridge[m[K::~Spi_Bridge()
+      | [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/spi_bridge.cpp:13[m[K:
+[01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/spi_bridge.h:55:9:[m[K [01;36m[Knote: [m[K‘[01m[Kvirtual Spi_Bridge::~Spi_Bridge()[m[K’ previously defined here
+   55 |         [01;36m[K~[m[KSpi_Bridge()
+      |         [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/spi_bridge_node.dir/build.make:76: CMakeFiles/spi_bridge_node.dir/src/spi_bridge.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:594: CMakeFiles/spi_bridge_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

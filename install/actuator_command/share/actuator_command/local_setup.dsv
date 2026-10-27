@@ -1,0 +1,2 @@
+source;share/actuator_command/environment/ament_prefix_path.sh
+source;share/actuator_command/environment/path.sh

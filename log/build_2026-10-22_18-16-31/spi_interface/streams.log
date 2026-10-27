@@ -1,0 +1,64 @@
+[0.095s] Invoking command in '/home/ubuntu/mc-pea-ros-network/build/spi_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/mc-pea-ros-network/build/spi_interface -- -j4 -l4
+[0.507s] [35m[1mConsolidate compiler generated dependencies of target spi_bridge_node[0m
+[0.596s] [  8%] Built target spi_interface__rosidl_generator_c
+[0.614s] [ 10%] Built target spi_interface__cpp
+[0.669s] [ 10%] Built target ament_cmake_python_copy_spi_interface
+[0.852s] [ 18%] Built target spi_interface__rosidl_typesupport_fastrtps_c
+[0.858s] [ 22%] [32mBuilding CXX object CMakeFiles/spi_bridge_node.dir/src/spi_bridge.cpp.o[0m
+[0.867s] [ 29%] Built target spi_interface__rosidl_typesupport_c
+[0.892s] [ 37%] Built target spi_interface__rosidl_typesupport_introspection_c
+[1.068s] [ 45%] Built target spi_interface__rosidl_typesupport_introspection_cpp
+[1.228s] [ 54%] Built target spi_interface__rosidl_typesupport_cpp
+[1.297s] [ 56%] [32mBuilding CXX object CMakeFiles/spi_bridge_node.dir/src/spi_bridge_node.cpp.o[0m
+[1.543s] [ 64%] Built target spi_interface__rosidl_typesupport_fastrtps_cpp
+[1.865s] [ 64%] Built target spi_interface
+[2.177s] [ 66%] Built target spi_interface__py
+[2.486s] [ 72%] Built target interpreter_node
+[2.869s] [ 79%] Built target actuator_bridge_node
+[3.268s] [ 85%] Built target spi_interface__rosidl_generator_py
+[3.730s] [ 89%] Built target spi_interface__rosidl_typesupport_fastrtps_c__pyext
+[3.810s] running egg_info
+[3.816s] writing spi_interface.egg-info/PKG-INFO
+[3.820s] writing dependency_links to spi_interface.egg-info/dependency_links.txt
+[3.823s] writing top-level names to spi_interface.egg-info/top_level.txt
+[3.853s] reading manifest file 'spi_interface.egg-info/SOURCES.txt'
+[3.879s] writing manifest file 'spi_interface.egg-info/SOURCES.txt'
+[4.074s] [ 93%] Built target spi_interface__rosidl_typesupport_introspection_c__pyext
+[4.159s] [ 93%] Built target ament_cmake_python_build_spi_interface_egg
+[4.417s] [ 97%] Built target spi_interface__rosidl_typesupport_c__pyext
+[18.730s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/spi_bridge.cpp:[m[K In constructor ‘[01m[KSpi_Bridge::Spi_Bridge(double)[m[K’:
+[18.732s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/spi_bridge.cpp:18:3:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KSpi_Bridge[m[K’ does not have any field named ‘[01m[Krecord_rate_[m[K’
+[18.732s]    18 |   [01;31m[Krecord_rate_[m[K(record_rate)
+[18.733s]       |   [01;31m[K^~~~~~~~~~~~[m[K
+[18.771s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/spi_bridge.cpp:18:16:[m[K [01;31m[Kerror: [m[K‘[01m[Krecord_rate[m[K’ was not declared in this scope; did you mean ‘[01m[Krecord_[m[K’?
+[18.773s]    18 |   record_rate_([01;31m[Krecord_rate[m[K)
+[18.776s]       |                [01;31m[K^~~~~~~~~~~[m[K
+[18.780s]       |                [32m[Krecord_[m[K
+[21.691s] In file included from [01m[K/usr/include/aarch64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+[21.692s]                  from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+[21.692s]                  from [01m[K/usr/include/c++/11/unordered_map:40[m[K,
+[21.693s]                  from [01m[K/usr/include/c++/11/functional:61[m[K,
+[21.694s]                  from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/spi_bridge_node.cpp:9[m[K:
+[21.703s] /usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = Spi_Bridge; _Args = {double, double}; _Tp = Spi_Bridge][m[K’:
+[21.706s] [01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = Spi_Bridge; _Args = {double, double}; _Tp = Spi_Bridge; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<Spi_Bridge>][m[K’
+[21.709s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {double, double}; _Tp = Spi_Bridge; _Alloc = std::allocator<Spi_Bridge>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[21.712s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = Spi_Bridge; _Alloc = std::allocator<Spi_Bridge>; _Args = {double, double}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[21.717s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<Spi_Bridge>; _Args = {double, double}; _Tp = Spi_Bridge; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[21.720s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<Spi_Bridge>; _Args = {double, double}; _Tp = Spi_Bridge][m[K’
+[21.723s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = Spi_Bridge; _Alloc = std::allocator<Spi_Bridge>; _Args = {double, double}][m[K’
+[21.726s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = Spi_Bridge; _Args = {double, double}][m[K’
+[21.729s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/spi_bridge_node.cpp:26:44:[m[K   required from here
+[21.732s] [01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KSpi_Bridge::Spi_Bridge(double, double)[m[K’
+[21.735s]   162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+[21.738s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[21.742s] In file included from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/spi_bridge_node.cpp:16[m[K:
+[21.747s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/spi_bridge.h:43:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KSpi_Bridge::Spi_Bridge(double)[m[K’
+[21.751s]    43 |     [01;36m[KSpi_Bridge[m[K(double publish_rate);
+[21.758s]       |     [01;36m[K^~~~~~~~~~[m[K
+[21.766s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/spi_bridge.h:43:5:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[22.089s] gmake[2]: *** [CMakeFiles/spi_bridge_node.dir/build.make:90: CMakeFiles/spi_bridge_node.dir/src/spi_bridge_node.cpp.o] Error 1
+[22.090s] gmake[2]: *** Waiting for unfinished jobs....
+[31.065s] gmake[2]: *** [CMakeFiles/spi_bridge_node.dir/build.make:76: CMakeFiles/spi_bridge_node.dir/src/spi_bridge.cpp.o] Error 1
+[31.067s] gmake[1]: *** [CMakeFiles/Makefile2:596: CMakeFiles/spi_bridge_node.dir/all] Error 2
+[31.068s] gmake: *** [Makefile:146: all] Error 2
+[31.078s] Invoked command in '/home/ubuntu/mc-pea-ros-network/build/spi_interface' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/mc-pea-ros-network/build/spi_interface -- -j4 -l4

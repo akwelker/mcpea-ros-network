@@ -1,0 +1,42 @@
+[35m[1mConsolidate compiler generated dependencies of target spi_bridge_node[0m
+[ 10%] Built target spi_interface__rosidl_generator_c
+[ 10%] Built target spi_interface__cpp
+[ 10%] Built target ament_cmake_python_copy_spi_interface
+[ 22%] Built target spi_interface__rosidl_typesupport_c
+[ 35%] Built target spi_interface__rosidl_typesupport_fastrtps_c
+[ 35%] Built target spi_interface__rosidl_typesupport_introspection_c
+[ 41%] Built target spi_bridge_node
+[ 50%] Built target spi_interface__rosidl_typesupport_introspection_cpp
+[ 58%] Built target spi_interface__rosidl_typesupport_cpp
+[ 66%] Built target spi_interface__rosidl_typesupport_fastrtps_cpp
+[ 66%] Built target spi_interface
+[ 68%] [32mBuilding CXX object CMakeFiles/interpreter_node.dir/src/interpreter.cpp.o[0m
+[ 70%] Built target spi_interface__py
+[ 77%] Built target actuator_bridge_node
+[ 79%] [32mBuilding CXX object CMakeFiles/interpreter_node.dir/src/interpreter_node.cpp.o[0m
+[ 85%] Built target spi_interface__rosidl_generator_py
+[ 89%] Built target spi_interface__rosidl_typesupport_fastrtps_c__pyext
+[ 93%] Built target spi_interface__rosidl_typesupport_introspection_c__pyext
+[ 97%] Built target spi_interface__rosidl_typesupport_c__pyext
+running egg_info
+writing spi_interface.egg-info/PKG-INFO
+writing dependency_links to spi_interface.egg-info/dependency_links.txt
+writing top-level names to spi_interface.egg-info/top_level.txt
+reading manifest file 'spi_interface.egg-info/SOURCES.txt'
+writing manifest file 'spi_interface.egg-info/SOURCES.txt'
+[ 97%] Built target ament_cmake_python_build_spi_interface_egg
+In file included from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter_node.cpp:17[m[K:
+[01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/interpreter.h:70:10:[m[K [01;31m[Kfatal error: [m[Kstd_srvs/srv/trigger.hpp: No such file or directory
+   70 | #include [01;31m[K"std_srvs/srv/trigger.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/interpreter_node.dir/build.make:90: CMakeFiles/interpreter_node.dir/src/interpreter_node.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:10[m[K:
+[01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/interpreter.h:70:10:[m[K [01;31m[Kfatal error: [m[Kstd_srvs/srv/trigger.hpp: No such file or directory
+   70 | #include [01;31m[K"std_srvs/srv/trigger.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/interpreter_node.dir/build.make:76: CMakeFiles/interpreter_node.dir/src/interpreter.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:624: CMakeFiles/interpreter_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

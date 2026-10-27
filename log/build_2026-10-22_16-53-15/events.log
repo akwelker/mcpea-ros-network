@@ -1,0 +1,371 @@
+[0.000000] (-) TimerEvent: {}
+[0.003128] (actuator_command) JobQueued: {'identifier': 'actuator_command', 'dependencies': OrderedDict()}
+[0.004203] (spi_interface) JobQueued: {'identifier': 'spi_interface', 'dependencies': OrderedDict()}
+[0.004983] (actuator_command) JobStarted: {'identifier': 'actuator_command'}
+[0.048792] (spi_interface) JobStarted: {'identifier': 'spi_interface'}
+[0.082990] (actuator_command) JobProgress: {'identifier': 'actuator_command', 'progress': 'cmake'}
+[0.088116] (actuator_command) JobProgress: {'identifier': 'actuator_command', 'progress': 'build'}
+[0.091476] (actuator_command) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/mc-pea-ros-network/build/actuator_command', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/mc-pea-ros-network/build/actuator_command', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.0.236 57330 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/ubuntu/.vscode-server/cli/servers/Stable-07f806f999227108933c2e30515b26eecc1fda74/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ubuntu/mc-pea-ros-network/install/spi_interface/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/ubuntu/.vscode-server/cli/servers/Stable-07f806f999227108933c2e30515b26eecc1fda74/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/.vscode-server'), ('TERM_PROGRAM_VERSION', '1.140.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-a5bd9ae9-fc91-4218-82f0-d0521c4a6963.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ubuntu/.vscode-server/cli/servers/Stable-07f806f999227108933c2e30515b26eecc1fda74/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ubuntu/.vscode-server/cli/servers/Stable-07f806f999227108933c2e30515b26eecc1fda74/server/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/ubuntu/mc-pea-ros-network/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/ubuntu/.vscode-server/cli/servers/Stable-07f806f999227108933c2e30515b26eecc1fda74/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-772647845180652d.txt'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/home/ubuntu/.vscode-server/data/User/workspaceStorage/bd30814f988b691f31c622bc95528cf5/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-d3866829c8.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/ubuntu/mc-pea-ros-network/install/spi_interface:/home/ubuntu/mc-pea-ros-network/install/actuator_command:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ubuntu/mc-pea-ros-network/build/actuator_command'), ('LC_ALL', 'en_US.UTF-8'), ('COPILOT_DEBUG_NONCE', '52e8f3f5d0abe880fbe19d9484f97dcc'), ('SSH_CONNECTION', '192.168.0.236 57330 192.168.0.213 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/mc-pea-ros-network/install/spi_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/mc-pea-ros-network/install/spi_interface:/home/ubuntu/mc-pea-ros-network/install/actuator_command:/opt/ros/humble')]), 'shell': False}
+[0.097854] (-) TimerEvent: {}
+[0.135803] (spi_interface) JobProgress: {'identifier': 'spi_interface', 'progress': 'cmake'}
+[0.139165] (spi_interface) JobProgress: {'identifier': 'spi_interface', 'progress': 'build'}
+[0.141317] (spi_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/mc-pea-ros-network/build/spi_interface', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/mc-pea-ros-network/build/spi_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.0.236 57330 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/ubuntu/.vscode-server/cli/servers/Stable-07f806f999227108933c2e30515b26eecc1fda74/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ubuntu/mc-pea-ros-network/install/spi_interface/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/ubuntu/.vscode-server/cli/servers/Stable-07f806f999227108933c2e30515b26eecc1fda74/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/.vscode-server'), ('TERM_PROGRAM_VERSION', '1.140.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-a5bd9ae9-fc91-4218-82f0-d0521c4a6963.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ubuntu/.vscode-server/cli/servers/Stable-07f806f999227108933c2e30515b26eecc1fda74/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ubuntu/.vscode-server/cli/servers/Stable-07f806f999227108933c2e30515b26eecc1fda74/server/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/ubuntu/mc-pea-ros-network/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/ubuntu/.vscode-server/cli/servers/Stable-07f806f999227108933c2e30515b26eecc1fda74/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-772647845180652d.txt'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/home/ubuntu/.vscode-server/data/User/workspaceStorage/bd30814f988b691f31c622bc95528cf5/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-d3866829c8.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/ubuntu/mc-pea-ros-network/install/spi_interface:/home/ubuntu/mc-pea-ros-network/install/actuator_command:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ubuntu/mc-pea-ros-network/build/spi_interface'), ('LC_ALL', 'en_US.UTF-8'), ('COPILOT_DEBUG_NONCE', '52e8f3f5d0abe880fbe19d9484f97dcc'), ('SSH_CONNECTION', '192.168.0.236 57330 192.168.0.213 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/mc-pea-ros-network/install/spi_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/mc-pea-ros-network/install/spi_interface:/home/ubuntu/mc-pea-ros-network/install/actuator_command:/opt/ros/humble')]), 'shell': False}
+[0.198133] (-) TimerEvent: {}
+[0.300169] (-) TimerEvent: {}
+[0.321859] (actuator_command) CommandEnded: {'returncode': 0}
+[0.323984] (actuator_command) JobProgress: {'identifier': 'actuator_command', 'progress': 'install'}
+[0.376982] (actuator_command) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/mc-pea-ros-network/build/actuator_command'], 'cwd': '/home/ubuntu/mc-pea-ros-network/build/actuator_command', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.0.236 57330 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/ubuntu/.vscode-server/cli/servers/Stable-07f806f999227108933c2e30515b26eecc1fda74/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ubuntu/mc-pea-ros-network/install/spi_interface/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/ubuntu/.vscode-server/cli/servers/Stable-07f806f999227108933c2e30515b26eecc1fda74/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/.vscode-server'), ('TERM_PROGRAM_VERSION', '1.140.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-a5bd9ae9-fc91-4218-82f0-d0521c4a6963.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ubuntu/.vscode-server/cli/servers/Stable-07f806f999227108933c2e30515b26eecc1fda74/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ubuntu/.vscode-server/cli/servers/Stable-07f806f999227108933c2e30515b26eecc1fda74/server/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/ubuntu/mc-pea-ros-network/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/ubuntu/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/ubuntu/.vscode-server/cli/servers/Stable-07f806f999227108933c2e30515b26eecc1fda74/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/ubuntu/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-772647845180652d.txt'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/home/ubuntu/.vscode-server/data/User/workspaceStorage/bd30814f988b691f31c622bc95528cf5/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-d3866829c8.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/ubuntu/mc-pea-ros-network/install/spi_interface:/home/ubuntu/mc-pea-ros-network/install/actuator_command:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ubuntu/mc-pea-ros-network/build/actuator_command'), ('LC_ALL', 'en_US.UTF-8'), ('COPILOT_DEBUG_NONCE', '52e8f3f5d0abe880fbe19d9484f97dcc'), ('SSH_CONNECTION', '192.168.0.236 57330 192.168.0.213 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/mc-pea-ros-network/install/spi_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/mc-pea-ros-network/install/spi_interface:/home/ubuntu/mc-pea-ros-network/install/actuator_command:/opt/ros/humble')]), 'shell': False}
+[0.400353] (-) TimerEvent: {}
+[0.448470] (actuator_command) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.451010] (actuator_command) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/actuator_command/share/ament_index/resource_index/package_run_dependencies/actuator_command\n'}
+[0.456499] (actuator_command) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/actuator_command/share/ament_index/resource_index/parent_prefix_path/actuator_command\n'}
+[0.459367] (actuator_command) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/environment/ament_prefix_path.sh\n'}
+[0.462000] (actuator_command) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/environment/ament_prefix_path.dsv\n'}
+[0.468478] (actuator_command) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/environment/path.sh\n'}
+[0.471517] (actuator_command) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/environment/path.dsv\n'}
+[0.474069] (actuator_command) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/local_setup.bash\n'}
+[0.476652] (actuator_command) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/local_setup.sh\n'}
+[0.480417] (actuator_command) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/local_setup.zsh\n'}
+[0.482895] (actuator_command) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/local_setup.dsv\n'}
+[0.500373] (actuator_command) StdoutLine: {'line': b'-- Installing: /home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/package.dsv\n'}
+[0.501141] (-) TimerEvent: {}
+[0.508779] (actuator_command) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/actuator_command/share/ament_index/resource_index/packages/actuator_command\n'}
+[0.510619] (actuator_command) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/cmake/actuator_commandConfig.cmake\n'}
+[0.512478] (actuator_command) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/cmake/actuator_commandConfig-version.cmake\n'}
+[0.513183] (actuator_command) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/mc-pea-ros-network/install/actuator_command/share/actuator_command/package.xml\n'}
+[0.539503] (actuator_command) CommandEnded: {'returncode': 0}
+[0.613326] (-) TimerEvent: {}
+[0.699679] (spi_interface) StdoutLine: {'line': b'[  2%] Built target spi_interface__cpp\n'}
+[0.714357] (-) TimerEvent: {}
+[0.716521] (spi_interface) StdoutLine: {'line': b'[ 10%] Built target spi_interface__rosidl_generator_c\n'}
+[0.749203] (spi_interface) StdoutLine: {'line': b'[ 16%] Built target spi_bridge_node\n'}
+[0.756712] (spi_interface) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_spi_interface\n'}
+[0.760762] (actuator_command) JobEnded: {'identifier': 'actuator_command', 'rc': 0}
+[0.814618] (-) TimerEvent: {}
+[0.909051] (spi_interface) StdoutLine: {'line': b'[ 25%] Built target spi_interface__rosidl_typesupport_cpp\n'}
+[0.914849] (-) TimerEvent: {}
+[0.970622] (spi_interface) StdoutLine: {'line': b'[ 33%] Built target spi_interface__rosidl_typesupport_c\n'}
+[1.015074] (-) TimerEvent: {}
+[1.030301] (spi_interface) StdoutLine: {'line': b'[ 41%] Built target spi_interface__rosidl_typesupport_fastrtps_cpp\n'}
+[1.036664] (spi_interface) StdoutLine: {'line': b'[ 50%] Built target spi_interface__rosidl_typesupport_introspection_c\n'}
+[1.115281] (-) TimerEvent: {}
+[1.216280] (-) TimerEvent: {}
+[1.318052] (-) TimerEvent: {}
+[1.324444] (spi_interface) StdoutLine: {'line': b'[ 58%] Built target spi_interface__rosidl_typesupport_introspection_cpp\n'}
+[1.356292] (spi_interface) StdoutLine: {'line': b'[ 66%] Built target spi_interface__rosidl_typesupport_fastrtps_c\n'}
+[1.418380] (-) TimerEvent: {}
+[1.521267] (-) TimerEvent: {}
+[1.622200] (-) TimerEvent: {}
+[1.669952] (spi_interface) StdoutLine: {'line': b'[ 66%] Built target spi_interface\n'}
+[1.722455] (-) TimerEvent: {}
+[1.823316] (-) TimerEvent: {}
+[1.924152] (-) TimerEvent: {}
+[1.997519] (spi_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target interpreter_node\x1b[0m\n'}
+[2.024346] (-) TimerEvent: {}
+[2.125131] (-) TimerEvent: {}
+[2.209430] (spi_interface) StdoutLine: {'line': b'[ 68%] Built target spi_interface__py\n'}
+[2.225415] (-) TimerEvent: {}
+[2.327091] (-) TimerEvent: {}
+[2.428681] (-) TimerEvent: {}
+[2.530330] (-) TimerEvent: {}
+[2.583121] (spi_interface) StdoutLine: {'line': b'[ 75%] Built target actuator_bridge_node\n'}
+[2.630563] (-) TimerEvent: {}
+[2.639235] (spi_interface) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/interpreter_node.dir/src/interpreter.cpp.o\x1b[0m\n'}
+[2.649953] (spi_interface) StdoutLine: {'line': b'[ 83%] Built target spi_interface__rosidl_generator_py\n'}
+[2.724219] (spi_interface) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object CMakeFiles/interpreter_node.dir/src/interpreter_node.cpp.o\x1b[0m\n'}
+[2.730786] (-) TimerEvent: {}
+[2.832805] (-) TimerEvent: {}
+[2.934713] (-) TimerEvent: {}
+[2.999449] (spi_interface) StdoutLine: {'line': b'[ 89%] Built target spi_interface__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.034908] (-) TimerEvent: {}
+[3.136648] (-) TimerEvent: {}
+[3.238860] (-) TimerEvent: {}
+[3.340707] (-) TimerEvent: {}
+[3.431589] (spi_interface) StdoutLine: {'line': b'[ 93%] Built target spi_interface__rosidl_typesupport_introspection_c__pyext\n'}
+[3.440913] (-) TimerEvent: {}
+[3.542760] (-) TimerEvent: {}
+[3.644737] (-) TimerEvent: {}
+[3.746550] (-) TimerEvent: {}
+[3.848667] (-) TimerEvent: {}
+[3.948362] (spi_interface) StdoutLine: {'line': b'[ 97%] Built target spi_interface__rosidl_typesupport_c__pyext\n'}
+[3.949259] (-) TimerEvent: {}
+[4.051882] (-) TimerEvent: {}
+[4.153629] (-) TimerEvent: {}
+[4.255573] (-) TimerEvent: {}
+[4.357240] (-) TimerEvent: {}
+[4.458976] (-) TimerEvent: {}
+[4.560941] (-) TimerEvent: {}
+[4.662755] (-) TimerEvent: {}
+[4.764630] (-) TimerEvent: {}
+[4.866730] (-) TimerEvent: {}
+[4.968569] (-) TimerEvent: {}
+[5.070337] (-) TimerEvent: {}
+[5.172489] (-) TimerEvent: {}
+[5.273425] (-) TimerEvent: {}
+[5.376709] (-) TimerEvent: {}
+[5.478982] (-) TimerEvent: {}
+[5.581011] (-) TimerEvent: {}
+[5.617618] (spi_interface) StdoutLine: {'line': b'running egg_info\n'}
+[5.628378] (spi_interface) StdoutLine: {'line': b'writing spi_interface.egg-info/PKG-INFO\n'}
+[5.631733] (spi_interface) StdoutLine: {'line': b'writing dependency_links to spi_interface.egg-info/dependency_links.txt\n'}
+[5.634889] (spi_interface) StdoutLine: {'line': b'writing top-level names to spi_interface.egg-info/top_level.txt\n'}
+[5.666931] (spi_interface) StdoutLine: {'line': b"reading manifest file 'spi_interface.egg-info/SOURCES.txt'\n"}
+[5.671347] (spi_interface) StdoutLine: {'line': b"writing manifest file 'spi_interface.egg-info/SOURCES.txt'\n"}
+[5.681234] (-) TimerEvent: {}
+[5.782543] (-) TimerEvent: {}
+[5.884610] (-) TimerEvent: {}
+[5.985961] (spi_interface) StdoutLine: {'line': b'[ 97%] Built target ament_cmake_python_build_spi_interface_egg\n'}
+[5.986822] (-) TimerEvent: {}
+[6.088316] (-) TimerEvent: {}
+[6.189217] (-) TimerEvent: {}
+[6.290580] (-) TimerEvent: {}
+[6.391950] (-) TimerEvent: {}
+[6.493322] (-) TimerEvent: {}
+[6.594646] (-) TimerEvent: {}
+[6.696058] (-) TimerEvent: {}
+[6.797618] (-) TimerEvent: {}
+[6.898991] (-) TimerEvent: {}
+[7.000424] (-) TimerEvent: {}
+[7.101812] (-) TimerEvent: {}
+[7.203409] (-) TimerEvent: {}
+[7.304885] (-) TimerEvent: {}
+[7.407001] (-) TimerEvent: {}
+[7.509541] (-) TimerEvent: {}
+[7.611020] (-) TimerEvent: {}
+[7.712431] (-) TimerEvent: {}
+[7.813780] (-) TimerEvent: {}
+[7.915183] (-) TimerEvent: {}
+[8.016607] (-) TimerEvent: {}
+[8.118045] (-) TimerEvent: {}
+[8.219717] (-) TimerEvent: {}
+[8.321849] (-) TimerEvent: {}
+[8.426083] (-) TimerEvent: {}
+[8.530557] (-) TimerEvent: {}
+[8.632806] (-) TimerEvent: {}
+[8.734913] (-) TimerEvent: {}
+[8.837281] (-) TimerEvent: {}
+[8.939324] (-) TimerEvent: {}
+[9.045554] (-) TimerEvent: {}
+[9.149739] (-) TimerEvent: {}
+[9.252439] (-) TimerEvent: {}
+[9.354847] (-) TimerEvent: {}
+[9.457071] (-) TimerEvent: {}
+[9.559730] (-) TimerEvent: {}
+[9.663344] (-) TimerEvent: {}
+[9.764356] (-) TimerEvent: {}
+[9.865325] (-) TimerEvent: {}
+[9.966324] (-) TimerEvent: {}
+[10.067429] (-) TimerEvent: {}
+[10.169918] (-) TimerEvent: {}
+[10.272341] (-) TimerEvent: {}
+[10.374457] (-) TimerEvent: {}
+[10.476324] (-) TimerEvent: {}
+[10.578475] (-) TimerEvent: {}
+[10.680251] (-) TimerEvent: {}
+[10.782433] (-) TimerEvent: {}
+[10.883717] (-) TimerEvent: {}
+[10.985007] (-) TimerEvent: {}
+[11.087457] (-) TimerEvent: {}
+[11.189635] (-) TimerEvent: {}
+[11.291571] (-) TimerEvent: {}
+[11.394538] (-) TimerEvent: {}
+[11.495976] (-) TimerEvent: {}
+[11.598537] (-) TimerEvent: {}
+[11.700918] (-) TimerEvent: {}
+[11.802970] (-) TimerEvent: {}
+[11.905139] (-) TimerEvent: {}
+[12.007408] (-) TimerEvent: {}
+[12.109737] (-) TimerEvent: {}
+[12.211947] (-) TimerEvent: {}
+[12.314092] (-) TimerEvent: {}
+[12.416853] (-) TimerEvent: {}
+[12.517808] (-) TimerEvent: {}
+[12.619982] (-) TimerEvent: {}
+[12.722051] (-) TimerEvent: {}
+[12.824261] (-) TimerEvent: {}
+[12.926428] (-) TimerEvent: {}
+[13.028902] (-) TimerEvent: {}
+[13.131207] (-) TimerEvent: {}
+[13.233727] (-) TimerEvent: {}
+[13.337589] (-) TimerEvent: {}
+[13.438484] (-) TimerEvent: {}
+[13.539895] (-) TimerEvent: {}
+[13.641334] (-) TimerEvent: {}
+[13.743468] (-) TimerEvent: {}
+[13.845625] (-) TimerEvent: {}
+[13.947819] (-) TimerEvent: {}
+[14.049924] (-) TimerEvent: {}
+[14.152138] (-) TimerEvent: {}
+[14.254256] (-) TimerEvent: {}
+[14.356477] (-) TimerEvent: {}
+[14.460463] (-) TimerEvent: {}
+[14.561768] (-) TimerEvent: {}
+[14.677307] (-) TimerEvent: {}
+[14.787210] (-) TimerEvent: {}
+[14.889365] (-) TimerEvent: {}
+[14.991735] (-) TimerEvent: {}
+[15.093896] (-) TimerEvent: {}
+[15.196086] (-) TimerEvent: {}
+[15.298347] (-) TimerEvent: {}
+[15.400809] (-) TimerEvent: {}
+[15.503132] (-) TimerEvent: {}
+[15.605316] (-) TimerEvent: {}
+[15.707495] (-) TimerEvent: {}
+[15.809651] (-) TimerEvent: {}
+[15.912042] (-) TimerEvent: {}
+[16.014472] (-) TimerEvent: {}
+[16.116717] (-) TimerEvent: {}
+[16.219759] (-) TimerEvent: {}
+[16.323081] (-) TimerEvent: {}
+[16.425585] (-) TimerEvent: {}
+[16.527398] (-) TimerEvent: {}
+[16.632731] (-) TimerEvent: {}
+[16.733636] (-) TimerEvent: {}
+[16.847183] (-) TimerEvent: {}
+[16.949289] (-) TimerEvent: {}
+[17.051637] (-) TimerEvent: {}
+[17.153807] (-) TimerEvent: {}
+[17.256256] (-) TimerEvent: {}
+[17.358888] (-) TimerEvent: {}
+[17.461174] (-) TimerEvent: {}
+[17.563789] (-) TimerEvent: {}
+[17.666939] (-) TimerEvent: {}
+[17.769061] (-) TimerEvent: {}
+[17.870959] (-) TimerEvent: {}
+[17.973153] (-) TimerEvent: {}
+[18.074935] (-) TimerEvent: {}
+[18.177338] (-) TimerEvent: {}
+[18.279497] (-) TimerEvent: {}
+[18.381641] (-) TimerEvent: {}
+[18.484080] (-) TimerEvent: {}
+[18.586263] (-) TimerEvent: {}
+[18.687666] (-) TimerEvent: {}
+[18.790008] (-) TimerEvent: {}
+[18.892544] (-) TimerEvent: {}
+[18.994674] (-) TimerEvent: {}
+[19.098863] (-) TimerEvent: {}
+[19.216034] (-) TimerEvent: {}
+[19.318602] (-) TimerEvent: {}
+[19.342666] (spi_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:54:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kvoid Interpreter::raw_data_pub_callback(std_msgs::msg::UInt16MultiArray)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[19.344069] (spi_interface) StderrLine: {'line': b'   54 | void \x1b[01;31m\x1b[KInterpreter\x1b[m\x1b[K::raw_data_pub_callback(const std_msgs::msg::UInt16MultiArray spi_msg)\n'}
+[19.344831] (spi_interface) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.345582] (spi_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:10\x1b[m\x1b[K:\n'}
+[19.346338] (spi_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/interpreter.h:78:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate is: \xe2\x80\x98\x1b[01m\x1b[Kvoid Interpreter::raw_data_pub_callback(std_msgs::msg::UInt8MultiArray)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[19.347319] (spi_interface) StderrLine: {'line': b'   78 |         void \x1b[01;36m\x1b[Kraw_data_pub_callback\x1b[m\x1b[K(const std_msgs::msg::UInt8MultiArray spi_msg);\n'}
+[19.348335] (spi_interface) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.349071] (spi_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/interpreter.h:48:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass Interpreter\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[19.349983] (spi_interface) StderrLine: {'line': b'   48 | class \x1b[01;36m\x1b[KInterpreter\x1b[m\x1b[K: public rclcpp::Node\n'}
+[19.350618] (spi_interface) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.357467] (spi_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Interpreter::command_sub_callback(std_msgs::msg::UInt16MultiArray)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[19.360513] (spi_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:160:78:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.362984] (spi_interface) StderrLine: {'line': b'  160 | void Interpreter::command_sub_callback(\x1b[01;35m\x1b[Kconst std_msgs::msg::UInt16MultiArray msg\x1b[m\x1b[K)\n'}
+[19.365421] (spi_interface) StderrLine: {'line': b'      |                                        \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[19.418844] (-) TimerEvent: {}
+[19.519851] (-) TimerEvent: {}
+[19.621991] (-) TimerEvent: {}
+[19.724000] (-) TimerEvent: {}
+[19.825388] (-) TimerEvent: {}
+[19.927537] (-) TimerEvent: {}
+[20.029649] (-) TimerEvent: {}
+[20.132202] (-) TimerEvent: {}
+[20.235234] (-) TimerEvent: {}
+[20.337347] (-) TimerEvent: {}
+[20.442316] (-) TimerEvent: {}
+[20.544642] (-) TimerEvent: {}
+[20.647538] (-) TimerEvent: {}
+[20.749214] (-) TimerEvent: {}
+[20.850109] (-) TimerEvent: {}
+[20.951021] (-) TimerEvent: {}
+[21.051999] (-) TimerEvent: {}
+[21.152945] (-) TimerEvent: {}
+[21.253898] (-) TimerEvent: {}
+[21.354866] (-) TimerEvent: {}
+[21.456266] (-) TimerEvent: {}
+[21.557586] (-) TimerEvent: {}
+[21.658866] (-) TimerEvent: {}
+[21.760228] (-) TimerEvent: {}
+[21.861523] (-) TimerEvent: {}
+[21.962469] (-) TimerEvent: {}
+[22.063434] (-) TimerEvent: {}
+[22.164364] (-) TimerEvent: {}
+[22.265319] (-) TimerEvent: {}
+[22.366341] (-) TimerEvent: {}
+[22.467455] (-) TimerEvent: {}
+[22.568370] (-) TimerEvent: {}
+[22.669385] (-) TimerEvent: {}
+[22.771145] (-) TimerEvent: {}
+[22.872421] (-) TimerEvent: {}
+[22.973796] (-) TimerEvent: {}
+[23.075130] (-) TimerEvent: {}
+[23.176600] (-) TimerEvent: {}
+[23.278243] (-) TimerEvent: {}
+[23.379586] (-) TimerEvent: {}
+[23.480924] (-) TimerEvent: {}
+[23.582493] (-) TimerEvent: {}
+[23.683963] (-) TimerEvent: {}
+[23.785256] (-) TimerEvent: {}
+[23.886664] (-) TimerEvent: {}
+[23.987971] (-) TimerEvent: {}
+[24.089339] (-) TimerEvent: {}
+[24.190666] (-) TimerEvent: {}
+[24.292082] (-) TimerEvent: {}
+[24.393361] (-) TimerEvent: {}
+[24.494647] (-) TimerEvent: {}
+[24.595993] (-) TimerEvent: {}
+[24.697275] (-) TimerEvent: {}
+[24.798512] (-) TimerEvent: {}
+[24.899960] (-) TimerEvent: {}
+[25.001261] (-) TimerEvent: {}
+[25.102626] (-) TimerEvent: {}
+[25.204055] (-) TimerEvent: {}
+[25.305387] (-) TimerEvent: {}
+[25.406713] (-) TimerEvent: {}
+[25.508102] (-) TimerEvent: {}
+[25.609394] (-) TimerEvent: {}
+[25.710672] (-) TimerEvent: {}
+[25.811997] (-) TimerEvent: {}
+[25.913359] (-) TimerEvent: {}
+[26.014843] (-) TimerEvent: {}
+[26.116299] (-) TimerEvent: {}
+[26.217673] (-) TimerEvent: {}
+[26.319004] (-) TimerEvent: {}
+[26.420339] (-) TimerEvent: {}
+[26.521600] (-) TimerEvent: {}
+[26.622899] (-) TimerEvent: {}
+[26.724299] (-) TimerEvent: {}
+[26.825579] (-) TimerEvent: {}
+[26.926884] (-) TimerEvent: {}
+[27.028187] (-) TimerEvent: {}
+[27.129653] (-) TimerEvent: {}
+[27.231156] (-) TimerEvent: {}
+[27.332488] (-) TimerEvent: {}
+[27.433764] (-) TimerEvent: {}
+[27.535003] (-) TimerEvent: {}
+[27.636414] (-) TimerEvent: {}
+[27.737666] (-) TimerEvent: {}
+[27.838907] (-) TimerEvent: {}
+[27.940180] (-) TimerEvent: {}
+[28.041631] (-) TimerEvent: {}
+[28.142834] (-) TimerEvent: {}
+[28.244124] (-) TimerEvent: {}
+[28.345528] (-) TimerEvent: {}
+[28.446727] (-) TimerEvent: {}
+[28.547948] (-) TimerEvent: {}
+[28.649120] (-) TimerEvent: {}
+[28.750314] (-) TimerEvent: {}
+[28.851548] (-) TimerEvent: {}
+[28.952740] (-) TimerEvent: {}
+[29.054029] (-) TimerEvent: {}
+[29.155293] (-) TimerEvent: {}
+[29.256598] (-) TimerEvent: {}
+[29.357904] (-) TimerEvent: {}
+[29.459745] (-) TimerEvent: {}
+[29.560632] (-) TimerEvent: {}
+[29.661555] (-) TimerEvent: {}
+[29.725916] (spi_interface) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/interpreter_node.dir/build.make:76: CMakeFiles/interpreter_node.dir/src/interpreter.cpp.o] Error 1\n'}
+[29.727102] (spi_interface) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:624: CMakeFiles/interpreter_node.dir/all] Error 2\n'}
+[29.728383] (spi_interface) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[29.735803] (spi_interface) CommandEnded: {'returncode': 2}
+[29.761899] (-) TimerEvent: {}
+[29.791299] (spi_interface) JobEnded: {'identifier': 'spi_interface', 'rc': 2}
+[29.804803] (-) EventReactorShutdown: {}

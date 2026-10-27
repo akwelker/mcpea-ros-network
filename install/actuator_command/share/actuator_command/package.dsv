@@ -1,0 +1,8 @@
+source;share/actuator_command/hook/cmake_prefix_path.ps1
+source;share/actuator_command/hook/cmake_prefix_path.dsv
+source;share/actuator_command/hook/cmake_prefix_path.sh
+source;share/actuator_command/local_setup.bash
+source;share/actuator_command/local_setup.dsv
+source;share/actuator_command/local_setup.ps1
+source;share/actuator_command/local_setup.sh
+source;share/actuator_command/local_setup.zsh

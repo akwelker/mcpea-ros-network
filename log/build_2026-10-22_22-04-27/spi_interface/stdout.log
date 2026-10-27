@@ -1,0 +1,27 @@
+[35m[1mConsolidate compiler generated dependencies of target spi_bridge_node[0m
+[  2%] Built target spi_interface__cpp
+[ 10%] Built target spi_interface__rosidl_generator_c
+[ 10%] Built target ament_cmake_python_copy_spi_interface
+[ 12%] [32mBuilding CXX object CMakeFiles/spi_bridge_node.dir/src/spi_bridge.cpp.o[0m
+[ 20%] Built target spi_interface__rosidl_typesupport_cpp
+[ 29%] Built target spi_interface__rosidl_typesupport_fastrtps_cpp
+[ 31%] [32mBuilding CXX object CMakeFiles/spi_bridge_node.dir/src/spi_bridge_node.cpp.o[0m
+[ 39%] Built target spi_interface__rosidl_typesupport_c
+[ 47%] Built target spi_interface__rosidl_typesupport_introspection_c
+[ 56%] Built target spi_interface__rosidl_typesupport_introspection_cpp
+[ 64%] Built target spi_interface__rosidl_typesupport_fastrtps_c
+[ 64%] Built target spi_interface
+[ 66%] Built target spi_interface__py
+[ 72%] Built target interpreter_node
+[ 79%] Built target actuator_bridge_node
+[ 85%] Built target spi_interface__rosidl_generator_py
+[ 89%] Built target spi_interface__rosidl_typesupport_fastrtps_c__pyext
+[ 93%] Built target spi_interface__rosidl_typesupport_introspection_c__pyext
+[ 97%] Built target spi_interface__rosidl_typesupport_c__pyext
+running egg_info
+writing spi_interface.egg-info/PKG-INFO
+writing dependency_links to spi_interface.egg-info/dependency_links.txt
+writing top-level names to spi_interface.egg-info/top_level.txt
+reading manifest file 'spi_interface.egg-info/SOURCES.txt'
+writing manifest file 'spi_interface.egg-info/SOURCES.txt'
+[ 97%] Built target ament_cmake_python_build_spi_interface_egg

@@ -1,0 +1,45 @@
+[0.070s] Invoking command in '/home/ubuntu/mc-pea-ros-network/build/spi_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/mc-pea-ros-network/build/spi_interface -- -j4 -l4
+[0.364s] [  8%] Built target spi_interface__rosidl_generator_c
+[0.420s] [ 11%] Built target spi_interface__cpp
+[0.499s] [ 17%] Built target spi_bridge_node
+[0.529s] [ 17%] Built target ament_cmake_python_copy_spi_interface
+[0.621s] [ 26%] Built target spi_interface__rosidl_typesupport_introspection_c
+[0.629s] [ 35%] Built target spi_interface__rosidl_typesupport_fastrtps_c
+[0.679s] [ 44%] Built target spi_interface__rosidl_typesupport_c
+[0.718s] [ 53%] Built target spi_interface__rosidl_typesupport_introspection_cpp
+[0.784s] [ 62%] Built target spi_interface__rosidl_typesupport_cpp
+[0.819s] [ 71%] Built target spi_interface__rosidl_typesupport_fastrtps_cpp
+[0.920s] [ 71%] Built target spi_interface
+[0.996s] [35m[1mConsolidate compiler generated dependencies of target interpreter_node[0m
+[1.049s] [ 73%] Built target spi_interface__py
+[1.168s] [ 75%] [32mBuilding CXX object CMakeFiles/interpreter_node.dir/src/interpreter.cpp.o[0m
+[1.196s] [ 82%] Built target spi_interface__rosidl_generator_py
+[1.341s] [ 86%] Built target spi_interface__rosidl_typesupport_introspection_c__pyext
+[1.344s] [ 91%] Built target spi_interface__rosidl_typesupport_fastrtps_c__pyext
+[1.465s] [ 95%] Built target spi_interface__rosidl_typesupport_c__pyext
+[2.102s] running egg_info
+[2.105s] writing spi_interface.egg-info/PKG-INFO
+[2.107s] writing dependency_links to spi_interface.egg-info/dependency_links.txt
+[2.108s] writing top-level names to spi_interface.egg-info/top_level.txt
+[2.119s] reading manifest file 'spi_interface.egg-info/SOURCES.txt'
+[2.122s] writing manifest file 'spi_interface.egg-info/SOURCES.txt'
+[2.273s] [ 95%] Built target ament_cmake_python_build_spi_interface_egg
+[12.863s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:[m[K In member function ‘[01m[Kvoid Interpreter::command_sub_callback(std_msgs::msg::UInt16MultiArray)[m[K’:
+[12.864s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:160:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[12.864s]   160 | void Interpreter::command_sub_callback([01;35m[Kconst std_msgs::msg::UInt16MultiArray msg[m[K)
+[12.865s]       |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[12.867s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:[m[K At global scope:
+[12.868s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:305:7:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kfloat Interpreter::convert_to_float(uint8_t, uint8_t, uint8_t, uint8_t)[m[K’
+[12.869s]   305 | float [01;31m[KInterpreter[m[K::convert_to_float(uint8_t b0, uint8_t b1, uint8_t b2, uint8_t b3)
+[12.869s]       |       [01;31m[K^~~~~~~~~~~[m[K
+[12.871s] In file included from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:10[m[K:
+[12.871s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/interpreter.h:80:15:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kfloat Interpreter::convert_to_float(uint16_t, uint16_t, uint16_t, uint16_t)[m[K’
+[12.872s]    80 |         float [01;36m[Kconvert_to_float[m[K(const uint16_t data1, const uint16_t data2, const uint16_t data3, const uint16_t data4);
+[12.873s]       |               [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[12.873s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/interpreter.h:47:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Interpreter[m[K’ defined here
+[12.874s]    47 | class [01;36m[KInterpreter[m[K: public rclcpp::Node
+[12.874s]       |       [01;36m[K^~~~~~~~~~~[m[K
+[22.804s] gmake[2]: *** [CMakeFiles/interpreter_node.dir/build.make:76: CMakeFiles/interpreter_node.dir/src/interpreter.cpp.o] Error 1
+[22.806s] gmake[1]: *** [CMakeFiles/Makefile2:622: CMakeFiles/interpreter_node.dir/all] Error 2
+[22.807s] gmake: *** [Makefile:146: all] Error 2
+[22.815s] Invoked command in '/home/ubuntu/mc-pea-ros-network/build/spi_interface' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/mc-pea-ros-network/build/spi_interface -- -j4 -l4

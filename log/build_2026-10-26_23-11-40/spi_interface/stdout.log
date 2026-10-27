@@ -1,0 +1,94 @@
+-- Looking for msg/McpeaTelemetry.msg in /home/ubuntu/mc-pea-ros-network/src/spi_interface/msg
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/ubuntu/mc-pea-ros-network/src/spi_interface/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ubuntu/mc-pea-ros-network/build/spi_interface
+[  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[35m[1mConsolidate compiler generated dependencies of target spi_bridge_node[0m
+[  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  4%] Built target ament_cmake_python_copy_spi_interface
+[ 10%] Built target spi_bridge_node
+running egg_info
+writing spi_interface.egg-info/PKG-INFO
+writing dependency_links to spi_interface.egg-info/dependency_links.txt
+writing top-level names to spi_interface.egg-info/top_level.txt
+reading manifest file 'spi_interface.egg-info/SOURCES.txt'
+writing manifest file 'spi_interface.egg-info/SOURCES.txt'
+[ 10%] Built target ament_cmake_python_build_spi_interface_egg
+[ 10%] Built target spi_interface__cpp
+[ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 14%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 16%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[35m[1mConsolidate compiler generated dependencies of target spi_interface__rosidl_generator_c[0m
+[ 18%] [32mBuilding C object CMakeFiles/spi_interface__rosidl_generator_c.dir/rosidl_generator_c/spi_interface/msg/detail/mcpea_command__functions.c.o[0m
+[ 20%] [32mBuilding C object CMakeFiles/spi_interface__rosidl_generator_c.dir/rosidl_generator_c/spi_interface/msg/detail/mcpea_telemetry__functions.c.o[0m
+[ 22%] [32m[1mLinking C shared library libspi_interface__rosidl_generator_c.so[0m
+[ 22%] Built target spi_interface__rosidl_generator_c
+[ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[35m[1mConsolidate compiler generated dependencies of target spi_interface__rosidl_typesupport_cpp[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/spi_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/spi_interface/msg/mcpea_command__type_support.cpp.o[0m
+[35m[1mConsolidate compiler generated dependencies of target spi_interface__rosidl_typesupport_fastrtps_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target spi_interface__rosidl_typesupport_introspection_cpp[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/spi_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/spi_interface/msg/detail/dds_fastrtps/mcpea_command__type_support.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/spi_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/spi_interface/msg/detail/mcpea_command__type_support.cpp.o[0m
+[35m[1mConsolidate compiler generated dependencies of target spi_interface__rosidl_typesupport_fastrtps_c[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/spi_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/spi_interface/msg/detail/mcpea_command__type_support_c.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/spi_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/spi_interface/msg/mcpea_telemetry__type_support.cpp.o[0m
+[ 37%] [32m[1mLinking CXX shared library libspi_interface__rosidl_typesupport_cpp.so[0m
+[ 39%] [32mBuilding CXX object CMakeFiles/spi_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/spi_interface/msg/detail/mcpea_telemetry__type_support.cpp.o[0m
+[ 39%] Built target spi_interface__rosidl_typesupport_cpp
+[ 41%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 43%] [32mBuilding CXX object CMakeFiles/spi_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/spi_interface/msg/detail/dds_fastrtps/mcpea_telemetry__type_support.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/spi_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/spi_interface/msg/detail/mcpea_telemetry__type_support_c.cpp.o[0m
+[ 47%] [32m[1mLinking CXX shared library libspi_interface__rosidl_typesupport_introspection_cpp.so[0m
+[35m[1mConsolidate compiler generated dependencies of target spi_interface__rosidl_typesupport_introspection_c[0m
+[ 50%] [32mBuilding C object CMakeFiles/spi_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/spi_interface/msg/detail/mcpea_command__type_support.c.o[0m
+[ 52%] [32mBuilding C object CMakeFiles/spi_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/spi_interface/msg/detail/mcpea_telemetry__type_support.c.o[0m
+[ 52%] Built target spi_interface__rosidl_typesupport_introspection_cpp
+[ 54%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 56%] [32m[1mLinking C shared library libspi_interface__rosidl_typesupport_introspection_c.so[0m
+[ 58%] [32m[1mLinking CXX shared library libspi_interface__rosidl_typesupport_fastrtps_c.so[0m
+[ 58%] Built target spi_interface__rosidl_typesupport_introspection_c
+[ 58%] Built target spi_interface__rosidl_typesupport_fastrtps_c
+[ 60%] [32m[1mLinking CXX shared library libspi_interface__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 60%] Built target spi_interface__rosidl_typesupport_fastrtps_cpp
+[35m[1mConsolidate compiler generated dependencies of target spi_interface__rosidl_typesupport_c[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/spi_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/spi_interface/msg/mcpea_telemetry__type_support.cpp.o[0m
+[ 64%] [32mBuilding CXX object CMakeFiles/spi_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/spi_interface/msg/mcpea_command__type_support.cpp.o[0m
+[ 66%] [32m[1mLinking CXX shared library libspi_interface__rosidl_typesupport_c.so[0m
+[ 66%] Built target spi_interface__rosidl_typesupport_c
+[ 66%] Built target spi_interface
+[35m[1mConsolidate compiler generated dependencies of target interpreter_node[0m
+[35m[1mConsolidate compiler generated dependencies of target actuator_bridge_node[0m
+[ 68%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/interpreter_node.dir/src/interpreter.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/actuator_bridge_node.dir/src/actuator_bridge_node.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/actuator_bridge_node.dir/src/actuator_bridge.cpp.o[0m
+[ 75%] Built target spi_interface__py
+[ 77%] [32m[1mLinking CXX executable actuator_bridge_node[0m
+[ 77%] Built target actuator_bridge_node

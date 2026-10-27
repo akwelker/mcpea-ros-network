@@ -1,0 +1,71 @@
+[0.066s] Invoking command in '/home/ubuntu/mc-pea-ros-network/build/spi_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/mc-pea-ros-network/build/spi_interface -- -j4 -l4
+[0.439s] [  2%] Built target spi_interface__cpp
+[0.442s] [ 10%] Built target spi_interface__rosidl_generator_c
+[0.570s] [ 16%] Built target spi_bridge_node
+[0.609s] [ 16%] Built target ament_cmake_python_copy_spi_interface
+[0.767s] [ 25%] Built target spi_interface__rosidl_typesupport_fastrtps_cpp
+[0.832s] [ 33%] Built target spi_interface__rosidl_typesupport_cpp
+[0.878s] [ 41%] Built target spi_interface__rosidl_typesupport_introspection_c
+[0.925s] [ 50%] Built target spi_interface__rosidl_typesupport_c
+[1.069s] [ 58%] Built target spi_interface__rosidl_typesupport_introspection_cpp
+[1.193s] [ 66%] Built target spi_interface__rosidl_typesupport_fastrtps_c
+[1.465s] [ 66%] Built target spi_interface
+[1.564s] [35m[1mConsolidate compiler generated dependencies of target interpreter_node[0m
+[1.803s] [ 68%] [32mBuilding CXX object CMakeFiles/interpreter_node.dir/src/interpreter.cpp.o[0m
+[1.848s] [ 70%] Built target spi_interface__py
+[1.892s] [ 77%] Built target actuator_bridge_node
+[2.074s] [ 83%] Built target spi_interface__rosidl_generator_py
+[2.290s] [ 87%] Built target spi_interface__rosidl_typesupport_introspection_c__pyext
+[2.314s] [ 91%] Built target spi_interface__rosidl_typesupport_fastrtps_c__pyext
+[2.430s] [ 95%] Built target spi_interface__rosidl_typesupport_c__pyext
+[2.937s] running egg_info
+[2.941s] writing spi_interface.egg-info/PKG-INFO
+[2.943s] writing dependency_links to spi_interface.egg-info/dependency_links.txt
+[2.945s] writing top-level names to spi_interface.egg-info/top_level.txt
+[2.959s] reading manifest file 'spi_interface.egg-info/SOURCES.txt'
+[2.963s] writing manifest file 'spi_interface.egg-info/SOURCES.txt'
+[3.115s] [ 95%] Built target ament_cmake_python_build_spi_interface_egg
+[14.171s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:[m[K In member function ‘[01m[Kvoid Interpreter::command_sub_callback(spi_interface::msg::McpeaCommand)[m[K’:
+[14.173s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:201:79:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Kstd::array<unsigned char, 4>[m[K’ to non-scalar type ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >[m[K’ requested
+[14.173s]   201 |     std::vector<uint8_t> data_out_torque_limit_vec = [01;31m[Kthis->convert_to_integers(torque_limit)[m[K;
+[14.174s]       |                                                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[14.175s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:208:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Interpreter[m[K’ has no member named ‘[01m[Kcommand_put_callback[m[K’; did you mean ‘[01m[Kcommand_pub_callback[m[K’?
+[14.175s]   208 |     this->[01;31m[Kcommand_put_callback[m[K(data_out);
+[14.176s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[14.176s]       |           [32m[Kcommand_pub_callback[m[K
+[14.177s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:187:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kmotor_state_cmd[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[14.177s]   187 |     float [01;35m[Kmotor_state_cmd[m[K = msg.current_limit;
+[14.178s]       |           [01;35m[K^~~~~~~~~~~~~~~[m[K
+[14.179s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:188:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kff_torque[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[14.179s]   188 |     float [01;35m[Kff_torque[m[K = msg.feedforward_torque;
+[14.180s]       |           [01;35m[K^~~~~~~~~[m[K
+[14.181s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:189:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcontrol_mode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[14.181s]   189 |     float [01;35m[Kcontrol_mode[m[K = msg.control_mode;
+[14.182s]       |           [01;35m[K^~~~~~~~~~~~[m[K
+[14.182s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:190:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdata_1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[14.183s]   190 |     float [01;35m[Kdata_1[m[K = msg.data_1; // usually the reference signal
+[14.183s]       |           [01;35m[K^~~~~~[m[K
+[14.184s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:191:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdata_2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[14.184s]   191 |     float [01;35m[Kdata_2[m[K = msg.data_2; // usually virutal stiffness
+[14.185s]       |           [01;35m[K^~~~~~[m[K
+[14.186s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:192:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdata_3[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[14.186s]   192 |     float [01;35m[Kdata_3[m[K = msg.data_3; // usually virtual damping
+[14.187s]       |           [01;35m[K^~~~~~[m[K
+[14.187s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:193:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdata_4[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[14.188s]   193 |     float [01;35m[Kdata_4[m[K = msg.data_4; // usually virtual damping
+[14.188s]       |           [01;35m[K^~~~~~[m[K
+[14.189s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:194:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdata_5[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[14.189s]   194 |     float [01;35m[Kdata_5[m[K = msg.data_5; // usually virtual damping
+[14.190s]       |           [01;35m[K^~~~~~[m[K
+[14.190s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:195:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdynamic_comp_gain[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[14.191s]   195 |     float [01;35m[Kdynamic_comp_gain[m[K = msg.dynamic_comp_gain;
+[14.192s]       |           [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[14.193s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:[m[K In member function ‘[01m[Kvoid Interpreter::command_pub_callback(std::vector<unsigned char, std::allocator<unsigned char> >)[m[K’:
+[14.193s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:222:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Interpreter[m[K’ has no member named ‘[01m[Kcommand_publisher[m[K’; did you mean ‘[01m[Kcommand_publisher_[m[K’?
+[14.194s]   222 |     this->[01;31m[Kcommand_publisher[m[K.publish(msg_out);
+[14.195s]       |           [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[14.195s]       |           [32m[Kcommand_publisher_[m[K
+[27.810s] gmake[2]: *** [CMakeFiles/interpreter_node.dir/build.make:76: CMakeFiles/interpreter_node.dir/src/interpreter.cpp.o] Error 1
+[27.811s] gmake[1]: *** [CMakeFiles/Makefile2:624: CMakeFiles/interpreter_node.dir/all] Error 2
+[27.812s] gmake: *** [Makefile:146: all] Error 2
+[27.819s] Invoked command in '/home/ubuntu/mc-pea-ros-network/build/spi_interface' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/mc-pea-ros-network/build/spi_interface -- -j4 -l4

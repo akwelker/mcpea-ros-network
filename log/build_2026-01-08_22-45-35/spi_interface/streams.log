@@ -1,0 +1,120 @@
+[0.073s] Invoking command in '/home/ubuntu/mc-pea-ros-network/build/spi_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/mc-pea-ros-network/build/spi_interface -- -j4 -l4
+[0.490s] [  0%] Built target ament_cmake_python_copy_spi_interface
+[0.494s] [  8%] Built target spi_interface__rosidl_generator_c
+[0.549s] [ 16%] Built target spi_bridge_node
+[0.553s] [ 10%] Built target spi_interface__cpp
+[0.657s] [ 25%] Built target spi_interface__rosidl_typesupport_fastrtps_c
+[0.677s] [ 33%] Built target spi_interface__rosidl_typesupport_introspection_c
+[0.683s] [ 41%] Built target spi_interface__rosidl_typesupport_c
+[0.828s] [ 50%] Built target spi_interface__rosidl_typesupport_introspection_cpp
+[0.834s] [ 58%] Built target spi_interface__rosidl_typesupport_cpp
+[0.873s] [ 66%] Built target spi_interface__rosidl_typesupport_fastrtps_cpp
+[1.016s] [ 66%] Built target spi_interface
+[1.225s] [ 68%] Built target spi_interface__py
+[1.273s] [ 70%] [32mBuilding CXX object CMakeFiles/actuator_bridge_node.dir/src/actuator_bridge.cpp.o[0m
+[1.326s] [ 77%] Built target interpreter_node
+[1.415s] [ 83%] Built target spi_interface__rosidl_generator_py
+[1.710s] [ 87%] Built target spi_interface__rosidl_typesupport_fastrtps_c__pyext
+[1.750s] [ 91%] Built target spi_interface__rosidl_typesupport_introspection_c__pyext
+[1.884s] [ 95%] Built target spi_interface__rosidl_typesupport_c__pyext
+[2.263s] running egg_info
+[2.267s] writing spi_interface.egg-info/PKG-INFO
+[2.269s] writing dependency_links to spi_interface.egg-info/dependency_links.txt
+[2.271s] writing top-level names to spi_interface.egg-info/top_level.txt
+[2.283s] reading manifest file 'spi_interface.egg-info/SOURCES.txt'
+[2.287s] writing manifest file 'spi_interface.egg-info/SOURCES.txt'
+[2.477s] [ 95%] Built target ament_cmake_python_build_spi_interface_egg
+[13.554s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:[m[K In constructor ‘[01m[KActuator_Bridge::Actuator_Bridge(double)[m[K’:
+[13.555s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:29:45:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Krclcpp::Subscription<std_msgs::msg::UInt16MultiArray_<std::allocator<void> > >::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<std_msgs::msg::UInt16MultiArray_<std::allocator<void> > > >[m[K’} and ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<spi_interface::msg::McpeaCommand_<std::allocator<void> >, std::allocator<void>, spi_interface::msg::McpeaCommand_<std::allocator<void> >, spi_interface::msg::McpeaCommand_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<spi_interface::msg::McpeaCommand_<std::allocator<void> >, std::allocator<void> > > >[m[K’)
+[13.555s]    29 |                       std::placeholders::_1)[01;31m[K)[m[K;
+[13.556s]       |                                             [01;31m[K^[m[K
+[13.556s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[13.557s]                  from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/actuator_bridge.h:18[m[K,
+[13.557s]                  from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:12[m[K:
+[13.558s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:363:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<const std::shared_ptr<_Yp>&> std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Yp>&) [with _Yp = _Yp; _Tp = rclcpp::Subscription<std_msgs::msg::UInt16MultiArray_<std::allocator<void> > >][m[K’
+[13.558s]   363 |         [01;36m[Koperator[m[K=(const shared_ptr<_Yp>& __r) noexcept
+[13.559s]       |         [01;36m[K^~~~~~~~[m[K
+[13.559s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:363:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[13.560s] /usr/include/c++/11/bits/shared_ptr.h: In substitution of ‘[01m[Ktemplate<class _Tp> template<class _Arg> using _Assignable = typename std::enable_if<std::is_assignable<std::__shared_ptr<_Tp>&, _Arg>::value, std::shared_ptr<_Tp>&>::type [with _Arg = const std::shared_ptr<rclcpp::Subscription<spi_interface::msg::McpeaCommand_<std::allocator<void> >, std::allocator<void>, spi_interface::msg::McpeaCommand_<std::allocator<void> >, spi_interface::msg::McpeaCommand_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<spi_interface::msg::McpeaCommand_<std::allocator<void> >, std::allocator<void> > > >&; _Tp = rclcpp::Subscription<std_msgs::msg::UInt16MultiArray_<std::allocator<void> > >][m[K’:
+[13.560s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:363:2:[m[K   required by substitution of ‘[01m[Ktemplate<class _Yp> std::shared_ptr<rclcpp::Subscription<std_msgs::msg::UInt16MultiArray_<std::allocator<void> > > >::_Assignable<const std::shared_ptr<_Tp>&> std::shared_ptr<rclcpp::Subscription<std_msgs::msg::UInt16MultiArray_<std::allocator<void> > > >::operator=<_Yp>(const std::shared_ptr<_Tp>&) [with _Yp = rclcpp::Subscription<spi_interface::msg::McpeaCommand_<std::allocator<void> >, std::allocator<void>, spi_interface::msg::McpeaCommand_<std::allocator<void> >, spi_interface::msg::McpeaCommand_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<spi_interface::msg::McpeaCommand_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[13.561s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:29:45:[m[K   required from here
+[13.561s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:130:15:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, std::shared_ptr<rclcpp::Subscription<std_msgs::msg::UInt16MultiArray_<std::allocator<void> > > >&>[m[K’
+[13.562s]   130 |         using [01;31m[K_Assignable[m[K = typename enable_if<
+[13.563s]       |               [01;31m[K^~~~~~~~~~~[m[K
+[13.564s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:374:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::auto_ptr<_Up> > std::shared_ptr<_Tp>::operator=(std::auto_ptr<_Up>&&) [with _Yp = _Yp; _Tp = rclcpp::Subscription<std_msgs::msg::UInt16MultiArray_<std::allocator<void> > >][m[K’
+[13.564s]   374 |         [01;36m[Koperator[m[K=(auto_ptr<_Yp>&& __r)
+[13.565s]       |         [01;36m[K^~~~~~~~[m[K
+[13.565s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:374:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[13.566s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:29:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<spi_interface::msg::McpeaCommand_<std::allocator<void> >, std::allocator<void>, spi_interface::msg::McpeaCommand_<std::allocator<void> >, spi_interface::msg::McpeaCommand_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<spi_interface::msg::McpeaCommand_<std::allocator<void> >, std::allocator<void> > > >[m[K’ is not derived from ‘[01m[Kstd::auto_ptr<_Up>[m[K’
+[13.567s]    29 |                       std::placeholders::_1)[01;36m[K)[m[K;
+[13.567s]       |                                             [01;36m[K^[m[K
+[13.568s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[13.568s]                  from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/actuator_bridge.h:18[m[K,
+[13.569s]                  from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:12[m[K:
+[13.569s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:391:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::shared_ptr<_Yp> > std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Yp>&&) [with _Yp = _Yp; _Tp = rclcpp::Subscription<std_msgs::msg::UInt16MultiArray_<std::allocator<void> > >][m[K’
+[13.570s]   391 |         [01;36m[Koperator[m[K=(shared_ptr<_Yp>&& __r) noexcept
+[13.570s]       |         [01;36m[K^~~~~~~~[m[K
+[13.571s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:391:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[13.571s] /usr/include/c++/11/bits/shared_ptr.h: In substitution of ‘[01m[Ktemplate<class _Tp> template<class _Arg> using _Assignable = typename std::enable_if<std::is_assignable<std::__shared_ptr<_Tp>&, _Arg>::value, std::shared_ptr<_Tp>&>::type [with _Arg = std::shared_ptr<rclcpp::Subscription<spi_interface::msg::McpeaCommand_<std::allocator<void> >, std::allocator<void>, spi_interface::msg::McpeaCommand_<std::allocator<void> >, spi_interface::msg::McpeaCommand_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<spi_interface::msg::McpeaCommand_<std::allocator<void> >, std::allocator<void> > > >; _Tp = rclcpp::Subscription<std_msgs::msg::UInt16MultiArray_<std::allocator<void> > >][m[K’:
+[13.572s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:391:2:[m[K   required by substitution of ‘[01m[Ktemplate<class _Yp> std::shared_ptr<rclcpp::Subscription<std_msgs::msg::UInt16MultiArray_<std::allocator<void> > > >::_Assignable<std::shared_ptr<_Tp> > std::shared_ptr<rclcpp::Subscription<std_msgs::msg::UInt16MultiArray_<std::allocator<void> > > >::operator=<_Yp>(std::shared_ptr<_Tp>&&) [with _Yp = rclcpp::Subscription<spi_interface::msg::McpeaCommand_<std::allocator<void> >, std::allocator<void>, spi_interface::msg::McpeaCommand_<std::allocator<void> >, spi_interface::msg::McpeaCommand_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<spi_interface::msg::McpeaCommand_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[13.572s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:29:45:[m[K   required from here
+[13.573s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:130:15:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, std::shared_ptr<rclcpp::Subscription<std_msgs::msg::UInt16MultiArray_<std::allocator<void> > > >&>[m[K’
+[13.573s]   130 |         using [01;31m[K_Assignable[m[K = typename enable_if<
+[13.574s]       |               [01;31m[K^~~~~~~~~~~[m[K
+[13.574s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:399:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp, class _Del> std::shared_ptr<_Tp>::_Assignable<std::unique_ptr<_Up, _Ep> > std::shared_ptr<_Tp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Yp = _Yp; _Del = _Del; _Tp = rclcpp::Subscription<std_msgs::msg::UInt16MultiArray_<std::allocator<void> > >][m[K’
+[13.575s]   399 |         [01;36m[Koperator[m[K=(unique_ptr<_Yp, _Del>&& __r)
+[13.575s]       |         [01;36m[K^~~~~~~~[m[K
+[13.576s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:399:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[13.576s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:29:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<spi_interface::msg::McpeaCommand_<std::allocator<void> >, std::allocator<void>, spi_interface::msg::McpeaCommand_<std::allocator<void> >, spi_interface::msg::McpeaCommand_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<spi_interface::msg::McpeaCommand_<std::allocator<void> >, std::allocator<void> > > >[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<_Tp, _Dp>[m[K’
+[13.577s]    29 |                       std::placeholders::_1)[01;36m[K)[m[K;
+[13.577s]       |                                             [01;36m[K^[m[K
+[13.578s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[13.578s]                  from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/actuator_bridge.h:18[m[K,
+[13.579s]                  from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:12[m[K:
+[13.579s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:359:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp>&) [with _Tp = rclcpp::Subscription<std_msgs::msg::UInt16MultiArray_<std::allocator<void> > >][m[K’
+[13.580s]   359 |       shared_ptr& [01;36m[Koperator[m[K=(const shared_ptr&) noexcept = default;
+[13.580s]       |                   [01;36m[K^~~~~~~~[m[K
+[13.580s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:359:29:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<spi_interface::msg::McpeaCommand_<std::allocator<void> >, std::allocator<void>, spi_interface::msg::McpeaCommand_<std::allocator<void> >, spi_interface::msg::McpeaCommand_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<spi_interface::msg::McpeaCommand_<std::allocator<void> >, std::allocator<void> > > >[m[K’ to ‘[01m[Kconst std::shared_ptr<rclcpp::Subscription<std_msgs::msg::UInt16MultiArray_<std::allocator<void> > > >&[m[K’
+[13.581s]   359 |       shared_ptr& operator=([01;36m[Kconst shared_ptr&[m[K) noexcept = default;
+[13.581s]       |                             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[13.582s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:383:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp>&&) [with _Tp = rclcpp::Subscription<std_msgs::msg::UInt16MultiArray_<std::allocator<void> > >][m[K’
+[13.584s]   383 |       [01;36m[Koperator[m[K=(shared_ptr&& __r) noexcept
+[13.585s]       |       [01;36m[K^~~~~~~~[m[K
+[13.586s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:383:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<spi_interface::msg::McpeaCommand_<std::allocator<void> >, std::allocator<void>, spi_interface::msg::McpeaCommand_<std::allocator<void> >, spi_interface::msg::McpeaCommand_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<spi_interface::msg::McpeaCommand_<std::allocator<void> >, std::allocator<void> > > >[m[K’ to ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<std_msgs::msg::UInt16MultiArray_<std::allocator<void> > > >&&[m[K’
+[13.588s]   383 |       operator=([01;36m[Kshared_ptr&& __r[m[K) noexcept
+[13.588s]       |                 [01;36m[K~~~~~~~~~~~~~^~~[m[K
+[13.600s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:37:52:[m[K [01;31m[Kerror: [m[Klvalue required as unary ‘[01m[K&[m[K’ operand
+[13.601s]    37 |         std::bind(&[01;31m[KActuator_Bridge::spi_transaction()[m[K, this));
+[13.601s]       |                    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[13.608s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:[m[K At global scope:
+[13.608s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:62:29:[m[K [01;31m[Kerror: [m[Kexpected class-name before ‘[01m[K([m[K’ token
+[13.609s]    62 | Actuator_Bridge::~Spi_Bridge[01;31m[K([m[K)
+[13.610s]       |                             [01;31m[K^[m[K
+[13.611s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:70:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid Actuator_Bridge::command_sub_callback(spi_interface::msg::McpeaCommand)[m[K’
+[13.611s]    70 | void [01;31m[KActuator_Bridge[m[K::command_sub_callback(
+[13.612s]       |      [01;31m[K^~~~~~~~~~~~~~~[m[K
+[13.612s] In file included from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:12[m[K:
+[13.613s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/actuator_bridge.h:91:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid Actuator_Bridge::command_sub_callback(spi_interface::msg::McpeaCommand_<std::allocator<void> >::SharedPtr)[m[K’
+[13.613s]    91 |     void [01;36m[Kcommand_sub_callback[m[K(
+[13.614s]       |          [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[13.615s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/actuator_bridge.h:59:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Actuator_Bridge[m[K’ defined here
+[13.615s]    59 | class [01;36m[KActuator_Bridge[m[K : public rclcpp::Node
+[13.616s]       |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[13.616s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:[m[K In member function ‘[01m[Kvoid Actuator_Bridge::telemetry_pub_callback()[m[K’:
+[13.617s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:82:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ has not been declared
+[13.617s]    82 |     spi_interface:[01;31m[Kmsg[m[K::McpeaTelemetry msg;
+[13.618s]       |                   [01;31m[K^~~[m[K
+[13.635s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:91:5:[m[K [01;31m[Kerror: [m[K‘[01m[Koutmsg[m[K’ was not declared in this scope
+[13.635s]    91 |     [01;31m[Koutmsg[m[K.set__accel_1(accel1);
+[13.636s]       |     [01;31m[K^~~~~~[m[K
+[13.638s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:184:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Actuator_Bridge[m[K’ has no member named ‘[01m[Kraw_data_publisher_[m[K’; did you mean ‘[01m[Kcreate_publisher[m[K’?
+[13.639s]   184 |     this->[01;31m[Kraw_data_publisher_[m[K->publish(outmsg);
+[13.639s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[13.640s]       |           [32m[Kcreate_publisher[m[K
+[13.640s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:82:5:[m[K [01;35m[Kwarning: [m[Klabel ‘[01m[Kspi_interface[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-label-Wunused-label]8;;[m[K]
+[13.640s]    82 |     [01;35m[Kspi_interface[m[K:msg::McpeaTelemetry msg;
+[13.641s]       |     [01;35m[K^~~~~~~~~~~~~[m[K
+[22.845s] gmake[2]: *** [CMakeFiles/actuator_bridge_node.dir/build.make:76: CMakeFiles/actuator_bridge_node.dir/src/actuator_bridge.cpp.o] Error 1
+[22.846s] gmake[1]: *** [CMakeFiles/Makefile2:652: CMakeFiles/actuator_bridge_node.dir/all] Error 2
+[22.847s] gmake: *** [Makefile:146: all] Error 2
+[22.854s] Invoked command in '/home/ubuntu/mc-pea-ros-network/build/spi_interface' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/mc-pea-ros-network/build/spi_interface -- -j4 -l4

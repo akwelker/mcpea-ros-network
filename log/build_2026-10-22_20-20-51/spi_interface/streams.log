@@ -1,0 +1,36 @@
+[0.078s] Invoking command in '/home/ubuntu/mc-pea-ros-network/build/spi_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/mc-pea-ros-network/build/spi_interface -- -j4 -l4
+[0.437s] [35m[1mConsolidate compiler generated dependencies of target spi_bridge_node[0m
+[0.456s] [  8%] Built target spi_interface__rosidl_generator_c
+[0.466s] [ 10%] Built target spi_interface__cpp
+[0.544s] [ 10%] Built target ament_cmake_python_copy_spi_interface
+[0.661s] [ 18%] Built target spi_interface__rosidl_typesupport_fastrtps_c
+[0.713s] [ 27%] Built target spi_interface__rosidl_typesupport_introspection_c
+[0.727s] [ 35%] Built target spi_interface__rosidl_typesupport_c
+[0.746s] [ 37%] [32mBuilding CXX object CMakeFiles/spi_bridge_node.dir/src/spi_bridge.cpp.o[0m
+[0.869s] [ 45%] Built target spi_interface__rosidl_typesupport_introspection_cpp
+[1.044s] [ 54%] Built target spi_interface__rosidl_typesupport_cpp
+[1.227s] [ 62%] Built target spi_interface__rosidl_typesupport_fastrtps_cpp
+[1.389s] [ 62%] Built target spi_interface
+[1.633s] [ 64%] Built target spi_interface__py
+[1.696s] [ 70%] Built target interpreter_node
+[1.861s] [ 77%] Built target actuator_bridge_node
+[1.912s] [ 83%] Built target spi_interface__rosidl_generator_py
+[2.114s] [ 87%] Built target spi_interface__rosidl_typesupport_introspection_c__pyext
+[2.126s] [ 91%] Built target spi_interface__rosidl_typesupport_fastrtps_c__pyext
+[2.248s] [ 95%] Built target spi_interface__rosidl_typesupport_c__pyext
+[2.689s] running egg_info
+[2.694s] writing spi_interface.egg-info/PKG-INFO
+[2.695s] writing dependency_links to spi_interface.egg-info/dependency_links.txt
+[2.697s] writing top-level names to spi_interface.egg-info/top_level.txt
+[2.711s] reading manifest file 'spi_interface.egg-info/SOURCES.txt'
+[2.715s] writing manifest file 'spi_interface.egg-info/SOURCES.txt'
+[2.912s] [ 95%] Built target ament_cmake_python_build_spi_interface_egg
+[12.918s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/spi_bridge.cpp:[m[K In member function ‘[01m[Kvoid Spi_Bridge::spi_transaction()[m[K’:
+[12.918s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/spi_bridge.cpp:112:8:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K([m[K’ before ‘[01m[KSpi_Bridge[m[K’
+[12.919s]   112 |     if [01;31m[KS[m[K[32m[Kpi_Bridge[m[K::verify_checksum(spi_buffer_.data())
+[12.920s]       |        [01;31m[K^[m[K[32m[K~~~~~~~~~[m[K
+[12.920s]       |        [32m[K([m[K
+[22.970s] gmake[2]: *** [CMakeFiles/spi_bridge_node.dir/build.make:76: CMakeFiles/spi_bridge_node.dir/src/spi_bridge.cpp.o] Error 1
+[22.971s] gmake[1]: *** [CMakeFiles/Makefile2:596: CMakeFiles/spi_bridge_node.dir/all] Error 2
+[22.972s] gmake: *** [Makefile:146: all] Error 2
+[22.980s] Invoked command in '/home/ubuntu/mc-pea-ros-network/build/spi_interface' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/mc-pea-ros-network/build/spi_interface -- -j4 -l4

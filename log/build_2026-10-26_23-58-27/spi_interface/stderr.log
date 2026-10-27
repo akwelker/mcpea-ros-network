@@ -1,0 +1,15 @@
+In file included from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter_node.cpp:17[m[K:
+[01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/interpreter.h:70:10:[m[K [01;31m[Kfatal error: [m[Kstd_srvs/srv/trigger.hpp: No such file or directory
+   70 | #include [01;31m[K"std_srvs/srv/trigger.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/interpreter_node.dir/build.make:90: CMakeFiles/interpreter_node.dir/src/interpreter_node.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/interpreter.cpp:10[m[K:
+[01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/include/interpreter.h:70:10:[m[K [01;31m[Kfatal error: [m[Kstd_srvs/srv/trigger.hpp: No such file or directory
+   70 | #include [01;31m[K"std_srvs/srv/trigger.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/interpreter_node.dir/build.make:76: CMakeFiles/interpreter_node.dir/src/interpreter.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:624: CMakeFiles/interpreter_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

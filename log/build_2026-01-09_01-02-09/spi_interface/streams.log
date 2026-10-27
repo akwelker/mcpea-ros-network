@@ -1,0 +1,40 @@
+[0.069s] Invoking command in '/home/ubuntu/mc-pea-ros-network/build/spi_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/mc-pea-ros-network/build/spi_interface -- -j4 -l4
+[0.420s] [  2%] Built target spi_interface__cpp
+[0.461s] [  8%] Built target spi_bridge_node
+[0.472s] [ 16%] Built target spi_interface__rosidl_generator_c
+[0.609s] [ 16%] Built target ament_cmake_python_copy_spi_interface
+[0.687s] [ 25%] Built target spi_interface__rosidl_typesupport_cpp
+[0.701s] [ 33%] Built target spi_interface__rosidl_typesupport_fastrtps_cpp
+[0.755s] [ 41%] Built target spi_interface__rosidl_typesupport_introspection_c
+[0.814s] [ 50%] Built target spi_interface__rosidl_typesupport_c
+[0.879s] [ 58%] Built target spi_interface__rosidl_typesupport_introspection_cpp
+[0.933s] [ 66%] Built target spi_interface__rosidl_typesupport_fastrtps_c
+[1.041s] [ 66%] Built target spi_interface
+[1.178s] [35m[1mConsolidate compiler generated dependencies of target actuator_bridge_node[0m
+[1.191s] [ 68%] Built target spi_interface__py
+[1.298s] [ 75%] Built target interpreter_node
+[1.442s] [ 77%] [32mBuilding CXX object CMakeFiles/actuator_bridge_node.dir/src/actuator_bridge.cpp.o[0m
+[1.458s] [ 83%] Built target spi_interface__rosidl_generator_py
+[1.614s] [ 87%] Built target spi_interface__rosidl_typesupport_introspection_c__pyext
+[1.736s] [ 91%] Built target spi_interface__rosidl_typesupport_fastrtps_c__pyext
+[1.810s] [ 95%] Built target spi_interface__rosidl_typesupport_c__pyext
+[2.410s] running egg_info
+[2.415s] writing spi_interface.egg-info/PKG-INFO
+[2.417s] writing dependency_links to spi_interface.egg-info/dependency_links.txt
+[2.419s] writing top-level names to spi_interface.egg-info/top_level.txt
+[2.431s] reading manifest file 'spi_interface.egg-info/SOURCES.txt'
+[2.436s] writing manifest file 'spi_interface.egg-info/SOURCES.txt'
+[2.588s] [ 95%] Built target ament_cmake_python_build_spi_interface_egg
+[13.571s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:[m[K In member function ‘[01m[Kvoid Actuator_Bridge::command_sub_callback(spi_interface::msg::McpeaCommand_<std::allocator<void> >::SharedPtr)[m[K’:
+[13.572s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:70:55:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[13.572s]    70 |     [01;35m[Kconst spi_interface::msg::McpeaCommand::SharedPtr msg[m[K)
+[13.573s]       |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[13.578s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:[m[K In member function ‘[01m[Kvoid Actuator_Bridge::spi_transaction()[m[K’:
+[13.579s] [01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/actuator_bridge.cpp:206:12:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K([m[K’ before ‘[01m[Kverify_checksum[m[K’
+[13.579s]   206 |         if [01;31m[Kv[m[K[32m[Kerify_checksum[m[K(spi_buffer)
+[13.580s]       |            [01;31m[K^[m[K[32m[K~~~~~~~~~~~~~~[m[K
+[13.580s]       |            [32m[K([m[K
+[23.701s] gmake[2]: *** [CMakeFiles/actuator_bridge_node.dir/build.make:76: CMakeFiles/actuator_bridge_node.dir/src/actuator_bridge.cpp.o] Error 1
+[23.702s] gmake[1]: *** [CMakeFiles/Makefile2:652: CMakeFiles/actuator_bridge_node.dir/all] Error 2
+[23.703s] gmake: *** [Makefile:146: all] Error 2
+[23.711s] Invoked command in '/home/ubuntu/mc-pea-ros-network/build/spi_interface' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/mc-pea-ros-network/build/spi_interface -- -j4 -l4

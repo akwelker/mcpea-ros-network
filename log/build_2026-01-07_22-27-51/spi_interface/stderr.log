@@ -1,0 +1,7 @@
+[01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/spi_bridge.cpp:[m[K In member function ‘[01m[Kvoid Spi_Bridge::raw_data_pub_callback()[m[K’:
+[01m[K/home/ubuntu/mc-pea-ros-network/src/spi_interface/src/spi_bridge.cpp:93:16:[m[K [01;31m[Kerror: [m[Kinvalid cast from type ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >[m[K’ to type ‘[01m[Kuint16_t[m[K’ {aka ‘[01m[Kshort unsigned int[m[K’}
+   93 |     msg.data = [01;31m[K(uint16_t) output_data_[m[K;
+      |                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/spi_bridge_node.dir/build.make:76: CMakeFiles/spi_bridge_node.dir/src/spi_bridge.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:594: CMakeFiles/spi_bridge_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
