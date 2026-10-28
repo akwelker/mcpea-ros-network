@@ -101,17 +101,18 @@ void Spi_Bridge::spi_transaction()
 
     auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(curr_time - this->last_command_time);
 
-    if(duration.count() > TIMEOUT_MS && !this->timeout_flag)
-    {
-        std::memcpy(spi_buffer_.data(),
-                    input_data_.data(),
-                    SPI_BUFFER_SIZE_BYTES);
-    }
-    else if(!this->timeout_flag)
+    if(duration.count() > TIMEOUT_MS)
     {
         std::fill(spi_buffer_.begin(), spi_buffer_.end(), 0);
-        RCLCPP_WARN(get_logger(), "Command Timeout!");
-        this->timeout_flag = true;
+        if (!timeout_flag)
+        {
+            RCLCPP_WARN(get_logger(), "Command timeout, sending zeros");
+            timeout_flag = true;
+        }
+    }
+    else
+    {
+        std::memcpy(spi_buffer_.data(), input_data_.data(), SPI_BUFFER_SIZE_BYTES);
     }
 
     // // Pack words into bytes
