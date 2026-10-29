@@ -315,6 +315,8 @@ void Interpreter::command_pub_callback(const std::vector<uint8_t> data_out)
         check_out[ENABLE_INDEX+1] = motor_code_arr[1];
         check_out[ENABLE_INDEX+2] = motor_code_arr[2];
         check_out[ENABLE_INDEX+3] = motor_code_arr[3];
+
+        this->motor_enable_flag = false;
     }
     else if (this->motor_reset_flag)
     {
@@ -326,6 +328,8 @@ void Interpreter::command_pub_callback(const std::vector<uint8_t> data_out)
         check_out[ENABLE_INDEX+1] = motor_code_arr[1];
         check_out[ENABLE_INDEX+2] = motor_code_arr[2];
         check_out[ENABLE_INDEX+3] = motor_code_arr[3];
+
+        this->motor_disable_flag = false;
     }
     
     if (this->motor_reset_flag)
@@ -338,6 +342,8 @@ void Interpreter::command_pub_callback(const std::vector<uint8_t> data_out)
         check_out[ENABLE_INDEX+1] = motor_code_arr[1];
         check_out[ENABLE_INDEX+2] = motor_code_arr[2];
         check_out[ENABLE_INDEX+3] = motor_code_arr[3];
+
+        this->motor_reset_flag = false;
     }
     
 
@@ -348,11 +354,15 @@ void Interpreter::command_pub_callback(const std::vector<uint8_t> data_out)
     if (this->joint_angle_zero_flag)
     {
         boolean_float_values_addtn += (1 << (7-ZERO_JOINT_INDEX));
+
+        this->joint_angle_zero_flag = false;
     }
     
     if (this->boom_angle_zero_flag)
     {
         boolean_float_values_addtn += (1 << (7-ZERO_BOOM_ANGLE_INDEX));
+
+        this->boom_angle_zero_flag = false;
     }
 
     check_out[BOOL_BUFFER_INDEX] += boolean_float_values_addtn;
