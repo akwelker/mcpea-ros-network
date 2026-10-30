@@ -1,0 +1,26 @@
+launch:
+
+- node:
+    pkg: "spi_interface"
+    exec: "interpreter_node"
+    name: "interpreter"
+    remap:
+    -
+        from: "/actuator_data_out"
+        to: "/actuator_telemetry"
+    -
+        from: "/actuator_command_in"
+        to: "/actuator_control"
+    -
+        from: "/actuator_data_in"
+        to: "/actuator_raw_data_in"
+
+
+- node:
+    pkg: "actuator_command"
+    exec: "regulator_node"
+    name: "regulator"
+    remap:
+    -
+        from: "/actuator_command"
+        to: "/actuator_control"

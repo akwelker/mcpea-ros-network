@@ -1,4 +1,4 @@
-# usr/bin/python3
+#!/usr/bin/python3
 '''
 Adam Welker     Utah Robotics Center        Oct. 2026
 
@@ -45,6 +45,7 @@ class jumping_state_machine(Node):
 
         # What is the current state machine state
         self.state = State.INIT
+
 
 
 

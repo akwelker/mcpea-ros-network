@@ -100,7 +100,8 @@ class Interpreter: public rclcpp::Node
         rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr motor_reset_service;
         rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr motor_disable_service;
 
-        // 
+        rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr zero_joint_service;
+        rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr zero_boom_service;
 
 
         // rclcpp::TimerBase::SharedPtr raw_data_timer_;
@@ -119,6 +120,9 @@ class Interpreter: public rclcpp::Node
         void enable_service_call(const std::shared_ptr<std_srvs::srv::Trigger::Request> request, std::shared_ptr<std_srvs::srv::Trigger::Response> response);
         void reset_service_call(const std::shared_ptr<std_srvs::srv::Trigger::Request> request, std::shared_ptr<std_srvs::srv::Trigger::Response> response);
         void disable_service_call(const std::shared_ptr<std_srvs::srv::Trigger::Request> request, std::shared_ptr<std_srvs::srv::Trigger::Response> response);
+
+        void zero_joint_service_call(const std::shared_ptr<std_srvs::srv::Trigger::Request> request, std::shared_ptr<std_srvs::srv::Trigger::Response> response);
+        void zero_boom_service_call(const std::shared_ptr<std_srvs::srv::Trigger::Request> request, std::shared_ptr<std_srvs::srv::Trigger::Response> response);
 
         float convert_to_float(const uint8_t data1, const uint8_t data2, const uint8_t data3, const uint8_t data4);
 
