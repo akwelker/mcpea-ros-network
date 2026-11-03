@@ -11,11 +11,13 @@ launch:
     -
         from: "/actuator_command_in"
         to: "/actuator_control"
+
+    -   
+        from: "/actuator_command_out"
+        to: "/actuator_raw_data_out"
     -
         from: "/actuator_data_in"
         to: "/actuator_raw_data_in"
-
-
 - node:
     pkg: "actuator_command"
     exec: "regulator_node"

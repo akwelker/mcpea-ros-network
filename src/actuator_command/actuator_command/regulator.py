@@ -96,7 +96,7 @@ class Regulator(Node):
     def publish_callback(self):
 
         command_msg = McpeaCommand()
-        command_msg.control_mode = param.position_control
+        command_msg.control_mode = param.PID_position
         command_msg.current_limit = param.std_current_limit
         command_msg.torque_limit = param.std_torque_limit
         command_msg.data_1 = 0. # setpoint 

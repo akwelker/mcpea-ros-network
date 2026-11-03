@@ -372,8 +372,8 @@ void Interpreter::command_pub_callback(const std::vector<uint8_t> data_out)
 
 
     //Add check sums
-    check_out[124] = this->get_checksum_1(data_out.data());
-    check_out[125] = this->get_checksum_2(data_out.data());
+    check_out[124] = this->get_checksum_1(check_out.data());
+    check_out[125] = this->get_checksum_2(check_out.data());
 
     msg_out.data = check_out;
 

@@ -24,7 +24,8 @@ setup(
     entry_points={
         'console_scripts': [
             'jumping_state_machine = actuator_command.jumping_state_machine:main',
-            'regulator_node = actuator_command.regulator:main'
+            'regulator_node = actuator_command.regulator:main',
+            'sleep_node = actuator_command.sleep_node:main'
         ],
     },
 )
