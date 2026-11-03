@@ -36,8 +36,8 @@ Interpreter::Interpreter():Node("Interpreter")
 
     // ros service subscribers
     this->motor_enable_service = this->create_service<std_srvs::srv::Trigger>("actuator_enable", std::bind(&Interpreter::enable_service_call, this, std::placeholders::_1, std::placeholders::_2));
-    this->motor_reset_service = this->create_service<std_srvs::srv::Trigger>("actuator_disable", std::bind(&Interpreter::reset_service_call, this, std::placeholders::_1, std::placeholders::_2));
-    this->motor_disable_service = this->create_service<std_srvs::srv::Trigger>("actuator_reset", std::bind(&Interpreter::disable_service_call, this, std::placeholders::_1, std::placeholders::_2));
+    this->motor_reset_service = this->create_service<std_srvs::srv::Trigger>("actuator_reset", std::bind(&Interpreter::reset_service_call, this, std::placeholders::_1, std::placeholders::_2));
+    this->motor_disable_service = this->create_service<std_srvs::srv::Trigger>("actuator_disable", std::bind(&Interpreter::disable_service_call, this, std::placeholders::_1, std::placeholders::_2));
 
     this->zero_joint_service = this->create_service<std_srvs::srv::Trigger>("zero_joint_angle", std::bind(&Interpreter::zero_joint_service_call, this, std::placeholders::_1, std::placeholders::_2));
     this->zero_boom_service = this->create_service<std_srvs::srv::Trigger>("zero_boom_angle", std::bind(&Interpreter::zero_boom_service_call, this, std::placeholders::_1, std::placeholders::_2));

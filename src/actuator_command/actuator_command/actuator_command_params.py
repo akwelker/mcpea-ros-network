@@ -18,6 +18,9 @@ lyapunov_redesign = 11.
 # standard operating values
 std_torque_limit = 10.#NM
 std_current_limit = 15. #NM
+
+safe_current_limit = 3. #NM
+
 std_kp = 30.
 std_kd = 0.18
 std_ki = 50.
