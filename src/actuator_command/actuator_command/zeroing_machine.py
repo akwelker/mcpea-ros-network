@@ -19,10 +19,10 @@ import actuator_command.actuator_command_params as param
 from enum import Enum
 
 from time import time, sleep
-from numpy import pi,sin,abs
+from numpy import pi,sin,abs,radians
 
-TIMOUT_TIME = 60*5 # minutes
-MAXIMUM_PULL_TORQUE = 0.25 #Nm
+TIMOUT_TIME = 60*2 # minutes
+MAXIMUM_PULL_TORQUE = 0.5 #Nm
 PULL_TORQUE_PERIOD  = 10. # s
 OMEGA = 2.*pi/PULL_TORQUE_PERIOD # rad/s
 
@@ -157,10 +157,11 @@ class Zeroing_State_Machine(Node):
 
                     self.regulate_angle(self.ref_angle)
 
-                    if abs(self.joint_angle - self.ref_angle) <= 0.005 and abs(self.joint_velocity<=0.5):
+                    if abs(self.joint_angle - self.ref_angle) <= 0.01 and (abs(self.joint_velocity)<=0.5):
 
                         self.state = States.Final_Zeroing
                         self.get_logger().info("Arrived at reference angle. Performing final tare...")
+                        self.do_nothing()
                     
                 case States.Final_Zeroing:
 
@@ -172,7 +173,7 @@ class Zeroing_State_Machine(Node):
 
                     if response.done():
                     
-                        if  response.result().success == True and abs(self.joint_angle) <= 0.005: # check to see if joint angle is actually zeroed
+                        if  response.result().success == True and abs(self.joint_angle) <= 0.001: # check to see if joint angle is actually zeroed
 
                             self.state = States.Finish
 
@@ -222,7 +223,7 @@ class Zeroing_State_Machine(Node):
 
             sleep(0.1)  # back off between retries
 
-        self.get_logger().error('Bode was not able to enable the motor!')
+        self.get_logger().error('Node was not able to enable the motor!')
         return False
 
 
@@ -231,7 +232,7 @@ class Zeroing_State_Machine(Node):
         disables the motor. Duh
         '''
 
-        self.get_logger().warn('Enabling Motor!')
+        self.get_logger().warn('Disabling Motor!')
 
         # Don't send requests into the void
         while not self._disable_client.wait_for_service(timeout_sec=1.0):
@@ -262,9 +263,9 @@ class Zeroing_State_Machine(Node):
         self.command_msg.control_mode = param.PID_position
         self.command_msg.current_limit = param.safe_current_limit
         self.command_msg.torque_limit = param.std_torque_limit
-        self.command_msg.data_1 = reference # setpoint 
+        self.command_msg.data_1 = radians(reference) # setpoint 
         self.command_msg.data_2 = param.std_kp
-        # self.command_msg.data_3 = param.std_ki
+        self.command_msg.data_3 = param.std_ki
         self.command_msg.data_4 = param.std_kd
 
         return
