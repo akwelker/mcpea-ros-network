@@ -26,7 +26,9 @@ setup(
             'jumping_state_machine = actuator_command.jumping_state_machine:main',
             'regulator_node = actuator_command.regulator:main',
             'sleep_node = actuator_command.sleep_node:main',
-            'zeroing_state_machine = actuator_command.zeroing_machine:main'
+            'zeroing_state_machine = actuator_command.zeroing_machine:main',
+            'error_reader_node = actuator_command.error_code_reader:main',
+            'test_number_node = actuator_command.test_number_publisher:main',
         ],
     },
 )

@@ -26,3 +26,8 @@ launch:
     -
         from: "/actuator_command"
         to: "/actuator_control"
+
+- node:
+    pkg: "actuator_command"
+    exec: "error_reader_node"
+    name: "error_reader"
