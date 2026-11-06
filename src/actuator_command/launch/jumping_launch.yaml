@@ -1,33 +1,36 @@
 launch:
+  - arg:
+      name: "bag_output_path"
+      default: "$(env HOME)/dissertation/hardware/mcpea-ros-network/bag/rosbag_$(command 'date +%Y_%m_%d-%H_%M_%S')"
 
-- node:
-    pkg: "spi_interface"
-    exec: "interpreter_node"
-    name: "interpreter"
-    remap:
-    -
-        from: "/actuator_data_out"
-        to: "/actuator_telemetry"
-    -
-        from: "/actuator_command_in"
-        to: "/actuator_control"
+  - node:
+      pkg: "spi_interface"
+      exec: "interpreter_node"
+      name: "interpreter"
+      remap:
+        - from: "/actuator_data_out"
+          to: "/actuator_telemetry"
+        - from: "/actuator_command_in"
+          to: "/actuator_control"
+        - from: "/actuator_command_out"
+          to: "/actuator_raw_data_out"
+        - from: "/actuator_data_in"
+          to: "/actuator_raw_data_in"
 
-    -   
-        from: "/actuator_command_out"
-        to: "/actuator_raw_data_out"
-    -
-        from: "/actuator_data_in"
-        to: "/actuator_raw_data_in"
-- node:
-    pkg: "actuator_command"
-    exec: "jumping_state_machine"
-    name: "jumping_state_machine"
-    remap:
-    -
-        from: "/actuator_command"
-        to: "/actuator_control"
+  - node:
+      pkg: "actuator_command"
+      exec: "jumping_state_machine"
+      name: "jumping_state_machine"
+      remap:
+        - from: "/actuator_command"
+          to: "/actuator_control"
 
-- node:
-    pkg: "actuator_command"
-    exec: "error_reader_node"
-    name: "error_reader"
+  - node:
+      pkg: "actuator_command"
+      exec: "error_reader_node"
+      name: "error_reader"
+
+  # Record the bag
+  - executable:
+      cmd: "ros2 bag record -o $(var bag_output_path) /actuator_telemetry /actuator_control"
+      output: "screen"
