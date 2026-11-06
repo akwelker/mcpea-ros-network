@@ -18,16 +18,33 @@ from enum import Enum
 
 from time import time, sleep
 from numpy import pi,sin,abs,radians, degrees
+from scipy.signal import butter
 
 # state machine parameters
 TIME_OUT_PERIOD = 60*2.0 # 2 min in seconds
-PULLBACK_ANGLE = 18. # degrees
-LANDING_ANGLE = -40. # degrees
-COMPRESSION_ANGLE = 19. #degrees
+PULLBACK_ANGLE = 12. # degrees
+LANDING_ANGLE = -0. # degrees
+COMPRESSION_ANGLE = 12. #degrees
 EXTENSION_ANGLE = -40. # degrees
 LANDING_TORQUE = 0.5 #NM
 INJECTION_TORQUE = -10. #nm
+TRANSITION_ANGLE = -20
 
+
+# filter parameters
+
+f_c = 20
+f_s = 500
+
+alpha = f_c/(f_c + f_s/2./pi)
+
+
+def low_pass(y_prev:float,x:float)->float:
+    '''
+    Return result for first order IIR filter
+
+    '''
+    return alpha*x + (1-alpha)*y_prev
 
 #Boom angle filter parameters
 
@@ -35,11 +52,12 @@ class States(Enum):
 
     Start = 0
     Pulling_Back = 1
-    Force_Injection = 2
+    Initial_Force_Injection = 2
+    Final_Force_Injection = 7
     Flight = 3
     Landing = 4
     Compression = 5
-    Finish = 5
+    Finish = 6
 
 
 
@@ -70,7 +88,10 @@ class Jumping_State_Machine(Node):
         self.joint_angle = 0
         self.joint_velocity = 0
         self.joint_accel = 0
-        self.boom_angle = 0
+        self.boom_angle = None
+
+        self.prev_time = 0
+        self.boom_vel = 0
         self.curr_torque = 0
 
     def timer_callback(self):
@@ -78,12 +99,28 @@ class Jumping_State_Machine(Node):
         self._command_publisher.publish(self.command_msg)
 
 
-    def telemetry_callback(self,msg:McpeaTelemetry):
+    def telemetry_callback(self, msg:McpeaTelemetry):
 
         self.joint_angle = msg.joint_position
         self.joint_velocity = msg.joint_velocity
         self.joint_accel = msg.accel_1
-        self.boom_angle = degrees(msg.boom_angle)
+
+        if (self.boom_angle == None):
+
+            self.boom_angle = degrees(msg.boom_angle)
+            self.prev_time = time()
+            
+        else:
+
+            prev_angle = self.boom_angle
+            self.boom_angle = low_pass(self.boom_angle,degrees(msg.boom_angle))
+
+            dt = time() - self.prev_time
+            self.boom_vel = (self.boom_angle - prev_angle)/dt
+
+            self.prev_time = time()
+
+
         self.curr_torque = msg.act_current*0.098*6
 
     def run_state_machine(self, num_jumps = 3):
@@ -113,56 +150,80 @@ class Jumping_State_Machine(Node):
 
                     if abs(self.joint_angle - PULLBACK_ANGLE) <= 1.0:
 
-                        self.regulate_torque(INJECTION_TORQUE)
-                        self.state = States.Force_Injection
+                        self.feedback_linearization_regulate(EXTENSION_ANGLE)
+                        self.state = States.Initial_Force_Injection
                         self.get_logger().info("Injecting Force!")
                         self.ref_time = time()
 
 
-                case States.Force_Injection:
+                case States.Initial_Force_Injection:
+
+
+                    if self.joint_angle <= TRANSITION_ANGLE:
+
+                        self.regulate_torque(INJECTION_TORQUE)
+                        self.state = States.Final_Force_Injection
+                        self.get_logger().info("Final Push!")
+                        self.ref_time = time()
+
+                    elif time() - self.ref_time >= 1.0:
+
+                        self.get_logger().error("Did not ROA Transition.")
+                        self.do_nothing()
+                        self.state = States.Finish
+
+                case States.Final_Force_Injection:
 
                     if self.joint_angle <= EXTENSION_ANGLE:
 
-                        self.feedback_linearization_regulate(LANDING_ANGLE)
+                        self.feedback_linearization_regulate(EXTENSION_ANGLE)
                         self.state = States.Flight
                         jump_completed += 1
                         self.get_logger().info("Lift off!")
 
                     elif time() - self.ref_time >= 1.0:
 
-                        self.get_logger().warn("Did not detect lift off.")
-                        self.feedback_linearization_regulate(LANDING_ANGLE)
-                        self.state = States.Flight
+                        self.get_logger().error("Did not detect lift off.")
+                        self.do_nothing()
+                        self.state = States.Finish
                         jump_completed += 1
 
                 case States.Flight:
 
                     # check if the joint angle is somewhat cose to the landing angle and we have a torque spike
 
-                    if abs(self.joint_angle - LANDING_ANGLE) <= 1 and abs(self.curr_torque)>LANDING_TORQUE:
+                    if self.boom_vel >= 3.0:
 
+                        self.state = States.Landing
+                        self.regulate_angle(LANDING_ANGLE)
+                        self.get_logger().info('Detected Apogee!')
+
+
+                case States.Landing:
+
+                     if abs(self.joint_angle - LANDING_ANGLE) <= 1:
+                    
                         self.state = States.Compression
-                        # self.regulate_angle(COMPRESSION_ANGLE)
                         self.do_nothing()
                         self.get_logger().info('Detected Landing!')
 
-                    
+
 
                 case States.Compression:
 
                     # check to see if we're going up or have passed the compression max angle
 
-                    if self.joint_angle >= COMPRESSION_ANGLE or self.joint_velocity <=  0.5:
+                    if self.joint_angle >= COMPRESSION_ANGLE and self.boom_vel <=  0.5:
 
-                        if jump_completed >= num_jumps:
+                        if jump_completed > num_jumps:
 
                             self.state = States.Finish
                             self.do_nothing()
 
                         else:
 
-                            self.regulate_torque(INJECTION_TORQUE)
-                            self.state = States.Force_Injection
+                            self.feedback_linearization_regulate(EXTENSION_ANGLE)
+                            self.state = States.Initial_Force_Injection
                             self.get_logger().info("Jumping Again!")
                             self.ref_time = time()
                 
