@@ -31,6 +31,7 @@ setup(
             'test_number_node = actuator_command.test_number_publisher:main',
             'fl_reference_follower = actuator_command.fl_reference_follow:main',
             'square_wave_generator = actuator_command.square_reference:main',
+            'GEM_jumping_state_machine = actuator_command.jumping_w_o_magnets:main',
         ],
     },
 )
