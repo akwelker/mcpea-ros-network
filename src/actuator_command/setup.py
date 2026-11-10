@@ -29,6 +29,8 @@ setup(
             'zeroing_state_machine = actuator_command.zeroing_machine:main',
             'error_reader_node = actuator_command.error_code_reader:main',
             'test_number_node = actuator_command.test_number_publisher:main',
+            'fl_reference_follower = actuator_command.fl_reference_follow:main',
+            'square_wave_generator = actuator_command.square_reference:main',
         ],
     },
 )

@@ -1,7 +1,8 @@
 launch:
   - arg:
       name: "bag_output_path"
-      default: "$(env HOME)/dissertation/hardware/mcpea-ros-network/bag/rosbag_$(command 'date +%Y_%m_%d-%H_%M_%S')"
+
+      default: "$(env HOME)/dissertation/hardware/mcpea-ros-network/bag/rosbag_$(eval \"__import__('datetime').datetime.now().strftime('%Y_%m_%d-%H_%M_%S')\")"
 
   - node:
       pkg: "spi_interface"

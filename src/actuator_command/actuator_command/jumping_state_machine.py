@@ -22,9 +22,9 @@ from scipy.signal import butter
 
 # state machine parameters
 TIME_OUT_PERIOD = 60*2.0 # 2 min in seconds
-PULLBACK_ANGLE = 12. # degrees
+PULLBACK_ANGLE = 16.5 # degrees
 LANDING_ANGLE = -0. # degrees
-COMPRESSION_ANGLE = 12. #degrees
+COMPRESSION_ANGLE = 13. #degrees
 EXTENSION_ANGLE = -40. # degrees
 LANDING_TORQUE = 0.5 #NM
 INJECTION_TORQUE = -10. #nm
@@ -201,11 +201,26 @@ class Jumping_State_Machine(Node):
 
                 case States.Landing:
 
-                     if abs(self.joint_angle - LANDING_ANGLE) <= 1:
+                    if abs(self.joint_angle - LANDING_ANGLE) <= 1 and abs(self.joint_velocity) <= 0.5:
                     
                         self.state = States.Compression
                         self.do_nothing()
-                        self.get_logger().info('Detected Landing!')
+                        self.get_logger().info('Ready to Land!')
+
+                    # elif self.joint_angle >= COMPRESSION_ANGLE and self.boom_vel <=  0.5:
+
+                    #     self.get_logger().info("Detected early jump!")
+                    #     if jump_completed > num_jumps:
+
+                    #         self.state = States.Finish
+                    #         self.do_nothing()
+
+                    #     else:
+
+                    #         self.feedback_linearization_regulate(EXTENSION_ANGLE)
+                    #         self.state = States.Initial_Force_Injection
+                    #         self.get_logger().info("Jumping Again!")
+                    #         self.ref_time = time()
 
 
 
@@ -213,7 +228,7 @@ class Jumping_State_Machine(Node):
 
                     # check to see if we're going up or have passed the compression max angle
 
-                    if self.joint_angle >= COMPRESSION_ANGLE and self.boom_vel <=  0.5:
+                    if self.joint_angle >= COMPRESSION_ANGLE: #and self.boom_vel <=  0.25:
 
                         if jump_completed > num_jumps:
 
