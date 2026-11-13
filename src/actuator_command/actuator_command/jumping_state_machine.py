@@ -22,9 +22,9 @@ from scipy.signal import butter
 
 # state machine parameters
 TIME_OUT_PERIOD = 60*2.0 # 2 min in seconds
-PULLBACK_ANGLE = 16.5 # degrees
-LANDING_ANGLE = -0. # degrees
-COMPRESSION_ANGLE = 13. #degrees
+PULLBACK_ANGLE = 26.5 # degrees
+LANDING_ANGLE = 0. # degrees
+COMPRESSION_ANGLE = 19. #degrees
 EXTENSION_ANGLE = -40. # degrees
 LANDING_TORQUE = 0.5 #NM
 INJECTION_TORQUE = -10. #nm
@@ -148,7 +148,7 @@ class Jumping_State_Machine(Node):
 
                 case States.Pulling_Back:
 
-                    if abs(self.joint_angle - PULLBACK_ANGLE) <= 1.0:
+                    if abs(self.joint_angle - PULLBACK_ANGLE) <= 0.5:
 
                         self.feedback_linearization_regulate(EXTENSION_ANGLE)
                         self.state = States.Initial_Force_Injection
